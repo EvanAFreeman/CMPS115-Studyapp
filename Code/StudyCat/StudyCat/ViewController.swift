@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+ 
     @IBOutlet weak var cat_in_box: UIImageView!
     var box: UIImage!
     var box1: UIImage!
@@ -38,10 +38,9 @@ class ViewController: UIViewController {
         
    
         animatedImage = UIImage.animatedImage(with: images, duration: 1.0)
-        
-        cat_in_box.image = animatedImage
-        
-  
+        if cat_in_box != nil {
+            cat_in_box.image = animatedImage
+        }
     }
 
     override func didReceiveMemoryWarning() {

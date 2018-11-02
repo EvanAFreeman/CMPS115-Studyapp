@@ -8,9 +8,31 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
- 
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    var list = ["read book", "write notes"]
+    
+    @IBOutlet weak var myTableView: UITableView!
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (list.count)
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = list[indexPath.row]
+        
+        return (cell)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
+        if editingStyle == UITableViewCellEditingStyle.delete
+        {
+            self.list.remove(at: indexPath.row)
+            myTableView.reloadData()
+        }
+    }
+    
     @IBOutlet weak var cat_in_box: UIImageView!
     var box: UIImage!
     var box1: UIImage!

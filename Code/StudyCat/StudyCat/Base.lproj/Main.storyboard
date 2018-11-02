@@ -964,10 +964,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVS-3V-d1W">
-                                <rect key="frame" x="0.0" y="20" width="45" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="365" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LBD-m9-zaU">
-                                        <rect key="frame" x="0.0" y="515" width="84" height="722"/>
+                                        <rect key="frame" x="0.0" y="515" width="58" height="722"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.88475195799999995" green="0.73257419020000003" blue="0.89798144040000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -983,7 +983,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4S-st-WiZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="84" height="449"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="449"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.88475195799999995" green="0.73257419020000003" blue="0.89798144040000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -1080,19 +1080,27 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Syr-TI-67v">
+                                <rect key="frame" x="66" y="25" width="293" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.88475195799999995" green="0.73257419020000003" blue="0.89798144040000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="RVS-3V-d1W" secondAttribute="bottom" id="5tl-Wg-U7L"/>
                             <constraint firstItem="RVS-3V-d1W" firstAttribute="leading" secondItem="VfK-4R-rKS" secondAttribute="leading" id="753-QN-ngV"/>
-                            <constraint firstAttribute="trailing" secondItem="RVS-3V-d1W" secondAttribute="trailing" constant="330" id="f7X-Vg-5ic"/>
+                            <constraint firstItem="Syr-TI-67v" firstAttribute="leading" secondItem="VfK-4R-rKS" secondAttribute="leadingMargin" constant="50" id="9Eh-eG-w0O"/>
+                            <constraint firstItem="Syr-TI-67v" firstAttribute="trailing" secondItem="VfK-4R-rKS" secondAttribute="trailingMargin" id="AlW-bW-M9Y"/>
+                            <constraint firstItem="kga-Qs-4eA" firstAttribute="top" secondItem="Syr-TI-67v" secondAttribute="bottom" constant="20" id="Pr1-Q2-U4n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RVS-3V-d1W" secondAttribute="trailing" constant="-6" id="WmG-wu-xto"/>
+                            <constraint firstItem="Syr-TI-67v" firstAttribute="top" secondItem="h17-9U-68F" secondAttribute="bottom" constant="5" id="a0g-SK-JUY"/>
                             <constraint firstItem="RVS-3V-d1W" firstAttribute="top" secondItem="h17-9U-68F" secondAttribute="bottom" id="gi7-CI-YMa"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vx-Gq-DXR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2456.8000000000002" y="819.04047976011998"/>
+            <point key="canvasLocation" x="3880.8000000000002" y="856.82158920539734"/>
         </scene>
     </scenes>
     <resources>
@@ -1110,13 +1118,13 @@
         <image name="window cat clone" width="180" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="503-VY-inL"/>
-        <segue reference="mx3-lF-up1"/>
-        <segue reference="n8i-CU-aIT"/>
-        <segue reference="aob-Sh-qPw"/>
-        <segue reference="pH5-QE-09A"/>
+        <segue reference="24W-AU-jbY"/>
+        <segue reference="mfv-3z-aLw"/>
+        <segue reference="Rio-2K-w4s"/>
+        <segue reference="69d-4S-Yks"/>
+        <segue reference="wGS-q1-M0h"/>
         <segue reference="otQ-Po-Tk9"/>
-        <segue reference="1F1-V5-NTa"/>
+        <segue reference="mth-zE-EWH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

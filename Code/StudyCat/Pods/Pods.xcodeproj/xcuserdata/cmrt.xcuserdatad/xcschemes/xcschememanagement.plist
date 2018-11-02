@@ -4,12 +4,37 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FirebaseAuth.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FirebaseCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>FirebaseDatabase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseStorage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMOAuth2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMSessionFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,12 +72,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5036616F3ABA44E7227EF6F0B86A0445</key>
+		<key>28A0A585DD41A5F02BDE8ADE4AF4F86B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68FBB954F8F821E47445D5FE66A66713</key>
+		<key>2B2712EF6F96688D89D40EDE40CE8202</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2BBB2BFD8FD42F137C331CDDD430D6E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>398EE6331BBC90E43589D64BEC7A869D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5036616F3ABA44E7227EF6F0B86A0445</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,12 +102,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E690386722B4541B47667A92AEFC3AC</key>
+		<key>82E6D32C08EA0008DF7CA4A41101D907</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D51703558D39F8D94262170480B4D0D7</key>
+		<key>9AE25678C79B25B39BFD86E1B3444590</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A335FFA7453C397A243D29A7953C2032</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1C4AAFAF49036C7007633DAA3C806AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D71EAF97C72A7E4C1D560AB30DC5D08C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +132,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E5B36F65723476214239401CD91FD7F4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EF9C1C66EC3371988D38D8C9FC027AD7</key>
+		<key>F05BBF0ABCBAB1D55C2FE0C052A8CF62</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -9,12 +9,17 @@ target 'StudyCat' do
   pod 'Firebase', '>= 2.5.0'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
   target 'StudyCatTests' do
     inherit! :search_paths
     pod 'Firebase'
     pod 'Firebase/Core'
     pod 'Firebase/Database'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Auth'
+    pod 'GoogleSignIn'
     # Pods for testing
   end
 
@@ -23,6 +28,9 @@ target 'StudyCat' do
     pod 'Firebase'
     pod 'Firebase/Core'
     pod 'Firebase/Database'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Auth'
+    pod 'GoogleSignIn'
     # Pods for testing
   end
 

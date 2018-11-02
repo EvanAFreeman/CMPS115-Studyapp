@@ -9,7 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    var list = ["read book", "write notes"]
+ var list = ["Read"]
+    ///////////////////////////////////////
+    // Get user to do list item and allow user to send with button
+    @IBOutlet weak var input: UITextField!
+    @IBAction func additem(_ sender: Any) {
+        if(input.text != "")
+        {
+            list.append(input.text!) //add the new item to the array
+            input.text = ""// so that the user can input some new text
+        }
+        myTableView.reloadData()
+    }
+    /////////////////////////////////////////
     
     @IBOutlet weak var myTableView: UITableView!
     
@@ -32,6 +44,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             myTableView.reloadData()
         }
     }
+    
+    /*
+    override func viewDidAppear(_ animated: Bool){
+        myTableView.reloadData()
+    }
+    */
     
     @IBOutlet weak var cat_in_box: UIImageView!
     var box: UIImage!

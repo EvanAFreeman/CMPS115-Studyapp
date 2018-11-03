@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     
     
+    
     var images: [UIImage]!
     let storage = Storage.storage().reference()
     let database = Database.database().reference()
@@ -114,7 +115,80 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+   
+//Timer Implementation
+////////////////////////////////////////////////////////////////////////////////////
+    var seconds = 0
+    var timer = Timer()
+    var minutes = 0
+    var hours = 0
+    var timer_running = false
+    var resume = false
+    var time_sec = 0
+    
+    @IBOutlet weak var timer_label: UILabel!
+    
+    @IBOutlet weak var slider_outlet: UISlider!
+    @IBAction func slider_timer(_ sender: UISlider) {
+        time_sec = Int(sender.value)
+        timer_label.text = timeString(time: TimeInterval(time_sec))
+        
+    }
+    
+    @IBOutlet weak var progress_timer: UIProgressView!
+    
+    @IBOutlet weak var start_outlet: UIButton!
+    @IBAction func start_button(_ sender: UIButton) {
+        if(timer_running == false){
+            run_timer()
+        }
+    }
+    
+    func run_timer(){
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
+        timer_running = true
+    }
+    
+    func counter(){
+        if(time_sec > 0){
+            time_sec -= 1
+            timer_label.text = timeString(time: TimeInterval(time_sec))
+        }
+        else{
+            timer.invalidate()
+        }
+    }
+    
+    @IBOutlet weak var pause_outlet: UIButton!
+    @IBAction func pause_button(_ sender: UIButton) {
+        if (self.resume == false){
+            timer.invalidate()
+            self.resume = true
+            self.pause_outlet.setTitle("Resume",for: .normal)
+        }
+        else{
+            run_timer()
+            self.resume = false
+            self.pause_outlet.setTitle("Pause",for: .normal)
+        }
+    }
+    
+    @IBOutlet weak var reset_outlet: UIButton!
+    @IBAction func reset_button(_ sender: UIButton) {
+        timer_running = false
+        timer.invalidate()
+        time_sec = 0
+        timer_label.text = timeString(time: TimeInterval(time_sec))
+        slider_outlet.setValue(0, animated: true)
+    }
+    
+    @IBOutlet weak var cat: UIImageView!
+    func timeString(time:TimeInterval) -> String{
+        hours = Int(time) / 3600
+        minutes = Int(time) / 60 % 60
+        seconds = Int(time) % 60
+        return String(format:"%02i : %02i : %02i", hours, minutes, seconds)
+    }
+    
 }
 

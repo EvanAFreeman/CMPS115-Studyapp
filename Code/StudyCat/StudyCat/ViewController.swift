@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var leadingConstraint6: NSLayoutConstraint!
     
     
-    var menuShow = false
+    var menuShow = true
     
     @IBAction func menu1(_ sender: Any) {
         if (menuShow){

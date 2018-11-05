@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ung-ov-xv9">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,8 +28,8 @@
                                         <rect key="frame" x="0.0" y="292" width="414" height="516"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHz-5b-AXC">
-                                        <rect key="frame" x="-67" y="8" width="134" height="479"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHz-5b-AXC">
+                                        <rect key="frame" x="0.0" y="8" width="134" height="479"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMa-X6-f3l">
                                                 <rect key="frame" x="8" y="10" width="50" height="50"/>
@@ -41,7 +41,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="music-icon"/>
                                                 <connections>
-                                                    <segue destination="31o-rO-wBf" kind="show" id="pH5-QE-09A"/>
+                                                    <segue destination="fkt-fg-uyi" kind="push" id="7OG-Dq-3zp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6e-aR-972">
@@ -83,7 +83,7 @@
                                 <color key="backgroundColor" red="0.69411764705882351" green="0.83529411764705885" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="tHz-5b-AXC" secondAttribute="trailing" constant="17" id="kWv-xN-Eyo"/>
-                                    <constraint firstItem="tHz-5b-AXC" firstAttribute="leading" secondItem="Wzf-SO-lzH" secondAttribute="leading" constant="-67" id="tfg-SF-HIF"/>
+                                    <constraint firstItem="tHz-5b-AXC" firstAttribute="leading" secondItem="Wzf-SO-lzH" secondAttribute="leading" id="tfg-SF-HIF"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -678,6 +678,7 @@
         <!--Navigation Controller-->
         <scene sceneID="K5K-NK-aud">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipo-ZO-PFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ung-ov-xv9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4fn-bt-ufG">
@@ -689,7 +690,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5wf-p6-DdO"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipo-ZO-PFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2865.217391304348" y="132.58928571428572"/>
         </scene>
@@ -698,6 +698,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="31o-rO-wBf" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="n3k-g3-DXb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EqY-fh-jO3">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -798,13 +799,13 @@
         <image name="window cat clone" width="180" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5wf-p6-DdO"/>
         <segue reference="503-VY-inL"/>
         <segue reference="mx3-lF-up1"/>
         <segue reference="n8i-CU-aIT"/>
         <segue reference="aob-Sh-qPw"/>
-        <segue reference="pH5-QE-09A"/>
-        <segue reference="otQ-Po-Tk9"/>
+        <segue reference="X09-Wo-prh"/>
+        <segue reference="I7Y-kH-r03"/>
+        <segue reference="7OG-Dq-3zp"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

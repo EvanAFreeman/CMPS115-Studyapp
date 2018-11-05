@@ -798,12 +798,13 @@
         <image name="window cat clone" width="180" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="24W-AU-jbY"/>
-        <segue reference="mfv-3z-aLw"/>
-        <segue reference="Asq-Ui-MYA"/>
-        <segue reference="gU6-DP-7gh"/>
-        <segue reference="X09-Wo-prh"/>
-        <segue reference="WoX-0A-awS"/>
+        <segue reference="5wf-p6-DdO"/>
+        <segue reference="503-VY-inL"/>
+        <segue reference="mx3-lF-up1"/>
+        <segue reference="n8i-CU-aIT"/>
+        <segue reference="aob-Sh-qPw"/>
+        <segue reference="pH5-QE-09A"/>
+        <segue reference="otQ-Po-Tk9"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

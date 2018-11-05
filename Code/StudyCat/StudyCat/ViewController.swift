@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     @IBAction func menu1(_ sender: Any) {
         if (menuShow){
-            leadConstraint1.constant = -67
+            leadingConstraint1.constant = -67
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
             })

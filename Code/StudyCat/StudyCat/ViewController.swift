@@ -17,17 +17,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var leadingConstraint5: NSLayoutConstraint!
     @IBOutlet weak var leadingConstraint6: NSLayoutConstraint!
     
+    @IBOutlet weak var leadConstraint1: NSLayoutConstraint!
+    
+    @IBOutlet weak var leadConstraint2: NSLayoutConstraint!
+    
+    @IBOutlet weak var leadConstraint3: NSLayoutConstraint!
+    
+    @IBOutlet weak var leadConstraint4: NSLayoutConstraint!
+    
+    @IBOutlet weak var leadConstraint5: NSLayoutConstraint!
+    
+    @IBOutlet weak var leadConstraint6: NSLayoutConstraint!
+    
+    
+    
     
     var menuShow = true
     
     @IBAction func menu1(_ sender: Any) {
         if (menuShow){
-            leadingConstraint1.constant = -67
+            leadConstraint1.constant = -67
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
             })
         } else{
-            leadingConstraint1.constant = 0
+            leadConstraint1.constant = 8
         
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
@@ -40,12 +54,12 @@ class ViewController: UIViewController {
     
     @IBAction func menu2(_ sender: Any) {
         if (menuShow){
-            leadingConstraint2.constant = -67
+            leadConstraint2.constant = -67
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
             })
         } else{
-            leadingConstraint2.constant = 0
+            leadConstraint2.constant = 8
             
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
@@ -58,12 +72,12 @@ class ViewController: UIViewController {
     
     @IBAction func menu3(_ sender: Any) {
         if (menuShow){
-            leadingConstraint3.constant = -67
+            leadConstraint3.constant = -67
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
             })
         } else{
-            leadingConstraint3.constant = 0
+            leadConstraint3.constant = 8
             
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
@@ -76,12 +90,12 @@ class ViewController: UIViewController {
     
     @IBAction func menu4(_ sender: Any) {
         if (menuShow){
-            leadingConstraint4.constant = -67
+            leadConstraint4.constant = -67
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
             })
         } else{
-            leadingConstraint4.constant = 0
+            leadConstraint4.constant = 8
             
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
@@ -95,12 +109,12 @@ class ViewController: UIViewController {
     
     @IBAction func menu5(_ sender: Any) {
         if (menuShow){
-            leadingConstraint5.constant = -67
+            leadConstraint5.constant = -67
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
             })
         } else{
-            leadingConstraint5.constant = 0
+            leadConstraint5.constant = 8
             
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
@@ -113,12 +127,12 @@ class ViewController: UIViewController {
     
     @IBAction func menu6(_ sender: Any) {
         if (menuShow){
-            leadingConstraint6.constant = -67
+            leadConstraint6.constant = -67
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
             })
         } else{
-            leadingConstraint6.constant = 0
+            leadConstraint6.constant = 8
             
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()

@@ -22,68 +22,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wzf-SO-lzH">
-                                <rect key="frame" x="0.0" y="88" width="84" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="84" height="852"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="floor" translatesAutoresizingMaskIntoConstraints="NO" id="hfv-Z6-AzX">
-                                        <rect key="frame" x="0.0" y="292" width="414" height="516"/>
+                                        <rect key="frame" x="0.0" y="308" width="414" height="544"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHz-5b-AXC">
-                                        <rect key="frame" x="0.0" y="8" width="134" height="479"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="dce-OR-FpT">
+                                        <rect key="frame" x="8" y="8" width="50" height="480"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMa-X6-f3l">
-                                                <rect key="frame" x="8" y="10" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMa-X6-f3l">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cathouseicon"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2Z-1w-HXT">
-                                                <rect key="frame" x="8" y="90" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2Z-1w-HXT">
+                                                <rect key="frame" x="0.0" y="86" width="50" height="50"/>
                                                 <state key="normal" image="music-icon"/>
                                                 <connections>
                                                     <segue destination="fkt-fg-uyi" kind="push" id="7OG-Dq-3zp"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6e-aR-972">
-                                                <rect key="frame" x="8" y="170" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6e-aR-972">
+                                                <rect key="frame" x="0.0" y="172" width="50" height="50"/>
                                                 <state key="normal" image="timer-icon"/>
                                                 <connections>
-                                                    <segue destination="TmX-P8-Hbf" kind="show" id="aob-Sh-qPw"/>
+                                                    <segue destination="cQ6-uf-V1y" kind="push" id="ehN-rm-qpg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5A-lP-8Uh">
-                                                <rect key="frame" x="8" y="250" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5A-lP-8Uh">
+                                                <rect key="frame" x="0.0" y="258" width="50" height="50"/>
                                                 <state key="normal" image="calendar"/>
                                                 <connections>
-                                                    <segue destination="eLZ-wU-smz" kind="show" id="n8i-CU-aIT"/>
+                                                    <segue destination="dGt-3x-bn7" kind="push" id="hYU-El-EBa"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1K-FF-BJw">
-                                                <rect key="frame" x="8" y="330" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1K-FF-BJw">
+                                                <rect key="frame" x="0.0" y="344" width="50" height="50"/>
                                                 <state key="normal" image="cat-goodies"/>
                                                 <connections>
-                                                    <segue destination="uhm-xr-I79" kind="show" id="mx3-lF-up1"/>
+                                                    <segue destination="clF-AR-ZAC" kind="push" id="Ifm-or-jfk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x42-Hr-wI5">
-                                                <rect key="frame" x="9" y="410" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x42-Hr-wI5">
+                                                <rect key="frame" x="0.0" y="430" width="50" height="50"/>
                                                 <state key="normal" image="checkmark"/>
                                                 <connections>
-                                                    <segue destination="vqA-Ki-xUH" kind="show" id="503-VY-inL"/>
+                                                    <segue destination="nqG-nl-nE8" kind="push" id="xHm-4R-m5d"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.69411764705882351" green="0.83529411764705885" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="tHz-5b-AXC" secondAttribute="trailing" constant="17" id="kWv-xN-Eyo"/>
-                                    <constraint firstItem="tHz-5b-AXC" firstAttribute="leading" secondItem="Wzf-SO-lzH" secondAttribute="leading" id="tfg-SF-HIF"/>
+                                    <constraint firstItem="dce-OR-FpT" firstAttribute="leading" secondItem="Wzf-SO-lzH" secondAttribute="leading" constant="8" id="MzD-va-138"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -127,7 +119,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cat_in_box" destination="399-Lp-O0I" id="eOb-eQ-1aV"/>
-                        <outlet property="leadingConstraint1" destination="tfg-SF-HIF" id="qyi-CX-gkd"/>
+                        <outlet property="leadConstraint1" destination="MzD-va-138" id="eBE-cO-983"/>
                         <outlet property="menu1" destination="TXK-DI-Uah" id="iid-fn-Q3U"/>
                     </connections>
                 </viewController>
@@ -148,64 +140,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4l-EH-qYr">
-                                <rect key="frame" x="0.0" y="88" width="84" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="84" height="852"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="npf-wi-fcI">
-                                        <rect key="frame" x="-67" y="8" width="67" height="479"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="dM5-jS-Xl4">
+                                        <rect key="frame" x="8" y="8" width="50" height="480"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTd-ak-CVq">
-                                                <rect key="frame" x="9" y="10" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTd-ak-CVq">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cathouseicon"/>
                                                 <connections>
-                                                    <segue destination="ung-ov-xv9" kind="show" id="I7Y-kH-r03"/>
+                                                    <segue destination="BYZ-38-t0r" kind="push" id="jcf-3t-OXq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqi-0d-C20">
-                                                <rect key="frame" x="8" y="90" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqi-0d-C20">
+                                                <rect key="frame" x="0.0" y="86" width="50" height="50"/>
                                                 <state key="normal" image="music-icon"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-pA-vAI">
-                                                <rect key="frame" x="9" y="170" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-pA-vAI">
+                                                <rect key="frame" x="0.0" y="172" width="50" height="50"/>
                                                 <state key="normal" image="timer-icon"/>
                                                 <connections>
-                                                    <segue destination="TmX-P8-Hbf" kind="show" id="8bf-0f-Pr1"/>
+                                                    <segue destination="cQ6-uf-V1y" kind="push" id="hP5-9E-9QC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eq-dA-BpP">
-                                                <rect key="frame" x="8" y="250" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eq-dA-BpP">
+                                                <rect key="frame" x="0.0" y="258" width="50" height="50"/>
                                                 <state key="normal" backgroundImage="calendar"/>
                                                 <connections>
-                                                    <segue destination="eLZ-wU-smz" kind="show" id="6U6-c5-5nZ"/>
+                                                    <segue destination="dGt-3x-bn7" kind="push" id="Nv9-bX-tFP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K41-wA-HZW">
-                                                <rect key="frame" x="8" y="330" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K41-wA-HZW">
+                                                <rect key="frame" x="0.0" y="344" width="50" height="50"/>
                                                 <state key="normal" image="cat-goodies"/>
                                                 <connections>
-                                                    <segue destination="uhm-xr-I79" kind="show" id="PeT-J0-Ka9"/>
+                                                    <segue destination="clF-AR-ZAC" kind="push" id="bd2-KJ-NNl"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bme-mn-zii">
-                                                <rect key="frame" x="9" y="410" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bme-mn-zii">
+                                                <rect key="frame" x="0.0" y="430" width="50" height="50"/>
                                                 <state key="normal" image="checkmark"/>
                                                 <connections>
-                                                    <segue destination="vqA-Ki-xUH" kind="show" id="XVc-dc-8TO"/>
+                                                    <segue destination="nqG-nl-nE8" kind="push" id="4Fb-DQ-qiV"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.77232601999999995" green="0.81586689670000001" blue="0.91697731599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="npf-wi-fcI" firstAttribute="top" secondItem="v4l-EH-qYr" secondAttribute="top" constant="8" id="6L1-nE-K8q"/>
-                                    <constraint firstItem="npf-wi-fcI" firstAttribute="leading" secondItem="v4l-EH-qYr" secondAttribute="leading" id="mpc-KY-vyh"/>
+                                    <constraint firstItem="dM5-jS-Xl4" firstAttribute="leading" secondItem="v4l-EH-qYr" secondAttribute="leading" constant="8" id="ebm-vD-UU8"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -236,7 +220,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leadingConstraint2" destination="mpc-KY-vyh" id="f5M-W7-T6O"/>
+                        <outlet property="leadConstraint2" destination="ebm-vD-UU8" id="Vtu-al-CMV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8c-BR-9Bt" sceneMemberID="firstResponder"/>
@@ -256,64 +240,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zk-p0-KJc">
-                                <rect key="frame" x="0.0" y="88" width="84" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="84" height="852"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EVV-mz-ac6">
-                                        <rect key="frame" x="-67" y="8" width="67" height="479"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="0QR-cQ-gQW">
+                                        <rect key="frame" x="8" y="8" width="50" height="480"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08m-4w-74i">
-                                                <rect key="frame" x="8" y="10" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08m-4w-74i">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cathouseicon"/>
                                                 <connections>
-                                                    <segue destination="ung-ov-xv9" kind="show" id="jye-Q9-Jrz"/>
+                                                    <segue destination="BYZ-38-t0r" kind="push" id="Bne-Dd-5C5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Waf-XF-5Dm">
-                                                <rect key="frame" x="8" y="90" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Waf-XF-5Dm">
+                                                <rect key="frame" x="0.0" y="86" width="50" height="50"/>
                                                 <state key="normal" image="music-icon"/>
                                                 <connections>
-                                                    <segue destination="31o-rO-wBf" kind="show" id="L3U-Pg-pv3"/>
+                                                    <segue destination="fkt-fg-uyi" kind="push" id="gXU-3C-AlK"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4c-8c-JpF">
-                                                <rect key="frame" x="8" y="170" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4c-8c-JpF">
+                                                <rect key="frame" x="0.0" y="172" width="50" height="50"/>
                                                 <state key="normal" image="timer-icon"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA0-Ff-GNl">
-                                                <rect key="frame" x="8" y="250" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA0-Ff-GNl">
+                                                <rect key="frame" x="0.0" y="258" width="50" height="50"/>
                                                 <state key="normal" backgroundImage="calendar"/>
                                                 <connections>
-                                                    <segue destination="eLZ-wU-smz" kind="show" id="Me1-cy-JVQ"/>
+                                                    <segue destination="dGt-3x-bn7" kind="push" id="LHd-RL-aiC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7y-kv-8vO">
-                                                <rect key="frame" x="8" y="330" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7y-kv-8vO">
+                                                <rect key="frame" x="0.0" y="344" width="50" height="50"/>
                                                 <state key="normal" image="cat-goodies"/>
                                                 <connections>
-                                                    <segue destination="uhm-xr-I79" kind="show" id="cqj-BN-6WM"/>
+                                                    <segue destination="clF-AR-ZAC" kind="push" id="bct-jC-eX8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRD-Av-EtW">
-                                                <rect key="frame" x="8" y="410" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRD-Av-EtW">
+                                                <rect key="frame" x="0.0" y="430" width="50" height="50"/>
                                                 <state key="normal" image="checkmark"/>
                                                 <connections>
-                                                    <segue destination="vqA-Ki-xUH" kind="show" id="gxs-k0-R1A"/>
+                                                    <segue destination="nqG-nl-nE8" kind="push" id="Ykh-fv-T5v"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.82739133880000004" green="0.54441328160000002" blue="0.57817838460000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="EVV-mz-ac6" firstAttribute="leading" secondItem="2zk-p0-KJc" secondAttribute="leading" id="3y6-cb-kGA"/>
-                                    <constraint firstItem="EVV-mz-ac6" firstAttribute="top" secondItem="2zk-p0-KJc" secondAttribute="top" constant="8" id="n2H-ed-vUS"/>
+                                    <constraint firstItem="0QR-cQ-gQW" firstAttribute="leading" secondItem="2zk-p0-KJc" secondAttribute="leading" constant="8" id="veg-ht-Ywu"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -337,14 +313,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WLg-to-1aT">
-                        <barButtonItem key="leftBarButtonItem" title="Item3" id="bvi-uy-cxE">
+                        <barButtonItem key="leftBarButtonItem" title="Item3" image="drop-down-arrow" id="bvi-uy-cxE">
                             <connections>
                                 <action selector="menu3:" destination="cQ6-uf-V1y" id="HvI-Hu-Ets"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leadingConstraint3" destination="3y6-cb-kGA" id="263-fG-m7E"/>
+                        <outlet property="leadConstraint3" destination="veg-ht-Ywu" id="Pme-qj-52l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftf-t3-KzE" sceneMemberID="firstResponder"/>
@@ -364,64 +340,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNI-AT-Ea0">
-                                <rect key="frame" x="0.0" y="88" width="84" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="84" height="852"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yH-37-z19">
-                                        <rect key="frame" x="-67" y="8" width="67" height="479"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="PDv-RR-5Nk">
+                                        <rect key="frame" x="8" y="8" width="50" height="480"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKl-Ai-abh">
-                                                <rect key="frame" x="8" y="10" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKl-Ai-abh">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cathouseicon"/>
                                                 <connections>
-                                                    <segue destination="ung-ov-xv9" kind="show" id="MAt-56-nbT"/>
+                                                    <segue destination="BYZ-38-t0r" kind="push" id="fLL-wR-dqN"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-98-UT9">
-                                                <rect key="frame" x="8" y="90" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-98-UT9">
+                                                <rect key="frame" x="0.0" y="86" width="50" height="50"/>
                                                 <state key="normal" image="music-icon"/>
                                                 <connections>
-                                                    <segue destination="31o-rO-wBf" kind="show" id="Sao-Js-Qky"/>
+                                                    <segue destination="fkt-fg-uyi" kind="push" id="P4e-Ti-Mym"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahg-5U-0Xe">
-                                                <rect key="frame" x="8" y="170" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahg-5U-0Xe">
+                                                <rect key="frame" x="0.0" y="172" width="50" height="50"/>
                                                 <state key="normal" image="timer-icon"/>
                                                 <connections>
-                                                    <segue destination="TmX-P8-Hbf" kind="show" id="jb5-xt-Zbr"/>
+                                                    <segue destination="cQ6-uf-V1y" kind="push" id="0qr-ed-9pB"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifc-4Y-wZ4">
-                                                <rect key="frame" x="8" y="250" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifc-4Y-wZ4">
+                                                <rect key="frame" x="0.0" y="258" width="50" height="50"/>
                                                 <state key="normal" backgroundImage="calendar"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhl-su-drZ">
-                                                <rect key="frame" x="9" y="330" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhl-su-drZ">
+                                                <rect key="frame" x="0.0" y="344" width="50" height="50"/>
                                                 <state key="normal" image="cat-goodies"/>
                                                 <connections>
-                                                    <segue destination="uhm-xr-I79" kind="show" id="v9z-cq-1Q9"/>
+                                                    <segue destination="clF-AR-ZAC" kind="push" id="Vad-M0-uv0"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ5-Vu-bdg">
-                                                <rect key="frame" x="9" y="410" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ5-Vu-bdg">
+                                                <rect key="frame" x="0.0" y="430" width="50" height="50"/>
                                                 <state key="normal" image="checkmark"/>
                                                 <connections>
-                                                    <segue destination="vqA-Ki-xUH" kind="show" id="kU7-YB-ofM"/>
+                                                    <segue destination="nqG-nl-nE8" kind="push" id="wKN-3l-BVH"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.89582011419999996" green="0.8727059667" blue="0.4963487808" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="2yH-37-z19" firstAttribute="top" secondItem="bNI-AT-Ea0" secondAttribute="top" constant="8" id="cDE-xQ-HxX"/>
-                                    <constraint firstItem="2yH-37-z19" firstAttribute="leading" secondItem="bNI-AT-Ea0" secondAttribute="leading" id="jmy-pQ-Lqe"/>
+                                    <constraint firstItem="PDv-RR-5Nk" firstAttribute="leading" secondItem="bNI-AT-Ea0" secondAttribute="leading" constant="8" id="BWf-56-b8A"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -451,9 +419,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="leadingConstraint4" destination="jmy-pQ-Lqe" id="IVR-nP-NAd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gAf-Mq-1Rm" sceneMemberID="firstResponder"/>
             </objects>
@@ -472,64 +437,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KiI-So-C2b">
-                                <rect key="frame" x="0.0" y="88" width="84" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="84" height="852"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clr-RQ-3nu">
-                                        <rect key="frame" x="-67" y="8" width="67" height="479"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="qcK-iU-EbG">
+                                        <rect key="frame" x="8" y="8" width="50" height="480"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-Zn-Rvu">
-                                                <rect key="frame" x="8" y="10" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-Zn-Rvu">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cathouseicon"/>
                                                 <connections>
-                                                    <segue destination="ung-ov-xv9" kind="show" id="WoX-0A-awS"/>
+                                                    <segue destination="BYZ-38-t0r" kind="push" id="AeL-d8-kt1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6S-Gp-E7q">
-                                                <rect key="frame" x="8" y="90" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6S-Gp-E7q">
+                                                <rect key="frame" x="0.0" y="86" width="50" height="50"/>
                                                 <state key="normal" image="music-icon"/>
                                                 <connections>
-                                                    <segue destination="31o-rO-wBf" kind="show" id="X09-Wo-prh"/>
+                                                    <segue destination="fkt-fg-uyi" kind="push" id="OZK-hg-Rhq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oe-on-UyV">
-                                                <rect key="frame" x="8" y="170" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oe-on-UyV">
+                                                <rect key="frame" x="0.0" y="172" width="50" height="50"/>
                                                 <state key="normal" image="timer-icon"/>
                                                 <connections>
-                                                    <segue destination="TmX-P8-Hbf" kind="show" id="gU6-DP-7gh"/>
+                                                    <segue destination="cQ6-uf-V1y" kind="push" id="EMW-IF-uhL"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1O-g4-KjJ">
-                                                <rect key="frame" x="8" y="250" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1O-g4-KjJ">
+                                                <rect key="frame" x="0.0" y="258" width="50" height="50"/>
                                                 <state key="normal" backgroundImage="calendar"/>
                                                 <connections>
-                                                    <segue destination="eLZ-wU-smz" kind="show" id="Asq-Ui-MYA"/>
+                                                    <segue destination="dGt-3x-bn7" kind="push" id="n9L-5X-Qtk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8g-cQ-LrM">
-                                                <rect key="frame" x="8" y="330" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8g-cQ-LrM">
+                                                <rect key="frame" x="0.0" y="344" width="50" height="50"/>
                                                 <state key="normal" image="cat-goodies"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-95-4RM">
-                                                <rect key="frame" x="9" y="410" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-95-4RM">
+                                                <rect key="frame" x="0.0" y="430" width="50" height="50"/>
                                                 <state key="normal" image="checkmark"/>
                                                 <connections>
-                                                    <segue destination="vqA-Ki-xUH" kind="show" id="24W-AU-jbY"/>
+                                                    <segue destination="nqG-nl-nE8" kind="push" id="sNw-Co-p8j"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.42204228100000002" green="0.432955225" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="clr-RQ-3nu" firstAttribute="top" secondItem="KiI-So-C2b" secondAttribute="top" constant="8" id="4iA-CG-q00"/>
-                                    <constraint firstItem="clr-RQ-3nu" firstAttribute="leading" secondItem="KiI-So-C2b" secondAttribute="leading" id="Aem-T8-KG0"/>
+                                    <constraint firstItem="qcK-iU-EbG" firstAttribute="leading" secondItem="KiI-So-C2b" secondAttribute="leading" constant="8" id="Rtw-gM-iWW"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -560,7 +517,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leadingConstraint5" destination="Aem-T8-KG0" id="v3C-1v-z3b"/>
+                        <outlet property="leadConstraint5" destination="Rtw-gM-iWW" id="vwV-04-OJS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEv-Ck-u58" sceneMemberID="firstResponder"/>
@@ -580,64 +537,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVS-3V-d1W">
-                                <rect key="frame" x="0.0" y="88" width="84" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="84" height="852"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWv-4J-zMb">
-                                        <rect key="frame" x="-67" y="8" width="67" height="479"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="hZX-y1-g27">
+                                        <rect key="frame" x="8" y="8" width="50" height="480"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m95-0C-EdI">
-                                                <rect key="frame" x="8" y="10" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m95-0C-EdI">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cathouseicon"/>
                                                 <connections>
-                                                    <segue destination="ung-ov-xv9" kind="show" id="otQ-Po-Tk9"/>
+                                                    <segue destination="BYZ-38-t0r" kind="push" id="zkc-9I-div"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrk-HC-jch">
-                                                <rect key="frame" x="8" y="90" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrk-HC-jch">
+                                                <rect key="frame" x="0.0" y="86" width="50" height="50"/>
                                                 <state key="normal" image="music-icon"/>
                                                 <connections>
-                                                    <segue destination="31o-rO-wBf" kind="show" id="wGS-q1-M0h"/>
+                                                    <segue destination="fkt-fg-uyi" kind="push" id="t2G-wF-P8J"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZH-Oz-bjB">
-                                                <rect key="frame" x="8" y="170" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZH-Oz-bjB">
+                                                <rect key="frame" x="0.0" y="172" width="50" height="50"/>
                                                 <state key="normal" image="timer-icon"/>
                                                 <connections>
-                                                    <segue destination="TmX-P8-Hbf" kind="show" id="69d-4S-Yks"/>
+                                                    <segue destination="cQ6-uf-V1y" kind="push" id="cY5-a0-qn5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzW-x1-YBc">
-                                                <rect key="frame" x="8" y="250" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzW-x1-YBc">
+                                                <rect key="frame" x="0.0" y="258" width="50" height="50"/>
                                                 <state key="normal" backgroundImage="calendar"/>
                                                 <connections>
-                                                    <segue destination="eLZ-wU-smz" kind="show" id="Rio-2K-w4s"/>
+                                                    <segue destination="dGt-3x-bn7" kind="push" id="GNy-Va-1Hx"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRZ-Xd-0zX">
-                                                <rect key="frame" x="9" y="330" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRZ-Xd-0zX">
+                                                <rect key="frame" x="0.0" y="344" width="50" height="50"/>
                                                 <state key="normal" image="cat-goodies"/>
                                                 <connections>
-                                                    <segue destination="uhm-xr-I79" kind="show" id="mfv-3z-aLw"/>
+                                                    <segue destination="clF-AR-ZAC" kind="push" id="7C7-YF-10f"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaE-Us-5nS">
-                                                <rect key="frame" x="8" y="410" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaE-Us-5nS">
+                                                <rect key="frame" x="0.0" y="430" width="50" height="50"/>
                                                 <state key="normal" image="checkmark"/>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.88475195799999995" green="0.73257419020000003" blue="0.89798144040000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="kWv-4J-zMb" firstAttribute="top" secondItem="RVS-3V-d1W" secondAttribute="top" constant="8" id="7Jg-qX-QhG"/>
-                                    <constraint firstItem="kWv-4J-zMb" firstAttribute="leading" secondItem="RVS-3V-d1W" secondAttribute="leading" id="fqh-Rg-xy1"/>
+                                    <constraint firstItem="hZX-y1-g27" firstAttribute="leading" secondItem="RVS-3V-d1W" secondAttribute="leading" constant="8" id="pHM-2T-zJf"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -668,7 +617,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leadingConstraint6" destination="fqh-Rg-xy1" id="lcY-0T-4mw"/>
+                        <outlet property="leadConstraint6" destination="pHM-2T-zJf" id="9Re-eo-4Om"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vx-Gq-DXR" sceneMemberID="firstResponder"/>
@@ -799,13 +748,12 @@
         <image name="window cat clone" width="180" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="503-VY-inL"/>
-        <segue reference="mx3-lF-up1"/>
-        <segue reference="n8i-CU-aIT"/>
-        <segue reference="aob-Sh-qPw"/>
-        <segue reference="X09-Wo-prh"/>
-        <segue reference="I7Y-kH-r03"/>
+        <segue reference="4Fb-DQ-qiV"/>
+        <segue reference="bd2-KJ-NNl"/>
+        <segue reference="Nv9-bX-tFP"/>
+        <segue reference="hP5-9E-9QC"/>
         <segue reference="7OG-Dq-3zp"/>
+        <segue reference="jcf-3t-OXq"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

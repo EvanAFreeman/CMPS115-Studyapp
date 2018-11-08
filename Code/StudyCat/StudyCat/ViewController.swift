@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
  var list = ["Read"]
     ///////////////////////////////////////
-    // Get user to do list item and allow user to send with button
+    // Code Start #1: Get user to do list item and allow user to send with button
     @IBOutlet weak var input: UITextField!
     @IBAction func additem(_ sender: Any) {
         if(input.text != "")
@@ -21,21 +21,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         myTableView.reloadData()
     }
+    // Code End #1
     /////////////////////////////////////////
-    
+    // Code Start#2: List all the items and display it on the screen
     @IBOutlet weak var myTableView: UITableView!
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (list.count)
     }
-    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = list[indexPath.row]
         
         return (cell)
     }
-    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
     {
         if editingStyle == UITableViewCellEditingStyle.delete
@@ -44,12 +43,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             myTableView.reloadData()
         }
     }
-    
-    /*
-    override func viewDidAppear(_ animated: Bool){
-        myTableView.reloadData()
-    }
-    */
+    //Code End #2
+    /////////////////////////////////////////////////
     
     @IBOutlet weak var cat_in_box: UIImageView!
     var box: UIImage!

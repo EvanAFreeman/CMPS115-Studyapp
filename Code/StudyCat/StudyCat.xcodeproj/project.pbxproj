@@ -15,7 +15,13 @@
 		4EAAEA692172840400A4896A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EAAEA672172840400A4896A /* LaunchScreen.storyboard */; };
 		4EAAEA742172840400A4896A /* StudyCatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAAEA732172840400A4896A /* StudyCatTests.swift */; };
 		4EAAEA7F2172840400A4896A /* StudyCatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAAEA7E2172840400A4896A /* StudyCatUITests.swift */; };
+
+		6E6A2A95219B84E10042ED5F /* timer_cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A2A94219B84E10042ED5F /* timer_cat.swift */; };
+		6E6A2A97219B9A870042ED5F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6A2A96219B9A870042ED5F /* AVFoundation.framework */; };
+		6E6A2A99219B9E320042ED5F /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E6A2A98219B9E310042ED5F /* alarm.mp3 */; };
+
 		6B82E2AA21810647003C61C5 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82E2A921810647003C61C5 /* DataServices.swift */; };
+
 		6EF94570364D4A29B0245BC5 /* Pods_StudyCatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D483C787457E256D67870C47 /* Pods_StudyCatTests.framework */; };
 		899108114B0C20B6E0A9EDC4 /* Pods_StudyCatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31AE524AD47BD04B108B538 /* Pods_StudyCatUITests.framework */; };
 		BF41B92B3CEFF6459AFE6986 /* Pods_StudyCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1827D91FE543862F593940 /* Pods_StudyCat.framework */; };
@@ -56,7 +62,14 @@
 		4EAAEA802172840400A4896A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F398DD209A8056D456E038E /* Pods-StudyCatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCatUITests/Pods-StudyCatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		62A5241BD8E888C18EAD2D1A /* Pods-StudyCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCat.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCat/Pods-StudyCat.release.xcconfig"; sourceTree = "<group>"; };
+
+		6E6A2A94219B84E10042ED5F /* timer_cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer_cat.swift; sourceTree = "<group>"; };
+		6E6A2A96219B9A870042ED5F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6E6A2A98219B9E310042ED5F /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm.mp3; path = ../../../../../Downloads/alarm.mp3; sourceTree = "<group>"; };
+		6E6A2A9A219B9EC90042ED5F /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+
 		6B82E2A921810647003C61C5 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+
 		76EC0A4731E40DA4173891B9 /* Pods-StudyCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCat/Pods-StudyCat.debug.xcconfig"; sourceTree = "<group>"; };
 		A31AE524AD47BD04B108B538 /* Pods_StudyCatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11B9008322050871C1B0806 /* Pods-StudyCatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCatTests/Pods-StudyCatTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6A2A97219B9A870042ED5F /* AVFoundation.framework in Frameworks */,
 				BF41B92B3CEFF6459AFE6986 /* Pods_StudyCat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +110,7 @@
 		4EAAEA522172840400A4896A = {
 			isa = PBXGroup;
 			children = (
+				6E6A2A98219B9E310042ED5F /* alarm.mp3 */,
 				4EAAEA5D2172840400A4896A /* StudyCat */,
 				4EAAEA722172840400A4896A /* StudyCatTests */,
 				4EAAEA7D2172840400A4896A /* StudyCatUITests */,
@@ -118,11 +133,15 @@
 		4EAAEA5D2172840400A4896A /* StudyCat */ = {
 			isa = PBXGroup;
 			children = (
+
+				6E6A2A9A219B9EC90042ED5F /* alarm.mp3 */,
+
 				6B13B4642180F01C0023F968 /* Services */,
 				6B13B4632180F0130023F968 /* Extensions */,
 				6B13B4622180EE950023F968 /* Model */,
 				6B13B4612180EE7E0023F968 /* View */,
 				6B13B4602180EC2F0023F968 /* Controller */,
+
 				4E0A3991217285FE007F3618 /* GoogleService-Info.plist */,
 				4EAAEA5E2172840400A4896A /* AppDelegate.swift */,
 				4EAAEA602172840400A4896A /* ViewController.swift */,
@@ -130,6 +149,7 @@
 				4EAAEA652172840400A4896A /* Assets.xcassets */,
 				4EAAEA672172840400A4896A /* LaunchScreen.storyboard */,
 				4EAAEA6A2172840400A4896A /* Info.plist */,
+				6E6A2A94219B84E10042ED5F /* timer_cat.swift */,
 			);
 			path = StudyCat;
 			sourceTree = "<group>";
@@ -191,6 +211,7 @@
 		79620AB3830C9BBB03D6554F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E6A2A96219B9A870042ED5F /* AVFoundation.framework */,
 				1A1827D91FE543862F593940 /* Pods_StudyCat.framework */,
 				D483C787457E256D67870C47 /* Pods_StudyCatTests.framework */,
 				A31AE524AD47BD04B108B538 /* Pods_StudyCatUITests.framework */,
@@ -331,6 +352,7 @@
 				4E0A3992217285FE007F3618 /* GoogleService-Info.plist in Resources */,
 				4EAAEA662172840400A4896A /* Assets.xcassets in Resources */,
 				4EAAEA642172840400A4896A /* Main.storyboard in Resources */,
+				6E6A2A99219B9E320042ED5F /* alarm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +575,7 @@
 				6B82E2AA21810647003C61C5 /* DataServices.swift in Sources */,
 				4EAAEA612172840400A4896A /* ViewController.swift in Sources */,
 				4EAAEA5F2172840400A4896A /* AppDelegate.swift in Sources */,
+				6E6A2A95219B84E10042ED5F /* timer_cat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

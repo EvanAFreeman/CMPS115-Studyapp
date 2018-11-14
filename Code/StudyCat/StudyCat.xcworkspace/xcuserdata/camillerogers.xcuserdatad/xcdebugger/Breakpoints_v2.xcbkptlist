@@ -10,11 +10,137 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StudyCat/ViewController.swift"
-            timestampString = "561676072.036297"
+            timestampString = "563922140.116007"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "6"
             endingLineNumber = "6"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StudyCat/AppDelegate.swift"
+            timestampString = "563850012.526111"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StudyCat.AppDelegate.__allocating_init() -&gt; StudyCat.AppDelegate"
+                  moduleName = "StudyCat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/camillerogers/Desktop/CMPS115/CMPS115-studyapp/Code/StudyCat/StudyCat/AppDelegate.swift"
+                  timestampString = "562889869.074031"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StudyCat.AppDelegate.init() -&gt; StudyCat.AppDelegate"
+                  moduleName = "StudyCat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/camillerogers/Desktop/CMPS115/CMPS115-studyapp/Code/StudyCat/StudyCat/AppDelegate.swift"
+                  timestampString = "562889869.0772949"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StudyCat.AppDelegate.__deallocating_deinit"
+                  moduleName = "StudyCat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/camillerogers/Desktop/CMPS115/CMPS115-studyapp/Code/StudyCat/StudyCat/AppDelegate.swift"
+                  timestampString = "562889869.0809031"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "StudyCat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/camillerogers/Desktop/CMPS115/CMPS115-studyapp/Code/StudyCat/StudyCat/AppDelegate.swift"
+                  timestampString = "562889869.083892"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StudyCat/timer.swift"
+            timestampString = "563839710.576925"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StudyCat/timer.swift"
+            timestampString = "563839778.3025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StudyCat/timer.swift"
+            timestampString = "563839778.927267"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>

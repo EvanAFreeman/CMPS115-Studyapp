@@ -13,8 +13,24 @@ import FirebaseDatabase
 import AVFoundation
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var cat_tree_white: UIImageView!
+    var cat_tree_1: UIImage!
+    var cat_tree_2: UIImage!
+    var cat_tree_3: UIImage!
+    var cat_tree_4: UIImage!
+    var cat_tree_5: UIImage!
+    
+    
 
- 
+    @IBOutlet weak var cat_scratch: UIImageView!
+    var cat_scratch1: UIImage!
+    var cat_scratch2: UIImage!
+    var cat_scratch3: UIImage!
+    var cat_scratch4: UIImage!
+    var cat_scratch5: UIImage!
+    
     @IBOutlet weak var cat_in_box: UIImageView!
     var box: UIImage!
     var box1: UIImage!
@@ -58,7 +74,27 @@ class ViewController: UIViewController {
     var tabby13: UIImage!
     var tabby14: UIImage!
     var tabby15: UIImage!
+
+    @IBOutlet weak var cat_window: UIImageView!
+    var windowcat1: UIImage!
+    var windowcat2: UIImage!
+    var windowcat3: UIImage!
+    var windowcat4: UIImage!
+    var windowcat5: UIImage!
+    var windowcat6: UIImage!
+    var windowcat7: UIImage!
+    var windowcat8: UIImage!
+    var windowcat9: UIImage!
+    var windowcat10: UIImage!
     
+    var images6: [UIImage]!
+    var animatedImage6: UIImage!
+    
+    var images5: [UIImage]!
+    var animatedImage5: UIImage!
+    
+    var images4: [UIImage]!
+    var animatedImage4: UIImage!
     
     var images3: [UIImage]!
     var animatedImage3: UIImage!
@@ -128,6 +164,37 @@ class ViewController: UIViewController {
         tabby14 = UIImage(named: "tabby_cat13")
         tabby15 = UIImage(named: "tabby_cat14")
         
+        
+        windowcat1 = UIImage(named: "window_cat00")
+        windowcat2 = UIImage(named: "window_cat01")
+        windowcat3 = UIImage(named: "window_cat02")
+        windowcat4 = UIImage(named: "window_cat03")
+        windowcat5 = UIImage(named: "window_cat04")
+        windowcat6 = UIImage(named: "window_cat05")
+        windowcat7 = UIImage(named: "window_cat06")
+        windowcat8 = UIImage(named: "window_cat07")
+        windowcat9 = UIImage(named: "window_cat08")
+        windowcat10 = UIImage(named: "window_cat09")
+        
+        cat_scratch1 = UIImage(named: "cat_scratch0")
+        cat_scratch2 = UIImage(named: "cat_scratch1")
+        cat_scratch3 = UIImage(named: "cat_scratch2")
+        cat_scratch4 = UIImage(named: "cat_scratch3")
+        cat_scratch5 = UIImage(named: "cat_scratch4")
+        
+        cat_tree_1 = UIImage(named: "white_cat0")
+        cat_tree_2 = UIImage(named: "white_cat1")
+        cat_tree_3 = UIImage(named: "white_cat2")
+        cat_tree_4 = UIImage(named: "white_cat3")
+        cat_tree_5 = UIImage(named: "white_cat4")
+        
+        images6 = [cat_tree_1, cat_tree_2, cat_tree_3, cat_tree_4, cat_tree_5]
+        
+        images5 = [cat_scratch1, cat_scratch2, cat_scratch3, cat_scratch4, cat_scratch5]
+        
+        
+        images4 = [windowcat1, windowcat2, windowcat3, windowcat4, windowcat5, windowcat6, windowcat7, windowcat8, windowcat9, windowcat10]
+        
         images2 = [cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13, cat14, cat15]
         
         images3 = [tabby1, tabby2, tabby3, tabby4, tabby5, tabby7, tabby8, tabby9, tabby10, tabby11, tabby12, tabby13, tabby14, tabby15]
@@ -157,6 +224,22 @@ class ViewController: UIViewController {
             
         }
          */
+        animatedImage6 = UIImage.animatedImage(with: images6, duration: 2.0)
+        if cat_tree_white != nil {
+            cat_tree_white.image = animatedImage6
+        }
+        
+        animatedImage5 = UIImage.animatedImage(with: images5, duration: 2.0)
+        if cat_scratch != nil {
+            cat_scratch.image = animatedImage5
+        }
+        
+        
+        animatedImage4 = UIImage.animatedImage(with: images4, duration: 2.0)
+        if cat_window != nil {
+            cat_window.image = animatedImage4
+        }
+        
         animatedImage3 = UIImage.animatedImage(with: images3, duration: 2.0)
         if tabby_in_tree != nil {
             tabby_in_tree.image = animatedImage3

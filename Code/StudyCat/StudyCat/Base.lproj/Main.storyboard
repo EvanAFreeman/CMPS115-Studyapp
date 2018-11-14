@@ -1083,27 +1083,30 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Syr-TI-67v">
                                 <rect key="frame" x="66" y="25" width="293" height="622"/>
                                 <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1u-Hb-bku">
+                                        <rect key="frame" x="16" y="62" width="262" height="545"/>
+                                    </scrollView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSP-zw-6ko">
                                         <rect key="frame" x="8" y="8" width="277" height="46"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="to do items ..." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qnf-Ah-nxf">
-                                                <rect key="frame" x="8" y="8" width="185" height="30"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQY-LA-TYP">
-                                                <rect key="frame" x="201" y="8" width="68" height="30"/>
+                                                <rect key="frame" x="209" y="8" width="60" height="30"/>
                                                 <color key="backgroundColor" red="0.73333333329999995" green="0.56862745100000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
-                                                <state key="normal" title="Add Item">
+                                                <state key="normal" title="  Add  ">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="additem:" destination="nqG-nl-nE8" eventType="touchUpInside" id="2ZH-ee-sen"/>
                                                 </connections>
                                             </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="to do items ..." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qnf-Ah-nxf">
+                                                <rect key="frame" x="8" y="8" width="193" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1151,13 +1154,17 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="zSP-zw-6ko" firstAttribute="top" secondItem="Syr-TI-67v" secondAttribute="top" constant="8" id="0b7-AB-8Dt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y1u-Hb-bku" secondAttribute="trailing" constant="15" id="6Fs-9P-Okp"/>
                                     <constraint firstItem="1AH-jK-UOJ" firstAttribute="leading" secondItem="Syr-TI-67v" secondAttribute="leading" constant="16" id="9r2-Ej-JVS"/>
                                     <constraint firstAttribute="bottom" secondItem="1AH-jK-UOJ" secondAttribute="bottom" constant="15" id="Avo-jN-JME"/>
+                                    <constraint firstItem="Y1u-Hb-bku" firstAttribute="leading" secondItem="Syr-TI-67v" secondAttribute="leading" constant="16" id="AxA-8a-nhU"/>
                                     <constraint firstItem="1AH-jK-UOJ" firstAttribute="top" secondItem="zSP-zw-6ko" secondAttribute="bottom" constant="8" id="DIM-h3-659"/>
+                                    <constraint firstItem="Y1u-Hb-bku" firstAttribute="top" secondItem="zSP-zw-6ko" secondAttribute="bottom" constant="8" id="W3J-Xg-PjC"/>
                                     <constraint firstAttribute="trailing" secondItem="1AH-jK-UOJ" secondAttribute="trailing" constant="15" id="Xat-Nh-3Ho"/>
                                     <constraint firstAttribute="trailing" secondItem="zSP-zw-6ko" secondAttribute="trailing" constant="8" id="f5D-zA-r8Y"/>
                                     <constraint firstItem="1AH-jK-UOJ" firstAttribute="top" secondItem="zSP-zw-6ko" secondAttribute="bottom" constant="8" id="ivs-3J-m84"/>
                                     <constraint firstItem="zSP-zw-6ko" firstAttribute="leading" secondItem="Syr-TI-67v" secondAttribute="leading" constant="8" id="mKj-2y-o1N"/>
+                                    <constraint firstAttribute="bottom" secondItem="Y1u-Hb-bku" secondAttribute="bottom" constant="15" id="uvb-7r-V0r"/>
                                     <constraint firstItem="1AH-jK-UOJ" firstAttribute="top" secondItem="Syr-TI-67v" secondAttribute="top" constant="62" id="zha-75-MXG"/>
                                 </constraints>
                             </view>
@@ -1181,7 +1188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vx-Gq-DXR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2498" y="819"/>
+            <point key="canvasLocation" x="2496.8000000000002" y="818.14092953523243"/>
         </scene>
     </scenes>
     <resources>

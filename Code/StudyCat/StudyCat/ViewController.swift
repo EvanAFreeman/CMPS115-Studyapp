@@ -258,7 +258,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         }
 
-         */
+        
         animatedImage6 = UIImage.animatedImage(with: images6, duration: 2.0)
         if cat_tree_white != nil {
             cat_tree_white.image = animatedImage6

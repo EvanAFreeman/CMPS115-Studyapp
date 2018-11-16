@@ -334,11 +334,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cat" destination="mQT-h5-WuT" id="guQ-X9-yYQ"/>
                         <outlet property="cat_in_box" destination="399-Lp-O0I" id="eOb-eQ-1aV"/>
                         <outlet property="cat_in_tree" destination="mQT-h5-WuT" id="VRm-9d-1fR"/>
                         <outlet property="cat_scratch" destination="zeI-KI-70r" id="MTU-BY-Wxc"/>
-                        <outlet property="cat_tree_2" destination="waY-P2-Usx" id="0op-Zj-vmh"/>
+                        <outlet property="cat_tree_white" destination="waY-P2-Usx" id="ex5-Fk-Xtb"/>
                         <outlet property="cat_window" destination="X7C-is-ocR" id="dzP-oe-hNl"/>
                         <outlet property="tabby_in_tree" destination="iJu-9s-o1e" id="Xkp-06-kyI"/>
                     </connections>
@@ -512,15 +511,15 @@
             </objects>
             <point key="canvasLocation" x="872.79999999999995" y="131.78410794602701"/>
         </scene>
-        <!--View Controller-->
+        <!--Timer View Controller-->
         <scene sceneID="odQ-8f-ip2">
             <objects>
-                <viewController id="cQ6-uf-V1y" customClass="ViewController" customModule="StudyCat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cQ6-uf-V1y" customClass="TimerViewController" customModule="StudyCat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jdP-2M-CpZ"/>
                         <viewControllerLayoutGuide type="bottom" id="D2P-t0-p2W"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vub-a0-hHr">
+                    <view key="view" contentMode="scaleToFill" id="vub-a0-hHr" customClass="viewcontroller">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -619,7 +618,7 @@
                                         </constraints>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="jye-Q9-Jrz"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="timer_segue" id="jye-Q9-Jrz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT2-cI-Jxg">
@@ -681,7 +680,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Start Study Session"/>
                                 <connections>
-                                    <action selector="start_button:" destination="cQ6-uf-V1y" eventType="touchUpInside" id="gzc-QQ-tR2"/>
+                                    <action selector="start_button:" destination="cQ6-uf-V1y" eventType="touchUpInside" id="FB2-NN-IK2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5R-TV-knH">
@@ -690,7 +689,6 @@
                                 <state key="normal" title="STOP"/>
                                 <connections>
                                     <action selector="reset_button:" destination="cQ6-uf-V1y" eventType="touchUpInside" id="te3-yv-itI"/>
-                                    <action selector="start_button:" destination="cQ6-uf-V1y" eventType="touchUpInside" id="4di-Be-m8e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdu-2y-bVQ">
@@ -1326,13 +1324,13 @@
         <image name="window_cat00" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="503-VY-inL"/>
-        <segue reference="mx3-lF-up1"/>
-        <segue reference="n8i-CU-aIT"/>
+        <segue reference="gxs-k0-R1A"/>
+        <segue reference="cqj-BN-6WM"/>
+        <segue reference="Me1-cy-JVQ"/>
         <segue reference="aob-Sh-qPw"/>
-        <segue reference="pH5-QE-09A"/>
-        <segue reference="EsN-3X-N3F"/>
-        <segue reference="1F1-V5-NTa"/>
+        <segue reference="L3U-Pg-pv3"/>
+        <segue reference="jye-Q9-Jrz"/>
+        <segue reference="jeX-8E-03T"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

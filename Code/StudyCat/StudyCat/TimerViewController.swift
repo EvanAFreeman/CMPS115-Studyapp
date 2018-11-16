@@ -34,7 +34,7 @@ class TimerViewController: UIViewController {
    
     
     var seconds = 0
-    //var timer = Timer()
+    var timer = Timer()
     var timer2 = Timer()
     var minutes = 0
     var hours = 0
@@ -121,8 +121,8 @@ class TimerViewController: UIViewController {
     
     //uses built in Timer() function, set bool timer_running = true
     func run_timer(){
-        run_timer1.shared.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerViewController.counter), userInfo: nil, repeats: true)
-        RunLoop.current.add(run_timer1.shared.timer, forMode: RunLoopMode.defaultRunLoopMode)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerViewController.counter), userInfo: nil, repeats: true)
+        RunLoop.current.add(timer, forMode: RunLoopMode.defaultRunLoopMode)
      }
     
    
@@ -159,7 +159,7 @@ class TimerViewController: UIViewController {
             timer_label.text = timeString(time: TimeInterval(time_sec))
         }
         else{
-            run_timer1.shared.timer.invalidate()
+            timer.invalidate()
             //play alarm when study session is done
             // alarm_sound.play()
         }
@@ -171,7 +171,7 @@ class TimerViewController: UIViewController {
         timer_running = false
         timer_label.isHidden = false
         break_timer.isHidden = true
-        run_timer1.shared.timer.invalidate()
+        timer.invalidate()
         timer2.invalidate()
         time_sec = 0
         break_timer.text = timeString(time: TimeInterval(time_sec))
@@ -186,7 +186,7 @@ class TimerViewController: UIViewController {
     @IBAction func break_button(_ sender: UIButton) {
         if (self.resume == false && break_bool == false){
             break_bool = true
-            //timer.invalidate()
+            timer.invalidate()
             run_timer2()
             self.resume = true
             timer_label.isHidden = true

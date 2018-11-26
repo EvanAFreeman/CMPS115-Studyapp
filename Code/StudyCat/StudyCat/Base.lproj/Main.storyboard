@@ -67,11 +67,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat house empty (1)" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-F2-gnd">
-                                <rect key="frame" x="90" y="102" width="304" height="410"/>
+                                <rect key="frame" x="90" y="102" width="303" height="410"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="window cat clone" translatesAutoresizingMaskIntoConstraints="NO" id="oDu-ao-baY">
-                                <rect key="frame" x="261" y="23" width="153" height="211"/>
+                                <rect key="frame" x="260" y="23" width="154" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="box_1" translatesAutoresizingMaskIntoConstraints="NO" id="s0l-u3-t3i">
@@ -145,7 +145,7 @@
                                                 </constraints>
                                                 <state key="normal" image="timer-icon"/>
                                                 <connections>
-                                                    <segue destination="cQ6-uf-V1y" kind="show" id="aob-Sh-qPw"/>
+                                                    <segue destination="cQ6-uf-V1y" kind="show" identifier="timer_segue" id="aob-Sh-qPw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5A-lP-8Uh">
@@ -293,11 +293,11 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="box_1" translatesAutoresizingMaskIntoConstraints="NO" id="399-Lp-O0I">
-                                <rect key="frame" x="212" y="583" width="201" height="238"/>
+                                <rect key="frame" x="212" y="583" width="200" height="238"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat house empty (1)" translatesAutoresizingMaskIntoConstraints="NO" id="4Mi-fw-L4q">
-                                <rect key="frame" x="92" y="112" width="267" height="290"/>
+                                <rect key="frame" x="92" y="112" width="266" height="290"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white_cat0" translatesAutoresizingMaskIntoConstraints="NO" id="waY-P2-Usx">
@@ -324,6 +324,13 @@
                                 <rect key="frame" x="103" y="68" width="222" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00 : 00 : 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O24-Uo-bEs">
+                                <rect key="frame" x="92" y="445" width="313" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.68885574240000003" green="0.83978426399999995" blue="0.68585462389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -340,6 +347,7 @@
                         <outlet property="cat_tree_white" destination="waY-P2-Usx" id="ex5-Fk-Xtb"/>
                         <outlet property="cat_window" destination="X7C-is-ocR" id="dzP-oe-hNl"/>
                         <outlet property="tabby_in_tree" destination="iJu-9s-o1e" id="Xkp-06-kyI"/>
+                        <outlet property="timerlabel" destination="O24-Uo-bEs" id="j5d-gd-pK5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -776,7 +784,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftf-t3-KzE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="819.04047976011998"/>
+            <point key="canvasLocation" x="133.33333333333334" y="818.97321428571422"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Jrb-VF-xQ8">

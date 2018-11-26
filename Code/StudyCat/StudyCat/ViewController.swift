@@ -12,9 +12,33 @@ import FirebaseStorage
 import FirebaseDatabase
 import AVFoundation
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-  
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, TimerUpdateDelegate{
    
+    
+    @IBOutlet weak var timerlabel: UILabel!
+    
+    
+    func updateTotalSeconds(data : Int)
+    {
+       timerlabel.text = timeString(time: TimeInterval(data))
+    }
+    
+    func timeString(time:TimeInterval) -> String{
+        
+        let hours = Int(time) / 3600
+        let minutes = Int(time) / 60 % 60
+        let seconds = Int(time) % 60
+        return String(format:"%02i : %02i : %02i", hours, minutes, seconds)
+    }
+    
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      //  if segue.identifier == "timer_segue"{
+        //    let timerViewController: TimerViewController = segue.destination as! TimerViewController
+            //timerViewController.delegate = self
+        //}
+    //}
+    
+    
     @IBOutlet weak var cat_tree_white: UIImageView!
     var cat_tree_1: UIImage!
     var cat_tree_2: UIImage!
@@ -30,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var cat_scratch3: UIImage!
     var cat_scratch4: UIImage!
     var cat_scratch5: UIImage!
-    var list = ["Read"]
+    //var list = ["Read"]
     
     @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var input: UITextField!
@@ -38,7 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Code Start #1: Get user to do list item and allow user to send with button
     @IBAction func additem(_ sender: Any) {
         if(input.text != ""){
-            list.append(input.text!) //add the new item to the array
+            todo_list.shared.list.append(input.text!) //add the new item to the array
             input.text = ""// so that the user can input some new text
         }
         myTableView.reloadData()
@@ -47,16 +71,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     /////////////////////////////////////////////////
     // Code Start#2: List all the items and display it on the screen
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (list.count)
+        return (todo_list.shared.list.count)
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = list[indexPath.row]
+        cell.textLabel?.text = todo_list.shared.list[indexPath.row]
         return (cell)
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == UITableViewCellEditingStyle.delete{
-            self.list.remove(at: indexPath.row)
+            todo_list.shared.list.remove(at: indexPath.row)
             myTableView.reloadData()
         }
     }
@@ -147,8 +171,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
    
 
     override func viewDidLoad() {
+       // TimerViewController().delegate = self
         super.viewDidLoad()
-        //timer_main.text = time_string
+        
+        //timer_main.text = time_string  
         
        // let music_file = Bundle.main.path(forResource: "alarm", ofType: ".mp3")
         
@@ -331,7 +357,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

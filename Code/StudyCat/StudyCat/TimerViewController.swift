@@ -23,9 +23,26 @@ class TimerViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer_view = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter_timer), userInfo: nil, repeats: true)
-        run_timer1.shared.run_timer()
-        break_timer.isHidden = true
+        
+        
+        if( run_timer1.shared.break_bool == true){
+            run_timer1.shared.run_timer2()
+            run_timer1.shared.timer.invalidate()
+            break_timer.isHidden = false
+            timer_label.isHidden = true
+            break_view = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter_timer2), userInfo: nil, repeats: true)
+        }
+        else if(run_timer1.shared.timer_running == true){
+            run_timer1.shared.timer2.invalidate()
+            run_timer1.shared.run_timer()
+            break_timer.isHidden = true
+            timer_label.isHidden = false
+            run_timer1.shared.run_timer()
+            timer_view = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter_timer), userInfo: nil, repeats: true)
+            
+        }
+        
+        
         
         
         
@@ -52,18 +69,20 @@ class TimerViewController: UIViewController{
     
     
     
-   var resume = false
+   //var resume = false
     var seconds = 0
     //var timer = Timer()
-    var timer2 = Timer()
+    //var timer2 = Timer()
     //var minutes = 0
     //var hours = 0
-    var timer_running = false
+    //var timer_running = false
     var timer_view = Timer()
+    var break_view = Timer()
+    var check = Timer()
     //static var time_sec = 0
-    var break_time = 0
+    //var break_time = 0
     var picked = false
-    var break_bool = false
+    //var break_bool = false
     
     
     //labels for timers
@@ -79,14 +98,19 @@ class TimerViewController: UIViewController{
     
     
     func counter_timer(){
-            timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
+        timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
+    }
+    
+    func counter_timer2(){
+        break_timer.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.break_time))
+        
     }
     
     //button action for thirty minutes
     @IBOutlet weak var thirty_outlet: UIButton!
     @IBAction func thirty_button(_ sender: UIButton) {
         timer_label.isHidden = false
-        timer_running = false
+        run_timer1.shared.timer_running = false
         //set picked = true, so only one option can be picked
         if(picked == false){
             picked = true
@@ -101,7 +125,7 @@ class TimerViewController: UIViewController{
     @IBOutlet weak var hour_outlet: UIButton!
     @IBAction func hour_button(_ sender: UIButton) {
         timer_label.isHidden = false
-        timer_running = false
+        run_timer1.shared.timer_running = false
         if(picked == false){
             picked = true
             run_timer1.shared.time_sec = 3600
@@ -114,7 +138,7 @@ class TimerViewController: UIViewController{
     @IBOutlet weak var hourThirty_outlet: UIButton!
     @IBAction func hourThirty_button(_ sender: UIButton) {
         timer_label.isHidden = false
-        timer_running = false
+        run_timer1.shared.timer_running = false
         if(picked == false){
             picked = true
             run_timer1.shared.time_sec = 5400
@@ -127,7 +151,7 @@ class TimerViewController: UIViewController{
     @IBOutlet weak var twoHours_outlet: UIButton!
     @IBAction func twoHours_button(_ sender: UIButton) {
         timer_label.isHidden = false
-        timer_running = false
+        run_timer1.shared.timer_running = false
         if(picked == false){
             picked = true
             run_timer1.shared.time_sec = 7200
@@ -142,14 +166,18 @@ class TimerViewController: UIViewController{
     @IBAction func start_button(_ sender: UIButton) {
         timer_label.isHidden = false
         break_timer.isHidden = true
+        
         //if timer isn't run then run_timer()
-        if(timer_running == false){
-            timer_running = true
+        if(run_timer1.shared.timer_running == false){
+            run_timer1.shared.timer_running = true
             //if(run_timer1.shared.already_running == false){
-            
+            run_timer1.shared.run_timer()
+            timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
+            check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
             
            // }
         }
+        
     }
     
    
@@ -164,29 +192,29 @@ class TimerViewController: UIViewController{
    
     
     //used for break timer
-    func run_timer2(){
-        timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerViewController.counter2), userInfo: nil, repeats: true)
-        RunLoop.current.add(timer2, forMode: RunLoopMode.defaultRunLoopMode)
+   // func run_timer2(){
+    //    timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerViewController.counter2), userInfo: nil, repeats: true)
+     //   RunLoop.current.add(timer2, forMode: RunLoopMode.defaultRunLoopMode)
         
-    }
+   // }
     
     //used for break
-    func counter2(){
-        if(break_time > 0){
-            break_time -= 1
-            break_timer.text = run_timer1.shared.timeString(time: TimeInterval(break_time))
-        }
-        else{
+    //func counter2(){
+    //    if(break_time > 0){
+    //        break_time -= 1
+     //       break_timer.text = run_timer1.shared.timeString(time: /TimeInterval(break_time))
+     //   }
+     //   else{
             //make timer_label unhidden and break_timer hidden
-            timer_label.isHidden = false
-            break_timer.isHidden = true
-            timer2.invalidate()
-            run_timer1.shared.run_timer()
-            self.resume = false
+     //       timer_label.isHidden = false
+     //       break_timer.isHidden = true
+      //      timer2.invalidate()
+      //      run_timer1.shared.run_timer()
+      //      self.resume = false
             //play alarm when break is done
            // alarm_sound.play()
-        }
-    }
+     //   }
+    //}
     
     
     
@@ -208,44 +236,57 @@ class TimerViewController: UIViewController{
     //stop button: cancel study session
     @IBOutlet weak var reset_outlet: UIButton!
     @IBAction func reset_button(_ sender: UIButton) {
-        timer_running = false
+        run_timer1.shared.timer_running = false
+        run_timer1.shared.already_running = false
+        run_timer1.shared.break_already_running = false
         timer_label.isHidden = false
         break_timer.isHidden = true
         run_timer1.shared.timer.invalidate()
-        timer2.invalidate()
+        run_timer1.shared.timer2.invalidate()
         run_timer1.shared.time_sec = 0
-        break_timer.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
+        run_timer1.shared.break_time = 0
+        break_timer.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.break_time))
         timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
         picked = false
-        break_bool = false
+        run_timer1.shared.break_bool = false
+        run_timer1.shared.done = false
         
     }
     
     //Click when user want to take a 2 minute break
     @IBOutlet weak var break_outlet: UIButton!
     @IBAction func break_button(_ sender: UIButton) {
-        if (self.resume == false && break_bool == false){
-            break_bool = true
+        if (run_timer1.shared.break_bool == false && run_timer1.shared.done == false){
+            run_timer1.shared.break_bool = true
             run_timer1.shared.timer.invalidate()
-            run_timer2()
-            self.resume = true
+            
+            run_timer1.shared.resume = true
             timer_label.isHidden = true
             break_timer.isHidden = false
             //set time to 2 minutes
-            break_time = 120
-            break_timer.text = run_timer1.shared.timeString(time: TimeInterval(break_time))
-            timer_running = false
+            run_timer1.shared.break_time = 120
+            break_timer.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.break_time))
+            check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
+            run_timer1.shared.run_timer2()
+            run_timer1.shared.timer_running = false
+            run_timer1.shared.already_running = false
+            
         }
         
-        if (self.resume == true && break_bool == false){
-            timer_label.isHidden = false
-            break_timer.isHidden = true
+        //if (run_timer1.shared.break_bool == false){
+          //  timer_label.isHidden = false
+          //  break_timer.isHidden = true
             
-            timer2.invalidate()
-            run_timer1.shared.run_timer()
-            self.resume = false
+         //   run_timer1.shared.timer2.invalidate()
+         //   run_timer1.shared.run_timer()
+         //   run_timer1.shared.resume = false
             //self.pause_outlet.setTitle("Pause",for: .normal)
-        }
+       // }
+            //if(run_timer1.shared.already_running == false){
+            
+            
+            // }
+        
         
     }
     

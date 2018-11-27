@@ -155,8 +155,7 @@ class TimerViewController: UIViewController{
             timer_label.isHidden = true
             break_timer.isHidden = false
             //set time to 2 minutes
-            //run_timer1.shared.break_time = 120
-            run_timer1.shared.break_time = 5
+            run_timer1.shared.break_time = 120
             break_timer.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.break_time))
             if(ischecked == false){
                 ischecked = true

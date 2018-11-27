@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="VGW-aJ-DUv">
             <objects>
-                <viewController id="TrU-pn-0KP" sceneMemberID="viewController">
+                <viewController id="TrU-pn-0KP" customClass="ViewController" customModule="StudyCat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vhq-R0-V8t"/>
                         <viewControllerLayoutGuide type="bottom" id="6Ur-g1-IEI"/>
@@ -21,34 +21,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-Zh-tAj">
-                                <rect key="frame" x="0.0" y="339" width="414" height="523"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floor" translatesAutoresizingMaskIntoConstraints="NO" id="wA3-68-X3W">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="523"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="wA3-68-X3W" firstAttribute="top" secondItem="Rzo-Zh-tAj" secondAttribute="top" id="3MT-CB-g9Z"/>
-                                    <constraint firstItem="wA3-68-X3W" firstAttribute="leading" secondItem="Rzo-Zh-tAj" secondAttribute="leading" id="arL-ef-CRF"/>
-                                    <constraint firstAttribute="bottom" secondItem="wA3-68-X3W" secondAttribute="bottom" id="f7x-TO-xOg"/>
-                                    <constraint firstAttribute="trailing" secondItem="wA3-68-X3W" secondAttribute="trailing" id="qHs-6k-8T4"/>
-                                </constraints>
-                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book_0" translatesAutoresizingMaskIntoConstraints="NO" id="Wi1-iD-VcM">
+                                <rect key="frame" x="57" y="265" width="307" height="292"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaY-cx-2Re">
+                                <rect key="frame" x="102" y="119" width="211" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TO " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjt-PX-ocn">
+                                <rect key="frame" x="162" y="177" width="91" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="StudyCat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAy-in-Lhw">
+                                <rect key="frame" x="87" y="555" width="241" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjG-6P-hsQ">
+                                <rect key="frame" x="110" y="686" width="199" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
+                                <state key="normal" title="Let's Begin">
+                                    <color key="titleShadowColor" red="0.24357136169999999" green="0.65943271000000003" blue="0.72743496190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="lmi-lh-061"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.65098039220000004" green="0.85490196080000003" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Rzo-Zh-tAj" firstAttribute="leading" secondItem="Ob0-VT-E7C" secondAttribute="leading" id="5X7-hJ-ggw"/>
-                            <constraint firstItem="Rzo-Zh-tAj" firstAttribute="top" secondItem="Vhq-R0-V8t" secondAttribute="bottom" constant="295" id="Hdl-Ic-yw2"/>
-                            <constraint firstAttribute="trailing" secondItem="Rzo-Zh-tAj" secondAttribute="trailing" id="iQP-2G-2GQ"/>
-                            <constraint firstItem="Rzo-Zh-tAj" firstAttribute="bottom" secondItem="6Ur-g1-IEI" secondAttribute="top" id="pxK-Ze-CZr"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.3464256227016449" green="0.68240505456924438" blue="0.73364466428756714" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="book_cat" destination="Wi1-iD-VcM" id="Zm9-rx-9iQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMR-kS-gwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1407.2" y="131.78410794602701"/>
+            <point key="canvasLocation" x="-1407.2463768115942" y="131.25"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="10S-gw-xs1">
@@ -65,10 +83,6 @@
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="floor" translatesAutoresizingMaskIntoConstraints="NO" id="UTC-PF-2Im">
                                 <rect key="frame" x="0.0" y="352" width="414" height="544"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat house empty (1)" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-F2-gnd">
-                                <rect key="frame" x="90" y="102" width="303" height="410"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="window cat clone" translatesAutoresizingMaskIntoConstraints="NO" id="oDu-ao-baY">
                                 <rect key="frame" x="260" y="23" width="154" height="211"/>
@@ -90,6 +104,10 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="EsN-3X-N3F"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat house empty (1)" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-F2-gnd">
+                                <rect key="frame" x="45" y="102" width="303" height="410"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.68885574240000003" green="0.83978426399999995" blue="0.68585462389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -297,7 +315,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat house empty (1)" translatesAutoresizingMaskIntoConstraints="NO" id="4Mi-fw-L4q">
-                                <rect key="frame" x="92" y="112" width="265" height="290"/>
+                                <rect key="frame" x="92" y="112" width="266" height="290"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white_cat0" translatesAutoresizingMaskIntoConstraints="NO" id="waY-P2-Usx">
@@ -358,11 +376,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cat_bed" destination="U2Q-ge-cKe" id="bib-3c-qOO"/>
                         <outlet property="cat_in_box" destination="399-Lp-O0I" id="eOb-eQ-1aV"/>
                         <outlet property="cat_in_tree" destination="mQT-h5-WuT" id="VRm-9d-1fR"/>
                         <outlet property="cat_scratch" destination="zeI-KI-70r" id="MTU-BY-Wxc"/>
+                        <outlet property="cat_sitting" destination="bki-YQ-hF4" id="uo0-X5-yU1"/>
                         <outlet property="cat_tree_white" destination="waY-P2-Usx" id="ex5-Fk-Xtb"/>
                         <outlet property="cat_window" destination="X7C-is-ocR" id="dzP-oe-hNl"/>
+                        <outlet property="laying_cat" destination="0RN-6w-p36" id="NDA-wL-1A9"/>
+                        <outlet property="mouse_cat" destination="vDp-yC-ygO" id="g2V-Ke-lbH"/>
+                        <outlet property="shaking_butt" destination="wbH-Z8-BBy" id="0dF-o4-xEs"/>
+                        <outlet property="standing_cat" destination="9f3-J2-4pX" id="chb-CA-QVA"/>
                         <outlet property="tabby_in_tree" destination="iJu-9s-o1e" id="Xkp-06-kyI"/>
                     </connections>
                 </viewController>
@@ -1331,6 +1355,7 @@
     <resources>
         <image name="arrow-up" width="37.5" height="37.5"/>
         <image name="bed_00" width="134" height="134"/>
+        <image name="book_0" width="128" height="128"/>
         <image name="box_1" width="200" height="200"/>
         <image name="calendar" width="37.5" height="37.5"/>
         <image name="cat house empty (1)" width="260" height="260"/>
@@ -1359,7 +1384,7 @@
         <segue reference="n8i-CU-aIT"/>
         <segue reference="aob-Sh-qPw"/>
         <segue reference="pH5-QE-09A"/>
-        <segue reference="I7Y-kH-r03"/>
+        <segue reference="EsN-3X-N3F"/>
         <segue reference="1F1-V5-NTa"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

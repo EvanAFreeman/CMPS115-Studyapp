@@ -14,12 +14,7 @@ import AVFoundation
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
    
-    func timeString(time:TimeInterval) -> String{
-        let hours = Int(time) / 3600
-        let minutes = Int(time) / 60 % 60
-        let seconds = Int(time) % 60
-        return String(format:"%02i : %02i : %02i", hours, minutes, seconds)
-    }
+   
     
     @IBOutlet weak var cat_tree_white: UIImageView!
     var cat_tree_1: UIImage!
@@ -37,6 +32,83 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var cat_scratch4: UIImage!
     var cat_scratch5: UIImage!
     //var list = ["Read"]
+    
+    @IBOutlet weak var cat_sitting: UIImageView!
+    var cat_sit1: UIImage!
+    var cat_sit2: UIImage!
+    var cat_sit3: UIImage!
+    var cat_sit4: UIImage!
+    var cat_sit5: UIImage!
+    var cat_sit6: UIImage!
+    var cat_sit7: UIImage!
+    var cat_sit8: UIImage!
+    var cat_sit9: UIImage!
+    var cat_sit10: UIImage!
+    var cat_sit11: UIImage!
+    var cat_sit12: UIImage!
+    var cat_sit13: UIImage!
+    var cat_sit14: UIImage!
+    var cat_sit15: UIImage!
+    
+    @IBOutlet weak var laying_cat: UIImageView!
+    var laying1: UIImage!
+    var laying2: UIImage!
+    var laying3: UIImage!
+    var laying4: UIImage!
+    var laying5: UIImage!
+    var laying6: UIImage!
+    
+    
+    @IBOutlet weak var cat_bed: UIImageView!
+    var bed1: UIImage!
+    var bed2: UIImage!
+    var bed3: UIImage!
+    var bed4: UIImage!
+    var bed5: UIImage!
+    var bed6: UIImage!
+    var bed7: UIImage!
+    var bed8: UIImage!
+    var bed9: UIImage!
+    var bed10: UIImage!
+    var bed11: UIImage!
+    
+    @IBOutlet weak var shaking_butt: UIImageView!
+    var shaking1: UIImage!
+    var shaking2: UIImage!
+    var shaking3: UIImage!
+    var shaking4: UIImage!
+    var shaking5: UIImage!
+    var shaking6: UIImage!
+    var shaking7: UIImage!
+    var shaking8: UIImage!
+    
+    @IBOutlet weak var standing_cat: UIImageView!
+    var standing1: UIImage!
+    var standing2: UIImage!
+    var standing3: UIImage!
+    var standing4: UIImage!
+    var standing5: UIImage!
+    var standing6: UIImage!
+    
+    @IBOutlet weak var mouse_cat: UIImageView!
+    var mouse1: UIImage!
+    var mouse2: UIImage!
+    var mouse3: UIImage!
+    var mouse4: UIImage!
+    var mouse5: UIImage!
+    var mouse6: UIImage!
+    
+    
+    @IBOutlet weak var book_cat: UIImageView!
+    var book1: UIImage!
+    var book2: UIImage!
+    var book3: UIImage!
+    var book4: UIImage!
+    var book5: UIImage!
+    var book6: UIImage!
+    var book7: UIImage!
+    var book8: UIImage!
+    var book9: UIImage!
     
     @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var input: UITextField!
@@ -124,6 +196,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var windowcat8: UIImage!
     var windowcat9: UIImage!
     var windowcat10: UIImage!
+    
+    var images13: [UIImage]!
+    var animatedImage13: UIImage!
+    
+    var images12: [UIImage]!
+    var animatedImage12: UIImage!
+    
+    var images11: [UIImage]!
+    var animatedImage11: UIImage!
+    
+    var images10: [UIImage]!
+    var animatedImage10: UIImage!
+    
+    var images9: [UIImage]!
+    var animatedImage9: UIImage!
+    
+    var images8: [UIImage]!
+    var animatedImage8: UIImage!
+    
+    var images7: [UIImage]!
+    var animatedImage7: UIImage!
     
     var images6: [UIImage]!
     var animatedImage6: UIImage!
@@ -233,6 +326,88 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cat_tree_4 = UIImage(named: "white_cat3")
         cat_tree_5 = UIImage(named: "white_cat4")
         
+        cat_sit1 = UIImage(named: "sitting_00")
+        cat_sit2 = UIImage(named: "sitting_01")
+        cat_sit3 = UIImage(named: "sitting_02")
+        cat_sit4 = UIImage(named: "sitting_03")
+        cat_sit5 = UIImage(named: "sitting_04")
+        cat_sit6 = UIImage(named: "sitting_05")
+        cat_sit7 = UIImage(named: "sitting_06")
+        cat_sit8 = UIImage(named: "sitting_07")
+        cat_sit9 = UIImage(named: "sitting_08")
+        cat_sit10 = UIImage(named: "sitting_09")
+        cat_sit11 = UIImage(named: "sitting_10")
+        cat_sit12 = UIImage(named: "sitting_11")
+        cat_sit13 = UIImage(named: "sitting_12")
+        cat_sit14 = UIImage(named: "sitting_13")
+        cat_sit15 = UIImage(named: "sitting_14")
+        
+        laying1 = UIImage(named: "laying_0")
+        laying2 = UIImage(named: "laying_1")
+        laying3 = UIImage(named: "laying_2")
+        laying4 = UIImage(named: "laying_3")
+        laying5 = UIImage(named: "laying_4")
+        laying6 = UIImage(named: "laying_5")
+        
+        bed1 = UIImage(named: "bed_00")
+        bed2 = UIImage(named: "bed_01")
+        bed3 = UIImage(named: "bed_02")
+        bed4 = UIImage(named: "bed_03")
+        bed5 = UIImage(named: "bed_04")
+        bed6 = UIImage(named: "bed_05")
+        bed7 = UIImage(named: "bed_06")
+        bed8 = UIImage(named: "bed_07")
+        bed9 = UIImage(named: "bed_08")
+        bed10 = UIImage(named: "bed_09")
+        bed11 = UIImage(named: "bed_10")
+        
+        shaking1 = UIImage(named: "skaing_0")
+        shaking2 = UIImage(named: "skaing_1")
+        shaking3 = UIImage(named: "skaing_2")
+        shaking4 = UIImage(named: "skaing_3")
+        shaking5 = UIImage(named: "skaing_4")
+        shaking6 = UIImage(named: "skaing_5")
+        shaking7 = UIImage(named: "skaing_6")
+        shaking8 = UIImage(named: "skaing_7")
+        
+        standing1 = UIImage(named: "standing_0")
+        standing2 = UIImage(named: "standing_1")
+        standing3 = UIImage(named: "standing_2")
+        standing4 = UIImage(named: "standing_3")
+        standing5 = UIImage(named: "standing_4")
+        standing6 = UIImage(named: "standing_5")
+        
+        mouse1 = UIImage(named: "mouse_0")
+        mouse2 = UIImage(named: "mouse_1")
+        mouse3 = UIImage(named: "mouse_2")
+        mouse4 = UIImage(named: "mouse_3")
+        mouse5 = UIImage(named: "mouse_4")
+        mouse6 = UIImage(named: "mouse_5")
+        
+        book1 = UIImage(named: "book_0")
+        book2 = UIImage(named: "book_1")
+        book3 = UIImage(named: "book_2")
+        book4 = UIImage(named: "book_3")
+        book5 = UIImage(named: "book_4")
+        book6 = UIImage(named: "book_5")
+        book7 = UIImage(named: "book_6")
+        book8 = UIImage(named: "book_7")
+        book9 = UIImage(named: "book_8")
+            
+        images13 = [book1, book2, book3, book4, book5, book6, book7, book8, book9]
+            
+        images12 = [mouse1, mouse2, mouse3, mouse4, mouse5, mouse6]
+        
+        images11 = [standing1, standing2, standing3, standing4, standing5, standing6]
+        
+        images10 = [shaking1, shaking2, shaking3, shaking4, shaking5, shaking6, shaking7, shaking8]
+        
+        images9 = [bed1, bed2, bed3, bed4, bed5, bed6, bed7, bed8, bed9, bed10, bed11]
+        
+        images8 = [laying1, laying2, laying3, laying4, laying5, laying6]
+        
+        images7 = [cat_sit1, cat_sit2,cat_sit3, cat_sit4, cat_sit5, cat_sit6, cat_sit7, cat_sit8, cat_sit9, cat_sit10, cat_sit11, cat_sit12, cat_sit13, cat_sit14, cat_sit15]
+        
         images6 = [cat_tree_1, cat_tree_2, cat_tree_3, cat_tree_4, cat_tree_5]
         
         images5 = [cat_scratch1, cat_scratch2, cat_scratch3, cat_scratch4, cat_scratch5]
@@ -268,7 +443,40 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
         }
+        animatedImage13 = UIImage.animatedImage(with: images13, duration: 2.0)
+        if book_cat != nil {
+            book_cat.image = animatedImage13
+        }
+        
+        animatedImage12 = UIImage.animatedImage(with: images12, duration: 2.0)
+        if mouse_cat != nil {
+            mouse_cat.image = animatedImage12
+        }
+        
+        animatedImage11 = UIImage.animatedImage(with: images11, duration: 2.0)
+        if standing_cat != nil {
+            standing_cat.image = animatedImage11
+        }
+        
+        animatedImage10 = UIImage.animatedImage(with: images10, duration: 2.0)
+        if shaking_butt != nil {
+            shaking_butt.image = animatedImage10
+        }
+        
+        animatedImage9 = UIImage.animatedImage(with: images9, duration: 2.0)
+        if cat_bed != nil {
+            cat_bed.image = animatedImage9
+        }
+        
+        animatedImage8 = UIImage.animatedImage(with: images8, duration: 2.0)
+        if laying_cat != nil {
+            laying_cat.image = animatedImage8
+        }
 
+        animatedImage7 = UIImage.animatedImage(with: images7, duration: 2.0)
+        if cat_sitting != nil {
+            cat_sitting.image = animatedImage7
+        }
         
         animatedImage6 = UIImage.animatedImage(with: images6, duration: 2.0)
         if cat_tree_white != nil {

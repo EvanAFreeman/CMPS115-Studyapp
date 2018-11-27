@@ -324,13 +324,6 @@
                                 <rect key="frame" x="103" y="68" width="222" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00 : 00 : 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O24-Uo-bEs">
-                                <rect key="frame" x="92" y="445" width="313" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="41"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.68885574240000003" green="0.83978426399999995" blue="0.68585462389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -347,7 +340,6 @@
                         <outlet property="cat_tree_white" destination="waY-P2-Usx" id="ex5-Fk-Xtb"/>
                         <outlet property="cat_window" destination="X7C-is-ocR" id="dzP-oe-hNl"/>
                         <outlet property="tabby_in_tree" destination="iJu-9s-o1e" id="Xkp-06-kyI"/>
-                        <outlet property="timerlabel" destination="O24-Uo-bEs" id="j5d-gd-pK5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1332,13 +1324,13 @@
         <image name="window_cat00" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gxs-k0-R1A"/>
-        <segue reference="cqj-BN-6WM"/>
-        <segue reference="Me1-cy-JVQ"/>
+        <segue reference="503-VY-inL"/>
+        <segue reference="mx3-lF-up1"/>
+        <segue reference="n8i-CU-aIT"/>
         <segue reference="aob-Sh-qPw"/>
-        <segue reference="L3U-Pg-pv3"/>
+        <segue reference="pH5-QE-09A"/>
         <segue reference="jye-Q9-Jrz"/>
-        <segue reference="jeX-8E-03T"/>
+        <segue reference="1F1-V5-NTa"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

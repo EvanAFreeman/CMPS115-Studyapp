@@ -10,17 +10,17 @@ import Foundation
 import AVFoundation
 import AudioToolbox
 
-
 class run_timer1{
-    
     
     static let shared = run_timer1()
     var timer = Timer()
     var timer2 = Timer()
+    
     init() {
         self.timer = Timer()
         self.timer2 = Timer()
     }
+    
     var done = false
     var seconds = 0
     var minutes = 0
@@ -33,6 +33,7 @@ class run_timer1{
     var timer_running = false
     var break_bool = false
     var resume = false
+    
     func run_timer(){
         if(run_timer1.shared.already_running == false){
             run_timer1.shared.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(run_timer1.shared.counter), userInfo: nil, repeats: true)
@@ -47,19 +48,14 @@ class run_timer1{
         RunLoop.current.add(run_timer1.shared.timer2, forMode: RunLoopMode.defaultRunLoopMode)
             run_timer1.shared.break_already_running = true
         }
-        
     }
     
     @objc func counter2(){
         if(run_timer1.shared.break_time > 0){
             run_timer1.shared.break_time -= 1
             run_timer1.shared.break_bool = true
-            //break_timer.text = run_timer1.shared.timeString(time: TimeInterval(break_time))
         }
         else{
-            //make timer_label unhidden and break_timer hidden
-            //timer_label.isHidden = false
-            //break_timer.isHidden = true
             run_timer1.shared.timer2.invalidate()
             run_timer1.shared.run_timer()
             run_timer1.shared.resume = false
@@ -69,15 +65,12 @@ class run_timer1{
             AudioServicesPlaySystemSound(SystemSoundID(1304))
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
             //play alarm when break is done
-            // alarm_sound.play()
         }
     }
     
     @objc func counter(){
         if(run_timer1.shared.time_sec > 0){
             run_timer1.shared.time_sec -= 1
-            //string = timeString(time: TimeInterval(TimerViewController.time_sec))
-            //TimerViewController().counter_timer()
         }
         else{
             run_timer1.shared.timer.invalidate()
@@ -86,22 +79,17 @@ class run_timer1{
             AudioServicesPlaySystemSound(SystemSoundID(1304))
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
             //play alarm when study session is done
-            // alarm_sound.play()
         }
     }
     
-    
-    
     //func run_timer(){
     func timeString(time:TimeInterval) -> String{
-        
         hours = Int(time) / 3600
         minutes = Int(time) / 60 % 60
         seconds = Int(time) % 60
         return String(format:"%02i : %02i : %02i", hours, minutes, seconds)
     }
     
-        //timer_running = true
 }
     
     

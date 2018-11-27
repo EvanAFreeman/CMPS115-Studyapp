@@ -9,29 +9,22 @@
 import UIKit
 import AVFoundation
 
-protocol TimerUpdateDelegate {
-    func updateTotalSeconds(data : Int)
-}
-
 class TimerViewController: UIViewController{
-    
-
-    //static let shared2 = TimerViewController()
-    //var alarm_sound: AVAudioPlayer = AVAudioPlayer()
-    
-  // var delegate : TimerUpdateDelegate? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        if( run_timer1.shared.break_bool == true){
+        if(ischecked==false){
+            check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
+        }
+
+        if(run_timer1.shared.break_bool == true){
             run_timer1.shared.run_timer2()
             run_timer1.shared.timer.invalidate()
             break_timer.isHidden = false
             timer_label.isHidden = true
             break_view = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter_timer2), userInfo: nil, repeats: true)
         }
+            
         else if(run_timer1.shared.timer_running == true){
             run_timer1.shared.timer2.invalidate()
             run_timer1.shared.run_timer()
@@ -39,63 +32,19 @@ class TimerViewController: UIViewController{
             timer_label.isHidden = false
             run_timer1.shared.run_timer()
             timer_view = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter_timer), userInfo: nil, repeats: true)
-            
         }
-        
-        
-        
-        
-        
-      //  let music_file = Bundle.main.path(forResource: "alarm", ofType: ".mp3")
-        
-      //  do{
-       //     try alarm_sound = AVAudioPlayer(contentsOf: URL(fileURLWithPath: music_file!))
-       // }
-        
-       // catch{
-        //   print(error)
-          //  }
-        
-        
     }
-   //     if self.delegate != nil{     //       if timer_label.text != nil{
-       //         let data = TimerViewController.time_sec
-         //       delegate?.updateTotalSeconds(data: data)
-           //     dismiss(animated: true, completion: nil)
-            //}
-        //}
-
-    //}
     
-    
-    
-   //var resume = false
     var seconds = 0
-    //var timer = Timer()
-    //var timer2 = Timer()
-    //var minutes = 0
-    //var hours = 0
-    //var timer_running = false
     var timer_view = Timer()
     var break_view = Timer()
     var check = Timer()
-    //static var time_sec = 0
-    //var break_time = 0
     var picked = false
-    //var break_bool = false
-    
+    var ischecked = false
     
     //labels for timers
     @IBOutlet weak var break_timer: UILabel!
     @IBOutlet weak var timer_label: UILabel!
-    
-   // func counter_timer(){
-     //   if (timer_label != nil){
-       //     timer_label.text = run_timer1.shared.timeString(time: TimeInterval(TimerViewController.time_sec))
-            
-        //}
-    //}
-    
     
     func counter_timer(){
         timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
@@ -103,7 +52,6 @@ class TimerViewController: UIViewController{
     
     func counter_timer2(){
         break_timer.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.break_time))
-        
     }
     
     //button action for thirty minutes
@@ -147,7 +95,6 @@ class TimerViewController: UIViewController{
         }
     }
     
-    
     @IBOutlet weak var twoHours_outlet: UIButton!
     @IBAction func twoHours_button(_ sender: UIButton) {
         timer_label.isHidden = false
@@ -160,78 +107,22 @@ class TimerViewController: UIViewController{
         }
     }
     
-    
     //actions for start button
     @IBOutlet weak var start_outlet: UIButton!
     @IBAction func start_button(_ sender: UIButton) {
         timer_label.isHidden = false
         break_timer.isHidden = true
-        
         //if timer isn't run then run_timer()
         if(run_timer1.shared.timer_running == false){
             run_timer1.shared.timer_running = true
-            //if(run_timer1.shared.already_running == false){
             run_timer1.shared.run_timer()
             timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
-            check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
-            
-           // }
+            if(ischecked == false){
+                ischecked = true
+                check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
+            }
         }
-        
     }
-    
-   
-    //uses built in Timer() function, set bool timer_running = true
-   // func run_timer(){
-        
-
-       // run_timer1.shared.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerViewController.counter), userInfo: nil, repeats: true)
-      // RunLoop.current.add(run_timer1.shared.timer, forMode: RunLoopMode.defaultRunLoopMode)
-    // }
-    
-   
-    
-    //used for break timer
-   // func run_timer2(){
-    //    timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerViewController.counter2), userInfo: nil, repeats: true)
-     //   RunLoop.current.add(timer2, forMode: RunLoopMode.defaultRunLoopMode)
-        
-   // }
-    
-    //used for break
-    //func counter2(){
-    //    if(break_time > 0){
-    //        break_time -= 1
-     //       break_timer.text = run_timer1.shared.timeString(time: /TimeInterval(break_time))
-     //   }
-     //   else{
-            //make timer_label unhidden and break_timer hidden
-     //       timer_label.isHidden = false
-     //       break_timer.isHidden = true
-      //      timer2.invalidate()
-      //      run_timer1.shared.run_timer()
-      //      self.resume = false
-            //play alarm when break is done
-           // alarm_sound.play()
-     //   }
-    //}
-    
-    
-    
-    
-    
-    //for study tiemr
-   // func counter(){
-   //     if(TimerViewController.time_sec > 0){
-   //         TimerViewController.time_sec -= 1
-   //         timer_label.text = timeString(time: TimeInterval(TimerViewController.time_sec))
-    //    }
-       // else{
-         //   run_timer1.shared.timer.invalidate()
-            //play alarm when study session is done
-           // alarm_sound.play()
-      // }
-  //  }
     
     //stop button: cancel study session
     @IBOutlet weak var reset_outlet: UIButton!
@@ -250,7 +141,8 @@ class TimerViewController: UIViewController{
         picked = false
         run_timer1.shared.break_bool = false
         run_timer1.shared.done = false
-        
+        check.invalidate()
+        ischecked = false
     }
     
     //Click when user want to take a 2 minute break
@@ -259,63 +151,23 @@ class TimerViewController: UIViewController{
         if (run_timer1.shared.break_bool == false && run_timer1.shared.done == false){
             run_timer1.shared.break_bool = true
             run_timer1.shared.timer.invalidate()
-            
             run_timer1.shared.resume = true
             timer_label.isHidden = true
             break_timer.isHidden = false
             //set time to 2 minutes
-            run_timer1.shared.break_time = 120
+            //run_timer1.shared.break_time = 120
+            run_timer1.shared.break_time = 5
             break_timer.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.break_time))
-            check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
+            if(ischecked == false){
+                ischecked = true
+                check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
+            }
             run_timer1.shared.run_timer2()
             run_timer1.shared.timer_running = false
             run_timer1.shared.already_running = false
-            
         }
-        
-        //if (run_timer1.shared.break_bool == false){
-          //  timer_label.isHidden = false
-          //  break_timer.isHidden = true
-            
-         //   run_timer1.shared.timer2.invalidate()
-         //   run_timer1.shared.run_timer()
-         //   run_timer1.shared.resume = false
-            //self.pause_outlet.setTitle("Pause",for: .normal)
-       // }
-            //if(run_timer1.shared.already_running == false){
-            
-            
-            // }
-        
-        
     }
     
-    
-    //func timeString(time:TimeInterval) -> String{
-     //
-    //    hours = Int(time) / 3600
-    //    minutes = Int(time) / 60 % 60
-    //    seconds = Int(time) % 60
-   //     return String(format:"%02i : %02i : %02i", hours, minutes, seconds)
-   // }
-    
-    
-    
-    
- 
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 

@@ -12,32 +12,14 @@ import FirebaseStorage
 import FirebaseDatabase
 import AVFoundation
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, TimerUpdateDelegate{
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
    
-    
-    @IBOutlet weak var timerlabel: UILabel!
-    
-    
-    func updateTotalSeconds(data : Int)
-    {
-       timerlabel.text = timeString(time: TimeInterval(data))
-    }
-    
     func timeString(time:TimeInterval) -> String{
-        
         let hours = Int(time) / 3600
         let minutes = Int(time) / 60 % 60
         let seconds = Int(time) % 60
         return String(format:"%02i : %02i : %02i", hours, minutes, seconds)
     }
-    
-    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      //  if segue.identifier == "timer_segue"{
-        //    let timerViewController: TimerViewController = segue.destination as! TimerViewController
-            //timerViewController.delegate = self
-        //}
-    //}
-    
     
     @IBOutlet weak var cat_tree_white: UIImageView!
     var cat_tree_1: UIImage!

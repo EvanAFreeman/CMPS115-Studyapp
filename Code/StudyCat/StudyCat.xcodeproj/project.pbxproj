@@ -20,7 +20,7 @@
 		6E6A2A9C219E27320042ED5F /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A2A9B219E27320042ED5F /* TimerViewController.swift */; };
 		6E6A2A9E219E5E890042ED5F /* run_timer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A2A9D219E5E890042ED5F /* run_timer1.swift */; };
 		6EB2350E21AC9193009959D1 /* todo_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2350D21AC9193009959D1 /* todo_list.swift */; };
-		6EB2351021AD1A0D009959D1 /* intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2350F21AD1A0D009959D1 /* intro.swift */; };
+		6EB2351221AE3AE5009959D1 /* mainpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2351121AE3AE5009959D1 /* mainpageViewController.swift */; };
 		6EF94570364D4A29B0245BC5 /* Pods_StudyCatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D483C787457E256D67870C47 /* Pods_StudyCatTests.framework */; };
 		899108114B0C20B6E0A9EDC4 /* Pods_StudyCatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31AE524AD47BD04B108B538 /* Pods_StudyCatUITests.framework */; };
 		BF41B92B3CEFF6459AFE6986 /* Pods_StudyCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1827D91FE543862F593940 /* Pods_StudyCat.framework */; };
@@ -66,7 +66,7 @@
 		6E6A2A9B219E27320042ED5F /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		6E6A2A9D219E5E890042ED5F /* run_timer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = run_timer1.swift; sourceTree = "<group>"; };
 		6EB2350D21AC9193009959D1 /* todo_list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo_list.swift; sourceTree = "<group>"; };
-		6EB2350F21AD1A0D009959D1 /* intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro.swift; sourceTree = "<group>"; };
+		6EB2351121AE3AE5009959D1 /* mainpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainpageViewController.swift; sourceTree = "<group>"; };
 		76EC0A4731E40DA4173891B9 /* Pods-StudyCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCat/Pods-StudyCat.debug.xcconfig"; sourceTree = "<group>"; };
 		A31AE524AD47BD04B108B538 /* Pods_StudyCatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11B9008322050871C1B0806 /* Pods-StudyCatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCatTests/Pods-StudyCatTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				6B13B4612180EE7E0023F968 /* View */,
 				6B13B4602180EC2F0023F968 /* Controller */,
 				4E0A3991217285FE007F3618 /* GoogleService-Info.plist */,
-				6EB2350F21AD1A0D009959D1 /* intro.swift */,
+				6EB2351121AE3AE5009959D1 /* mainpageViewController.swift */,
 				6E6A2A9D219E5E890042ED5F /* run_timer1.swift */,
 				6EB2350D21AC9193009959D1 /* todo_list.swift */,
 				4EAAEA5E2172840400A4896A /* AppDelegate.swift */,
@@ -571,13 +571,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EB2351021AD1A0D009959D1 /* intro.swift in Sources */,
 				6E6A2A9C219E27320042ED5F /* TimerViewController.swift in Sources */,
 				6B82E2AA21810647003C61C5 /* DataServices.swift in Sources */,
 				4EAAEA612172840400A4896A /* ViewController.swift in Sources */,
 				6E6A2A9E219E5E890042ED5F /* run_timer1.swift in Sources */,
 				4EAAEA5F2172840400A4896A /* AppDelegate.swift in Sources */,
 				6EB2350E21AC9193009959D1 /* todo_list.swift in Sources */,
+				6EB2351221AE3AE5009959D1 /* mainpageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,16 +13,17 @@ class TimerViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if(ischecked==false){
-            check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
+        if(run_timer1.shared.ischecked==false){
+            run_timer1.shared.check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
+            run_timer1.shared.ischecked=true
         }
-
+        
         if(run_timer1.shared.break_bool == true){
             run_timer1.shared.run_timer2()
             run_timer1.shared.timer.invalidate()
             break_timer.isHidden = false
             timer_label.isHidden = true
-            break_view = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter_timer2), userInfo: nil, repeats: true)
+            counter_timer2()
         }
             
         else if(run_timer1.shared.timer_running == true){
@@ -31,16 +32,14 @@ class TimerViewController: UIViewController{
             break_timer.isHidden = true
             timer_label.isHidden = false
             run_timer1.shared.run_timer()
-            timer_view = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter_timer), userInfo: nil, repeats: true)
+            counter_timer()
         }
     }
     
     var seconds = 0
-    var timer_view = Timer()
-    var break_view = Timer()
-    var check = Timer()
+    // var check = Timer()
     var picked = false
-    var ischecked = false
+    
     
     //labels for timers
     @IBOutlet weak var break_timer: UILabel!
@@ -117,9 +116,9 @@ class TimerViewController: UIViewController{
             run_timer1.shared.timer_running = true
             run_timer1.shared.run_timer()
             timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
-            if(ischecked == false){
-                ischecked = true
-                check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
+            if(run_timer1.shared.ischecked == false){
+                run_timer1.shared.ischecked = true
+                run_timer1.shared.check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
             }
         }
     }
@@ -141,8 +140,8 @@ class TimerViewController: UIViewController{
         picked = false
         run_timer1.shared.break_bool = false
         run_timer1.shared.done = false
-        check.invalidate()
-        ischecked = false
+        run_timer1.shared.check.invalidate()
+        run_timer1.shared.ischecked = false
     }
     
     //Click when user want to take a 2 minute break
@@ -157,18 +156,26 @@ class TimerViewController: UIViewController{
             //set time to 2 minutes
             run_timer1.shared.break_time = 120
             break_timer.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.break_time))
-            if(ischecked == false){
-                ischecked = true
-                check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
+            if(run_timer1.shared.ischecked == false){
+                run_timer1.shared.ischecked = true
+                run_timer1.shared.check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
             }
             run_timer1.shared.run_timer2()
             run_timer1.shared.timer_running = false
             run_timer1.shared.already_running = false
         }
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        run_timer1.shared.ischecked = false
+        run_timer1.shared.check.invalidate()
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
 }
-
-
-
 

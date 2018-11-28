@@ -263,18 +263,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let boxCatVisible = false
         
-        
-            if !boxCatVisible{
-                //boxCatLead.constant = 150
-                //boxCatTrail.constant = -150
-                boxCatView.isHidden = true
-            }
-            else{
-                //boxCatLead.constant = 33
-                //boxCatTrail.constant = -18
-                boxCatView.isHidden = false
-            }
-        
+//        
+//            if !boxCatVisible{
+//                //boxCatLead.constant = 150
+//                //boxCatTrail.constant = -150
+//                boxCatView.isHidden = true
+//            }
+//            else{
+//                //boxCatLead.constant = 33
+//                //boxCatTrail.constant = -18
+//                boxCatView.isHidden = false
+//            }
+//        
         
         
         

@@ -15,12 +15,15 @@ class run_timer1{
     static let shared = run_timer1()
     var timer = Timer()
     var timer2 = Timer()
+    var check = Timer()
+    
     
     init() {
         self.timer = Timer()
         self.timer2 = Timer()
+        self.check = Timer()
     }
-    
+    var ischecked = false
     var done = false
     var seconds = 0
     var minutes = 0
@@ -34,6 +37,7 @@ class run_timer1{
     var break_bool = false
     var resume = false
     
+    
     func run_timer(){
         if(run_timer1.shared.already_running == false){
             run_timer1.shared.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(run_timer1.shared.counter), userInfo: nil, repeats: true)
@@ -44,8 +48,8 @@ class run_timer1{
     
     func run_timer2(){
         if(run_timer1.shared.break_already_running == false){
-        timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(run_timer1.shared.counter2), userInfo: nil, repeats: true)
-        RunLoop.current.add(run_timer1.shared.timer2, forMode: RunLoopMode.defaultRunLoopMode)
+            timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(run_timer1.shared.counter2), userInfo: nil, repeats: true)
+            RunLoop.current.add(run_timer1.shared.timer2, forMode: RunLoopMode.defaultRunLoopMode)
             run_timer1.shared.break_already_running = true
         }
     }
@@ -91,7 +95,8 @@ class run_timer1{
     }
     
 }
-    
-    
+
+
+
 
 

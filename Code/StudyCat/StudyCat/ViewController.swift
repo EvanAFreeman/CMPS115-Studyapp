@@ -97,8 +97,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var mouse4: UIImage!
     var mouse5: UIImage!
     var mouse6: UIImage!
-    
-    
    
     
     @IBOutlet weak var myTableView: UITableView!
@@ -234,7 +232,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //var alarm_sound: AVAudioPlayer = AVAudioPlayer()
     
   
-   
+    @IBOutlet weak var boxCatTrail: NSLayoutConstraint!
+    
+    @IBOutlet weak var boxCatLead: NSLayoutConstraint!
+    
+    @IBOutlet weak var boxCatView: UIImageView!
 
     override func viewDidLoad() {
        // TimerViewController().delegate = self
@@ -256,6 +258,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //let bundleIdentifier =  Bundle.main.bundleIdentifier
         //print(bundleIdentifier!)
+        
+        
+        
+        let boxCatVisible = false
+        
+        
+            if !boxCatVisible{
+                //boxCatLead.constant = 150
+                //boxCatTrail.constant = -150
+                boxCatView.isHidden = true
+            }
+            else{
+                //boxCatLead.constant = 33
+                //boxCatTrail.constant = -18
+                boxCatView.isHidden = false
+            }
+        
+        
+        
+        
+        
+        
+        
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpeg"
         

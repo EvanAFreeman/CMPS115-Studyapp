@@ -335,6 +335,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         images = loadCat(filename: "box", num_images: 5)
         box_cat.addImages(imgArray: images)
         
+        /*
+            In total we have twelve cats up for modification:
+                1. mice_cat
+                2. stand_cat
+                3. shaking_cat
+                4. bed_cat
+                5. lay_cat
+                6. sitting_cat
+                7. white_cat
+                8. scratch_cat
+                9. window_cat
+                10. siamese_cat
+                11. tabby_cat
+                12. box_cat
+         */
+        
         //probably do the randomization here?
         
         animatedImage12 = UIImage.animatedImage(with: images12, duration: 2.0)
@@ -377,7 +393,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cat_scratch.image = animatedImage5
         }
 
-
         animatedImage4 = UIImage.animatedImage(with: images4, duration: 2.0)
         if cat_window != nil {
             cat_window.image = animatedImage4
@@ -393,9 +408,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cat_in_tree.image = animatedImage2
         }
 
-
         animatedImage = UIImage.animatedImage(with: images, duration: 2.0)
-
         if cat_in_box != nil {
             cat_in_box.image = animatedImage
         }

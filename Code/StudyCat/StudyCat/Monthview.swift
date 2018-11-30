@@ -1,8 +1,8 @@
 //
-//  Monthview.swift
+//  MonthView.swift
 //  StudyCat
 //
-//  Created by cheyenne on 11/24/18.
+//  Created by cheyenne on 11/26/18.
 //  Copyright © 2018 Kit. All rights reserved.
 //
 

@@ -422,7 +422,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         animatedImage = UIImage.animatedImage(with: images, duration: 2.0)
         if cat_in_box != nil {
-            cat_in_box.image = animatedImage
+            cat_in_box.image = animated_random_cat//animatedImage
         }
     }
     

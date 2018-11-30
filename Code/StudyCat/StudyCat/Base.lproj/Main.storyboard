@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TrU-pn-0KP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TrU-pn-0KP">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -322,18 +322,16 @@
                                 <rect key="frame" x="260" y="30" width="156" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEU-7D-kqs">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEU-7D-kqs">
                                 <rect key="frame" x="204" y="615" width="240" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="box_1" translatesAutoresizingMaskIntoConstraints="NO" id="399-Lp-O0I">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="box_1" translatesAutoresizingMaskIntoConstraints="NO" id="399-Lp-O0I">
                                         <rect key="frame" x="33" y="-18" width="199" height="238"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="399-Lp-O0I" secondAttribute="trailing" constant="8" id="9tR-43-IkF"/>
-                                    <constraint firstItem="399-Lp-O0I" firstAttribute="leading" secondItem="mEU-7D-kqs" secondAttribute="leading" constant="33" id="chy-9r-eB7"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U9i-Uv-jaB">
                                 <rect key="frame" x="65" y="615" width="172" height="168"/>
@@ -455,8 +453,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="boxCatLead" destination="chy-9r-eB7" id="j36-Zb-Uuh"/>
-                        <outlet property="boxCatTrail" destination="9tR-43-IkF" id="8KO-5c-vK1"/>
                         <outlet property="boxCatView" destination="399-Lp-O0I" id="39d-nh-j3x"/>
                         <outlet property="cat_bed" destination="U2Q-ge-cKe" id="bib-3c-qOO"/>
                         <outlet property="cat_in_box" destination="399-Lp-O0I" id="eOb-eQ-1aV"/>

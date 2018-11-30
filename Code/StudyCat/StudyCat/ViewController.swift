@@ -231,10 +231,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     //var alarm_sound: AVAudioPlayer = AVAudioPlayer()
     
-  
-    @IBOutlet weak var boxCatTrail: NSLayoutConstraint!
-    
-    @IBOutlet weak var boxCatLead: NSLayoutConstraint!
     
     @IBOutlet weak var boxCatView: UIImageView!
 
@@ -259,6 +255,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         let boxCatVisible = false
+        
+        if !run_timer1.shared.already_running{
+            boxCatView.isHidden = true
+        }
+            //else if(run_timer1.shared.already_running) && run_timer1.shared.time_sec >= 1795{
+            //    boxCatView.isHidden = true
+            //}
+        else if (run_timer1.shared.already_running) && (run_timer1.shared.time_sec <= 1785){
+            if !boxCatVisible{
+                boxCatView.isHidden = false
+            }
+        }
         
 //        
 //            if !boxCatVisible{

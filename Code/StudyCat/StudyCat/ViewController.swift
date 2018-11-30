@@ -514,40 +514,85 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    /*
-    func uploadImage(filename: String) {
-        let temp = storage.child(String(format: "cat_pictures/box_%d", index))
-        temp.putData(UIImageJPEGRepresentation(image, 0.8)!, metadata: metaData) { (data, error) in
-            if error == nil {
-                print("upload successful")
-            } else {
-                print("error")
+    func randomCat(image_list: [UIImage]) -> [UIImage] {
+        var temp = [UIImage]()
+        let rand = randomNumber()
+        for img in image_list {
+            temp.append(newColor(image: img, randColor: rand))
+        }
+        return temp
+    }
+    
+    func randomNumber() -> Float {
+        return Float(Int.random(in: 0 ... 10)) / 10.0
+    }
+    
+    func newColor(image: UIImage, randColor: Float) -> UIImage {
+        let newImage = CIImage(image: image)
+        //let modImage = newImage?.applyingFilter("CIColorControls", withInputParameters:\
+        [kCIInputSaturationKey: randColor])
+        let modImage = newImage?.applyingFilter("CIHueAdjust", withInputParameters: [kCII\
+            nputAngleKey: randColor])
+        
+        return UIImage(ciImage: modImage!)
+    }
+    func getInfo(input: UIImage) -> Array<UIColor> {
+        let width = Int(input.size.width)
+        let height = Int(input.size.height)
+        
+        guard let pixelData = input.cgImage?.dataProvider?.data else { return [] }
+        let data: UnsafePointer<UInt8> = CFDataGetBytePtr(pixelData)
+        
+        var imageColors: [UIColor] = []
+        
+        for x in 0..<width{
+            for y in 0..<height {
+                let point = CGPoint(x: x, y: y)
+                let pixelInfo: Int = ((width * Int(point.y)) + Int(point.x)) * 4
+                let color = UIColor(red: CGFloat(data[pixelInfo]) / 255.0,
+                                    green: CGFloat(data[pixelInfo + 1]) / 255.0,
+                                    blue: CGFloat(data[pixelInfo + 2]) / 255.0,
+                                    alpha: CGFloat(data[pixelInfo + 3]) / 255.0)
+                imageColors.append(color)
             }
         }
-
+        return imageColors
     }
-     */
+    
+    func uploadImages(filename: String, num_images: Int, data:
+        StorageMetadata) {
+        for i in 1...num_images {
+            let file = filename + "_" + String(i)
+            let file_UI = UIImage(named: file)
+            
+            let temp = storage.child(String("cat_pictures/" + file))
+            temp.putData(UIImageJPEGRepresentation(file_UI!, 0.8)!, metadata: data) { (data, error) in
+                if error == nil {
+                    print("upload successful")
+                } else {
+                    print("error")
+                }
+            }
+        }
+    }
    
 
-    func loadCatBox() -> Array<UIImage>{
-        
-        var images = Array<UIImage>()
-        
-        for i in 1...5 {
-            let temp = storage.child(String(format: "cat_pictures/box_%d", i))
+    func loadCat(filename: String, num_images: Int) -> [UIImage]{
+        var images = [UIImage]()
+        for i in 1...num_images {
+            //e.g. cat_pictures/box_i
+            let temp = storage.child(String(format: "cat_pictures/" + filename + "_" + String(i)))
             temp.getData(maxSize: 1*1000*1000) { (data, error) in
                 if error == nil {
-                    print(String(format: "pic %d retreived successfully\n", i))
+                    //print(String(format: filename + "_%d retreived successfully\n", i))
+                    //I HAD IT HERE BEFORE
                 } else {
                     print(String(format: "there was an error loading the cat %d\n", i))
                 }
             }
-            
-            images.append(UIImage(named: String(format: "box_%d", i))!)
+            images.append(UIImage(named: String(format: filename + "_%d", i))!) //NOW ITS HERE
         }
         return images
-        
-        
     }
 
     override func didReceiveMemoryWarning() {

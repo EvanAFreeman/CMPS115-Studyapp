@@ -254,18 +254,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         
-        let boxCatVisible = false
+        var boxCatUnlocked = false
         
-        if !run_timer1.shared.already_running{
+        if !run_timer1.shared.already_running && (boxCatUnlocked == false){
             boxCatView.isHidden = true
         }
             //else if(run_timer1.shared.already_running) && run_timer1.shared.time_sec >= 1795{
             //    boxCatView.isHidden = true
             //}
         else if (run_timer1.shared.already_running) && (run_timer1.shared.time_sec <= 1785){
-            if !boxCatVisible{
+                boxCatUnlocked = true
                 boxCatView.isHidden = false
-            }
         }
         
 //        

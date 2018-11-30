@@ -356,6 +356,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //probably do the randomization here?
         
+        let imageView = UIImageView(image: random_cat.getImages()[0])
+        imageView.frame = CGRect(x: 300, y: 0, width: 100, height: 100)
+        view.addSubview(imageView)
+        
+        let animated_random_cat = UIImage.animatedImage(with: random_cat.getImages(), duration: 2.0)
+        imageView.image = animated_random_cat
+        
         
         
         animatedImage12 = UIImage.animatedImage(with: images12, duration: 2.0)

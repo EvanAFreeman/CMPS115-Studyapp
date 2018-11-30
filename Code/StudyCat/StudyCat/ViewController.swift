@@ -350,8 +350,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 11. tabby_cat
                 12. box_cat
          */
+    
+        let random_cat: Cat = Cat()
+        random_cat.addImages(imgArray: randomCat(image_list: mice_cat.getImages()))
         
         //probably do the randomization here?
+        
+        
         
         animatedImage12 = UIImage.animatedImage(with: images12, duration: 2.0)
         if mouse_cat != nil {
@@ -482,7 +487,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let temp = storage.child(String(format: "cat_pictures/" + filename + "_" + String(i)))
             temp.getData(maxSize: 1*1000*1000) { (data, error) in
                 if error == nil {
-                    //print(String(format: filename + "_%d retreived successfully\n", i))
+                    print(String(format: filename + "_%d retreived successfully\n", i))
                     //I HAD IT HERE BEFORE
                 } else {
                     print(String(format: "there was an error loading the cat %d\n", i))

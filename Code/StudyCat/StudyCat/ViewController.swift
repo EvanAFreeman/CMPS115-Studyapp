@@ -256,9 +256,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
         // Do any additional setup after loading the view, typically from a nib.
         
-        //let bundleIdentifier =  Bundle.main.bundleIdentifier
-        //print(bundleIdentifier!)
-        
         
         
         let boxCatVisible = false
@@ -275,16 +272,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //                boxCatView.isHidden = false
 //            }
 //        
-        
-        
-        
-        
-        
-        
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpeg"
         
-        images = loadCatBox()
+        //images = loadCat()
         
         cat1 = UIImage(named: "sprite_00")
         cat2 = UIImage(named: "sprite_01")
@@ -529,10 +520,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func newColor(image: UIImage, randColor: Float) -> UIImage {
         let newImage = CIImage(image: image)
-        //let modImage = newImage?.applyingFilter("CIColorControls", withInputParameters:\
-        [kCIInputSaturationKey: randColor])
-        let modImage = newImage?.applyingFilter("CIHueAdjust", withInputParameters: [kCII\
-            nputAngleKey: randColor])
+        //let modImage = newImage?.applyingFilter("CIColorControls", withInputParameters:[kCIInputSaturationKey: randColor])
+        let modImage = newImage?.applyingFilter("CIHueAdjust", withInputParameters: [kCIInputAngleKey: randColor])
         
         return UIImage(ciImage: modImage!)
     }

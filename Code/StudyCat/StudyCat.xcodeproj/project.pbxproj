@@ -25,6 +25,10 @@
 		6EF94570364D4A29B0245BC5 /* Pods_StudyCatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D483C787457E256D67870C47 /* Pods_StudyCatTests.framework */; };
 		899108114B0C20B6E0A9EDC4 /* Pods_StudyCatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31AE524AD47BD04B108B538 /* Pods_StudyCatUITests.framework */; };
 		BF41B92B3CEFF6459AFE6986 /* Pods_StudyCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1827D91FE543862F593940 /* Pods_StudyCat.framework */; };
+		CE9A29B621B0EAE7000765FF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A29B521B0EAE7000765FF /* CalendarViewController.swift */; };
+		CE9A29B821B0EB57000765FF /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A29B721B0EB57000765FF /* CalendarView.swift */; };
+		CE9A29BA21B0EB87000765FF /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A29B921B0EB87000765FF /* MonthView.swift */; };
+		CE9A29BC21B0EBB5000765FF /* WeekdaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A29BB21B0EBB5000765FF /* WeekdaysView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,10 @@
 		B11B9008322050871C1B0806 /* Pods-StudyCatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCatTests/Pods-StudyCatTests.release.xcconfig"; sourceTree = "<group>"; };
 		B971161A2F43D8E45E693A45 /* Pods-StudyCatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCatUITests/Pods-StudyCatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C43ED03572F3CE2994F02588 /* Pods-StudyCatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCatTests/Pods-StudyCatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE9A29B521B0EAE7000765FF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		CE9A29B721B0EB57000765FF /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		CE9A29B921B0EB87000765FF /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		CE9A29BB21B0EBB5000765FF /* WeekdaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdaysView.swift; sourceTree = "<group>"; };
 		D483C787457E256D67870C47 /* Pods_StudyCatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,6 +149,10 @@
 				6E6A2A9D219E5E890042ED5F /* run_timer1.swift */,
 				6EB2350D21AC9193009959D1 /* todo_list.swift */,
 				4EAAEA5E2172840400A4896A /* AppDelegate.swift */,
+				CE9A29BB21B0EBB5000765FF /* WeekdaysView.swift */,
+				CE9A29B521B0EAE7000765FF /* CalendarViewController.swift */,
+				CE9A29B721B0EB57000765FF /* CalendarView.swift */,
+				CE9A29B921B0EB87000765FF /* MonthView.swift */,
 				4EAAEA602172840400A4896A /* ViewController.swift */,
 				4E029BCB21B0D28D000CF04F /* Cat.swift */,
 				4EAAEA622172840400A4896A /* Main.storyboard */,
@@ -574,12 +586,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9A29BA21B0EB87000765FF /* MonthView.swift in Sources */,
+				CE9A29BC21B0EBB5000765FF /* WeekdaysView.swift in Sources */,
+				CE9A29B821B0EB57000765FF /* CalendarView.swift in Sources */,
 				6E6A2A9C219E27320042ED5F /* TimerViewController.swift in Sources */,
 				6B82E2AA21810647003C61C5 /* DataServices.swift in Sources */,
 				4EAAEA612172840400A4896A /* ViewController.swift in Sources */,
 				6E6A2A9E219E5E890042ED5F /* run_timer1.swift in Sources */,
 				4E029BCC21B0D28D000CF04F /* Cat.swift in Sources */,
 				4EAAEA5F2172840400A4896A /* AppDelegate.swift in Sources */,
+				CE9A29B621B0EAE7000765FF /* CalendarViewController.swift in Sources */,
 				6EB2350E21AC9193009959D1 /* todo_list.swift in Sources */,
 				6EB2351221AE3AE5009959D1 /* mainpageViewController.swift in Sources */,
 			);

@@ -38,6 +38,7 @@ class run_timer1{
     var timer_running = false
     var break_bool = false
     var resume = false
+    var totalTime = 0
     
     
     func run_timer(){

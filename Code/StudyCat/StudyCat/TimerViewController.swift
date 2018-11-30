@@ -62,6 +62,7 @@ class TimerViewController: UIViewController{
         if(picked == false){
             picked = true
             run_timer1.shared.time_sec = 1800
+            run_timer1.shared.totalTime = 1800
             //set timer_label to thirty minutes
             timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
             //make break timer hidden from view
@@ -76,6 +77,7 @@ class TimerViewController: UIViewController{
         if(picked == false){
             picked = true
             run_timer1.shared.time_sec = 3600
+            run_timer1.shared.totalTime = 3600
             timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
             break_timer.isHidden = true
         }
@@ -89,6 +91,7 @@ class TimerViewController: UIViewController{
         if(picked == false){
             picked = true
             run_timer1.shared.time_sec = 5400
+            run_timer1.shared.totalTime = 5400
             timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
             break_timer.isHidden = true
         }
@@ -101,6 +104,7 @@ class TimerViewController: UIViewController{
         if(picked == false){
             picked = true
             run_timer1.shared.time_sec = 7200
+            run_timer1.shared.totalTime = 7200
             timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
             break_timer.isHidden = true
         }

@@ -233,6 +233,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     @IBOutlet weak var boxCatView: UIImageView!
+    
+    @IBOutlet weak var standingCatView: UIImageView!
+    
+    @IBOutlet weak var bedCatView: UIImageView!
+    
+    @IBOutlet weak var shakingCatView: UIImageView!
+    
+    @IBOutlet weak var mouseCatView: UIImageView!
+    
+    @IBOutlet weak var layingCatView: UIImageView!
+    
+    @IBOutlet weak var sittingCatView: UIImageView!
+    
+    @IBOutlet weak var tabbyCatView: UIImageView!
+    
+    @IBOutlet weak var treeCatView: UIImageView!
+    
+    @IBOutlet weak var scratchCatView: UIImageView!
+    
+    @IBOutlet weak var windowCatView: UIImageView!
+    
+    @IBOutlet weak var tree2CatView: UIImageView!
+
 
     override func viewDidLoad() {
        // TimerViewController().delegate = self
@@ -505,10 +528,84 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         return images
     }
+    
+    var boxCatUnlocked = false
+    var standingCatUnlocked = false
+    var bedCatUnlocked = false
+    var shakingCatUnlocked = false
+    var mouseCatUnlocked = false
+    var layingCatUnlocked = false
+    var sittingCatUnlocked = false
+    var tabbyCatUnlocked = false
+    var treeCatUnlocked = false
+    var scratchCatUnlocked = false
+    var windowCatUnlocked = false
+    var tree2CatUnlocked = false
 
+    
     func cat_appear(){
-        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= 1795){
+        
+        if ((run_timer1.shared.already_running == false) && run_timer1.shared.break_bool == false){
+            boxCatView.isHidden = true
+            standingCatView.isHidden = true
+            bedCatView.isHidden = true
+            shakingCatView.isHidden = true
+            mouseCatView.isHidden = true
+            layingCatView.isHidden = true
+            sittingCatView.isHidden = true
+            tabbyCatView.isHidden = true
+            treeCatView.isHidden = true
+            scratchCatView.isHidden = true
+            windowCatView.isHidden = true
+            tree2CatView.isHidden = true
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 11) + 10){
             boxCatView.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 10) + 10){
+            standingCatView.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 9) + 10){
+            bedCatView.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 8) + 10){
+            shakingCatView.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 7) + 10){
+            mouseCatView.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 6) + 10){
+            layingCatView.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 5) + 10){
+            sittingCatView.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 4) + 10){
+            tabbyCatView.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 3) + 10){
+            treeCatView.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 2) + 10){
+            scratchCatView.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 1) + 10){
+            windowCatView.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= 10){
+            tree2CatView.isHidden = false
         }
     }
     

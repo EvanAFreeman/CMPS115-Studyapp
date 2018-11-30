@@ -287,41 +287,55 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //            uploadImages(filename: cat.0, num_images: cat.1, data: metaData)
 //        }
         
+        let mice_cat: Cat = Cat()
         images12 = loadCat(filename: "mouse", num_images: 6)
-        //[mouse1, mouse2, mouse3, mouse4, mouse5, mouse6]
+        mice_cat.addImages(imgArray: images12)
 
+        let stand_cat: Cat = Cat()
         images11 = loadCat(filename: "standing", num_images: 6)
-        //[standing1, standing2, standing3, standing4, standing5, standing6]
+        stand_cat.addImages(imgArray: images11)
 
+        let shaking_cat: Cat = Cat()
         images10 = loadCat(filename: "shaking", num_images: 8)
-        //[shaking1, shaking2, shaking3, shaking4, shaking5, shaking6, shaking7, shaking8]
-
-        images9 = loadCat(filename: "bed", num_images: 9)
-        //[bed1, bed2, bed3, bed4, bed5, bed6, bed7, bed8, bed9, bed10, bed11]
-
-        images8 = loadCat(filename: "laying", num_images: 6)
-        //[laying1, laying2, laying3, laying4, laying5, laying6]
-
-        images7 = loadCat(filename: "sitting", num_images: 15)
-        //[cat_sit1, cat_sit2,cat_sit3, cat_sit4, cat_sit5, cat_sit6, cat_sit7, cat_sit8, cat_sit9, cat_sit10, cat_sit11, cat_sit12, cat_sit13, cat_sit14, cat_sit15]
-
-        images6 = loadCat(filename: "white_cat", num_images: 5)
-        //[cat_tree_1, cat_tree_2, cat_tree_3, cat_tree_4, cat_tree_5]
-
-        images5 = loadCat(filename: "cat_scratch", num_images: 5)
-        //[cat_scratch1, cat_scratch2, cat_scratch3, cat_scratch4, cat_scratch5]
-
-        images4 = loadCat(filename: "window_cat", num_images: 10)
-        //[windowcat1, windowcat2, windowcat3, windowcat4, windowcat5, windowcat6, windowcat7, windowcat8, windowcat9, windowcat10]
-
-        images2 = loadCat(filename: "sprite", num_images: 15)
-        //[cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13, cat14, cat15]
-
-        images3 = loadCat(filename: "tabby_cat", num_images: 14)
-        //[tabby1, tabby2, tabby3, tabby4, tabby5, tabby6, tabby7, tabby8, tabby9, tabby10, tabby11, tabby12, tabby13, tabby14]
+        shaking_cat.addImages(imgArray: images10)
         
+        let bed_cat: Cat = Cat()
+        images9 = loadCat(filename: "bed", num_images: 9)
+        bed_cat.addImages(imgArray: images9)
+
+        let lay_cat: Cat = Cat()
+        images8 = loadCat(filename: "laying", num_images: 6)
+        lay_cat.addImages(imgArray: images8)
+
+        let sitting_cat: Cat = Cat()
+        images7 = loadCat(filename: "sitting", num_images: 15)
+        sitting_cat.addImages(imgArray: images7)
+        
+        let white_cat: Cat = Cat()
+        images6 = loadCat(filename: "white_cat", num_images: 5)
+        white_cat.addImages(imgArray: images6)
+        
+        let scratch_cat: Cat = Cat()
+        images5 = loadCat(filename: "cat_scratch", num_images: 5)
+        scratch_cat.addImages(imgArray: images5)
+        
+        let window_cat: Cat = Cat()
+        images4 = loadCat(filename: "window_cat", num_images: 10)
+        window_cat.addImages(imgArray: images4)
+        
+        let siamese_cat: Cat = Cat()
+        images2 = loadCat(filename: "sprite", num_images: 15)
+        siamese_cat.addImages(imgArray: images2)
+        
+        let tabby_cat: Cat = Cat()
+        images3 = loadCat(filename: "tabby_cat", num_images: 14)
+        tabby_cat.addImages(imgArray: images3)
+        
+        let box_cat: Cat = Cat()
         images = loadCat(filename: "box", num_images: 5)
-        //[box1, box2, box3, box4, box5]
+        box_cat.addImages(imgArray: images)
+        
+        //probably do the randomization here?
         
         animatedImage12 = UIImage.animatedImage(with: images12, duration: 2.0)
         if mouse_cat != nil {

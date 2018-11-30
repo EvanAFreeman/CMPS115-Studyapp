@@ -16,12 +16,14 @@ class run_timer1{
     var timer = Timer()
     var timer2 = Timer()
     var check = Timer()
+    var check2 = Timer()
     
     
     init() {
         self.timer = Timer()
         self.timer2 = Timer()
         self.check = Timer()
+        self.check2 = Timer()
     }
     var ischecked = false
     var done = false

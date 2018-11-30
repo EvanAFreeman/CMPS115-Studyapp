@@ -254,19 +254,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         
-        let boxCatVisible = false
-        
-        if !run_timer1.shared.already_running{
-            boxCatView.isHidden = true
-        }
+       
             //else if(run_timer1.shared.already_running) && run_timer1.shared.time_sec >= 1795{
             //    boxCatView.isHidden = true
             //}
-        else if (run_timer1.shared.already_running) && (run_timer1.shared.time_sec <= 1785){
-            if !boxCatVisible{
-                boxCatView.isHidden = false
-            }
-        }
+            run_timer1.shared.check2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.cat_appear), userInfo: nil, repeats: true)
+        
         
 //        
 //            if !boxCatVisible{
@@ -513,6 +506,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return images
     }
 
+    func cat_appear(){
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= 1795){
+            boxCatView.isHidden = false
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -520,6 +520,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     
-
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        run_timer1.shared.ischecked = false
+        run_timer1.shared.check.invalidate()
+        
+    }
 }
 

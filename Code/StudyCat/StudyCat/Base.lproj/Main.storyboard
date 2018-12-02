@@ -1298,40 +1298,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVS-3V-d1W">
                                 <rect key="frame" x="0.0" y="88" width="400" height="808"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LBD-m9-zaU">
-                                        <rect key="frame" x="0.0" y="515" width="58" height="722"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.73333333329999995" green="0.56862745100000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                <integer key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorFromUIColor">
-                                                <color key="value" red="0.32130057649999999" green="0.38780932740000001" blue="0.32236888050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4S-st-WiZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="58" height="449"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.73333333329999995" green="0.56862745100000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                <integer key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorFromUIColor">
-                                                <color key="value" red="0.32130057649999999" green="0.38780932740000001" blue="0.32236888050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" red="0.73333333329999995" green="0.56862745100000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -1648,11 +1614,11 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kU7-YB-ofM"/>
-        <segue reference="v9z-cq-1Q9"/>
+        <segue reference="mfv-3z-aLw"/>
         <segue reference="Rio-2K-w4s"/>
-        <segue reference="jb5-xt-Zbr"/>
-        <segue reference="Sao-Js-Qky"/>
-        <segue reference="MAt-56-nbT"/>
+        <segue reference="69d-4S-Yks"/>
+        <segue reference="wGS-q1-M0h"/>
+        <segue reference="otQ-Po-Tk9"/>
         <segue reference="1F1-V5-NTa"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

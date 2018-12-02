@@ -242,6 +242,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
        // TimerViewController().delegate = self
         super.viewDidLoad()
         
+        run_timer1.shared.check2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.cat_appear), userInfo: nil, repeats: true)
+        
+        
         //timer_main.text = time_string  
         
        // let music_file = Bundle.main.path(forResource: "alarm", ofType: ".mp3")
@@ -258,7 +261,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         
-        let boxCatVisible = false
+        //let boxCatVisible = false
         
 //        
 //            if !boxCatVisible{
@@ -505,9 +508,98 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return images
     }
 
+    
+    var boxCatUnlocked = false
+    var standingCatUnlocked = false
+    var bedCatUnlocked = false
+    var shakingCatUnlocked = false
+    var mouseCatUnlocked = false
+    var layingCatUnlocked = false
+    var sittingCatUnlocked = false
+    var tabbyCatUnlocked = false
+    var treeCatUnlocked = false
+    var scratchCatUnlocked = false
+    var windowCatUnlocked = false
+    var tree2CatUnlocked = false
+    
+    
+    func cat_appear(){
+        
+                if ((run_timer1.shared.already_running == false) && run_timer1.shared.break_bool == false){
+                    cat_in_box.isHidden = true
+                    standing_cat.isHidden = true
+                    cat_bed.isHidden = true
+                    shaking_butt.isHidden = true
+                    mouse_cat.isHidden = true
+                    laying_cat.isHidden = true
+                    cat_sitting.isHidden = true
+                    tabby_in_tree.isHidden = true
+                    cat_tree_white.isHidden = true
+                    cat_scratch.isHidden = true
+                    cat_window.isHidden = true
+                    cat_in_tree.isHidden = true
+                }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 11) + 10){
+            cat_in_box.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 10) + 10){
+            standing_cat.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 9) + 10){
+            cat_bed.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 8) + 10){
+            shaking_butt.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 7) + 10){
+            mouse_cat.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 6) + 10){
+            laying_cat.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 5) + 10){
+            cat_sitting.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 4) + 10){
+            tabby_in_tree.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 3) + 10){
+            cat_tree_white.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 2) + 10){
+            cat_scratch.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 1) + 10){
+            cat_window.isHidden = false
+        }
+        
+        if (run_timer1.shared.already_running == true) && (run_timer1.shared.time_sec <= 10){
+            cat_in_tree.isHidden = false
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated);        run_timer1.shared.check2.invalidate()
+        
     }
     
     

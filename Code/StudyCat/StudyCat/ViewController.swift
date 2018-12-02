@@ -530,7 +530,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //function that check2 will check every second to see if the study time is at a certain time to make cats appear
     func cat_appear(){
-        
         if ((run_timer1.shared.already_running == false) && run_timer1.shared.break_bool == false){
             cat_in_box.isHidden = true
             standing_cat.isHidden = true
@@ -546,7 +545,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cat_in_tree.isHidden = true
         }
         
-        if (run_timer1.shared.already_running == true || run_timer1.shared.break_already_running == true) && (run_timer1.shared.time_sec <= (1795)){
+        if (run_timer1.shared.already_running == true || run_timer1.shared.break_already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 11) + 10){
             cat_in_box.isHidden = false
         }
         

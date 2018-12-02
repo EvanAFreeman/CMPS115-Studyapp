@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TrU-pn-0KP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TrU-pn-0KP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -481,10 +479,10 @@
             </objects>
             <point key="canvasLocation" x="133.33333333333334" y="131.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Mainpage View Controller-->
         <scene sceneID="fFW-Gc-YZ6">
             <objects>
-                <viewController id="fkt-fg-uyi" customClass="ViewController" customModule="StudyCat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fkt-fg-uyi" customClass="mainpageViewController" customModule="StudyCat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Yb-xt-1aN"/>
                         <viewControllerLayoutGuide type="bottom" id="yqT-0v-2mx"/>
@@ -665,10 +663,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zk-p0-KJc">
-                                <rect key="frame" x="0.0" y="20" width="66" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="53" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4C-kE-CEx">
-                                        <rect key="frame" x="0.0" y="259" width="84" height="743"/>
+                                        <rect key="frame" x="0.0" y="207" width="71" height="795"/>
                                         <color key="backgroundColor" red="0.82739133880000004" green="0.54441328160000002" blue="0.57817838460000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -683,7 +681,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rh7-Po-cD0">
-                                        <rect key="frame" x="0.0" y="0.0" width="84" height="193"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="154"/>
                                         <color key="backgroundColor" red="0.82739133880000004" green="0.54441328160000002" blue="0.57817838460000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -698,46 +696,46 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRD-Av-EtW">
-                                        <rect key="frame" x="8" y="431" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="353" width="37" height="37"/>
                                         <state key="normal" image="checkmark"/>
                                         <connections>
                                             <segue destination="nqG-nl-nE8" kind="show" id="gxs-k0-R1A"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7y-kv-8vO">
-                                        <rect key="frame" x="8" y="355" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="290" width="37" height="37"/>
                                         <state key="normal" image="cat-goodies"/>
                                         <connections>
                                             <segue destination="clF-AR-ZAC" kind="show" id="cqj-BN-6WM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA0-Ff-GNl">
-                                        <rect key="frame" x="8" y="278" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="226" width="37" height="37"/>
                                         <state key="normal" backgroundImage="calendar"/>
                                         <connections>
                                             <segue destination="dGt-3x-bn7" kind="show" id="Me1-cy-JVQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4c-8c-JpF">
-                                        <rect key="frame" x="8" y="201" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="162" width="37" height="37"/>
                                         <state key="normal" image="timer-icon"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Waf-XF-5Dm">
-                                        <rect key="frame" x="8" y="127" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="101" width="37" height="37"/>
                                         <state key="normal" image="music-icon"/>
                                         <connections>
                                             <segue destination="fkt-fg-uyi" kind="show" id="L3U-Pg-pv3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08m-4w-74i">
-                                        <rect key="frame" x="8" y="58" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="45" width="37" height="37"/>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" identifier="timer_segue" id="jye-Q9-Jrz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT2-cI-Jxg">
-                                        <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="0.0" width="37" height="37"/>
                                         <state key="normal" image="arrow-up"/>
                                         <connections>
                                             <segue destination="f3j-tS-ZBN" kind="show" id="jeX-8E-03T"/>
@@ -789,7 +787,7 @@
                                         <rect key="frame" x="15" y="15" width="261" height="577"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Aw-vk-AlG">
-                                                <rect key="frame" x="8" y="8" width="245" height="54.5"/>
+                                                <rect key="frame" x="8" y="8" width="245" height="54"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
                                                 <state key="normal" title="Start Studying">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -799,13 +797,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjd-r6-iL2">
-                                                <rect key="frame" x="8" y="70.5" width="245" height="54"/>
+                                                <rect key="frame" x="8" y="70" width="245" height="54.5"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXT-34-scD">
-                                                <rect key="frame" x="20" y="132.5" width="221" height="54.5"/>
+                                                <rect key="frame" x="20" y="132.5" width="221" height="54"/>
                                                 <color key="backgroundColor" red="0.78210263324873086" green="0.52618148728370628" blue="0.56293026322575224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                                 <state key="normal" title="30 minute">
@@ -816,7 +814,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrT-bl-aAU">
-                                                <rect key="frame" x="20" y="207" width="221" height="53.5"/>
+                                                <rect key="frame" x="20" y="206.5" width="221" height="54"/>
                                                 <color key="backgroundColor" red="0.78210263319999995" green="0.52618148730000003" blue="0.56293026319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                                 <state key="normal" title="1 hour">
@@ -827,7 +825,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzI-pr-1PI">
-                                                <rect key="frame" x="20" y="280.5" width="221" height="54.5"/>
+                                                <rect key="frame" x="20" y="280.5" width="221" height="54"/>
                                                 <color key="backgroundColor" red="0.78210263319999995" green="0.52618148730000003" blue="0.56293026319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                                 <state key="normal" title="1.5 hour">
@@ -838,7 +836,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YW4-ud-PxO">
-                                                <rect key="frame" x="20" y="355" width="221" height="54"/>
+                                                <rect key="frame" x="20" y="354.5" width="221" height="54.5"/>
                                                 <color key="backgroundColor" red="0.78210263319999995" green="0.52618148730000003" blue="0.56293026319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                                 <state key="normal" title="2 hour">
@@ -849,7 +847,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdu-2y-bVQ">
-                                                <rect key="frame" x="20" y="429" width="221" height="54.5"/>
+                                                <rect key="frame" x="20" y="429" width="221" height="54"/>
                                                 <color key="backgroundColor" red="0.78210263319999995" green="0.52618148730000003" blue="0.56293026319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                                 <state key="normal" title="BREAK">
@@ -860,7 +858,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5R-TV-knH">
-                                                <rect key="frame" x="20" y="503.5" width="221" height="53.5"/>
+                                                <rect key="frame" x="20" y="503" width="221" height="54"/>
                                                 <color key="backgroundColor" red="0.78210263319999995" green="0.52618148730000003" blue="0.56293026319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                                 <state key="normal" title="STOP">
@@ -871,7 +869,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ht-Rw-SSp">
-                                                <rect key="frame" x="8" y="70.5" width="245" height="54"/>
+                                                <rect key="frame" x="8" y="70" width="245" height="54.5"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1004,46 +1002,46 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ5-Vu-bdg">
-                                        <rect key="frame" x="8" y="457" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="405" width="37" height="37"/>
                                         <state key="normal" image="checkmark"/>
                                         <connections>
                                             <segue destination="nqG-nl-nE8" kind="show" id="kU7-YB-ofM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhl-su-drZ">
-                                        <rect key="frame" x="8" y="378" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="339" width="37" height="37"/>
                                         <state key="normal" image="cat-goodies"/>
                                         <connections>
                                             <segue destination="clF-AR-ZAC" kind="show" id="v9z-cq-1Q9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifc-4Y-wZ4">
-                                        <rect key="frame" x="8" y="299" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="273" width="37" height="37"/>
                                         <state key="normal" backgroundImage="calendar"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahg-5U-0Xe">
-                                        <rect key="frame" x="8" y="222" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="209" width="37" height="37"/>
                                         <state key="normal" image="timer-icon"/>
                                         <connections>
                                             <segue destination="cQ6-uf-V1y" kind="show" id="jb5-xt-Zbr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-98-UT9">
-                                        <rect key="frame" x="8" y="146" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="146" width="37" height="37"/>
                                         <state key="normal" image="music-icon"/>
                                         <connections>
                                             <segue destination="fkt-fg-uyi" kind="show" id="Sao-Js-Qky"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKl-Ai-abh">
-                                        <rect key="frame" x="8" y="72" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="72" width="37" height="50"/>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="MAt-56-nbT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDC-C2-dbg">
-                                        <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="0.0" width="37" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="2C3-Pn-3Yf"/>
                                         </constraints>
@@ -1099,10 +1097,10 @@
             </objects>
             <point key="canvasLocation" x="924.63768115942037" y="819.64285714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Mainpage View Controller-->
         <scene sceneID="zL2-5d-dvI">
             <objects>
-                <viewController id="clF-AR-ZAC" customClass="ViewController" customModule="StudyCat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="clF-AR-ZAC" customClass="mainpageViewController" customModule="StudyCat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Aqn-Mm-44X"/>
                         <viewControllerLayoutGuide type="bottom" id="6SH-e5-Iic"/>
@@ -1147,46 +1145,46 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-95-4RM">
-                                        <rect key="frame" x="8" y="457" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="405" width="37" height="37"/>
                                         <state key="normal" image="checkmark"/>
                                         <connections>
                                             <segue destination="nqG-nl-nE8" kind="show" id="24W-AU-jbY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8g-cQ-LrM">
-                                        <rect key="frame" x="8" y="378" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="339" width="37" height="37"/>
                                         <state key="normal" image="cat-goodies"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1O-g4-KjJ">
-                                        <rect key="frame" x="8" y="299" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="273" width="37" height="37"/>
                                         <state key="normal" backgroundImage="calendar"/>
                                         <connections>
                                             <segue destination="dGt-3x-bn7" kind="show" id="Asq-Ui-MYA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oe-on-UyV">
-                                        <rect key="frame" x="8" y="222" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="209" width="37" height="37"/>
                                         <state key="normal" image="timer-icon"/>
                                         <connections>
                                             <segue destination="cQ6-uf-V1y" kind="show" id="gU6-DP-7gh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6S-Gp-E7q">
-                                        <rect key="frame" x="8" y="146" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="146" width="37" height="37"/>
                                         <state key="normal" image="music-icon"/>
                                         <connections>
                                             <segue destination="fkt-fg-uyi" kind="show" id="X09-Wo-prh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-Zn-Rvu">
-                                        <rect key="frame" x="8" y="72" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="72" width="37" height="50"/>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="WoX-0A-awS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8md-sJ-oB9">
-                                        <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="0.0" width="37" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ZYP-3e-3aS"/>
                                         </constraints>
@@ -1405,46 +1403,46 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaE-Us-5nS">
-                                        <rect key="frame" x="8" y="457" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="405" width="37" height="37"/>
                                         <state key="normal" image="checkmark"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRZ-Xd-0zX">
-                                        <rect key="frame" x="8" y="378" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="339" width="37" height="37"/>
                                         <state key="normal" image="cat-goodies"/>
                                         <connections>
                                             <segue destination="clF-AR-ZAC" kind="show" id="mfv-3z-aLw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzW-x1-YBc">
-                                        <rect key="frame" x="8" y="299" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="273" width="37" height="37"/>
                                         <state key="normal" backgroundImage="calendar"/>
                                         <connections>
                                             <segue destination="dGt-3x-bn7" kind="show" id="Rio-2K-w4s"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZH-Oz-bjB">
-                                        <rect key="frame" x="8" y="222" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="209" width="37" height="37"/>
                                         <state key="normal" image="timer-icon"/>
                                         <connections>
                                             <segue destination="cQ6-uf-V1y" kind="show" id="69d-4S-Yks"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrk-HC-jch">
-                                        <rect key="frame" x="8" y="146" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="146" width="37" height="37"/>
                                         <state key="normal" image="music-icon"/>
                                         <connections>
                                             <segue destination="fkt-fg-uyi" kind="show" id="wGS-q1-M0h"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m95-0C-EdI">
-                                        <rect key="frame" x="8" y="72" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="72" width="37" height="50"/>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="otQ-Po-Tk9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKp-Ou-cdB">
-                                        <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="0.0" width="37" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="iUf-Ph-fnz"/>
                                         </constraints>
@@ -1598,41 +1596,41 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow-up" width="50" height="50"/>
+        <image name="arrow-up" width="37.5" height="37.5"/>
         <image name="bed_1" width="134" height="134"/>
         <image name="book_1" width="128" height="128"/>
         <image name="box_1" width="200" height="200"/>
         <image name="bunny_0" width="96" height="96"/>
-        <image name="calendar" width="50" height="50"/>
+        <image name="calendar" width="37.5" height="37.5"/>
         <image name="cat house empty (1)" width="260" height="260"/>
-        <image name="cat-goodies" width="50" height="50"/>
+        <image name="cat-goodies" width="37.5" height="37.5"/>
         <image name="cat_scratch_1" width="320" height="320"/>
-        <image name="cathouseicon" width="50" height="50"/>
-        <image name="checkmark" width="50" height="50"/>
-        <image name="drop-down-arrow" width="50" height="50"/>
+        <image name="cathouseicon" width="37.5" height="37.5"/>
+        <image name="checkmark" width="37.5" height="37.5"/>
+        <image name="drop-down-arrow" width="37.5" height="37.5"/>
         <image name="floor" width="375" height="375"/>
         <image name="glasses_0" width="96" height="96"/>
         <image name="laying_1" width="180" height="180"/>
         <image name="mouse_1" width="120" height="120"/>
-        <image name="music-icon" width="50" height="50"/>
+        <image name="music-icon" width="37.5" height="37.5"/>
         <image name="shaking_1" width="130" height="130"/>
         <image name="sitting_1" width="170" height="170"/>
         <image name="sprite_1" width="1500" height="1500"/>
         <image name="standing_1" width="150" height="150"/>
         <image name="tabby_cat_1" width="1300" height="1300"/>
-        <image name="timer-icon" width="50" height="50"/>
+        <image name="timer-icon" width="37.5" height="37.5"/>
         <image name="white_cat_1" width="320" height="320"/>
         <image name="window cat clone" width="180" height="180"/>
         <image name="window_cat_1" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XVc-dc-8TO"/>
-        <segue reference="PeT-J0-Ka9"/>
-        <segue reference="6U6-c5-5nZ"/>
-        <segue reference="8bf-0f-Pr1"/>
-        <segue reference="pH5-QE-09A"/>
-        <segue reference="I7Y-kH-r03"/>
-        <segue reference="HcO-hq-VFU"/>
+        <segue reference="24W-AU-jbY"/>
+        <segue reference="mfv-3z-aLw"/>
+        <segue reference="Asq-Ui-MYA"/>
+        <segue reference="gU6-DP-7gh"/>
+        <segue reference="X09-Wo-prh"/>
+        <segue reference="WoX-0A-awS"/>
+        <segue reference="o9b-rN-EeK"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

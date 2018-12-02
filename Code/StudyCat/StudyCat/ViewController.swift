@@ -246,6 +246,50 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var boxCatLead: NSLayoutConstraint!
     
     @IBOutlet weak var boxCatView: UIImageView!
+    
+    
+
+    @IBOutlet weak var leadingConstraint1: NSLayoutConstraint!
+    
+    @IBOutlet weak var leadingConstraint2: NSLayoutConstraint!
+    
+    @IBOutlet weak var leadingConstraint3: NSLayoutConstraint!
+    
+    @IBOutlet weak var leadingConstraint4: NSLayoutConstraint!
+    
+    @IBOutlet weak var leadingConstraint5: NSLayoutConstraint!
+    
+    @IBOutlet weak var leadingConstraint6: NSLayoutConstraint!
+    
+    
+    
+    
+    
+    @IBAction func menuView1(_ sender: Any) {
+        
+    }
+    
+    @IBAction func menuView2(_ sender: Any) {
+        
+    }
+    
+    @IBAction func menuView3(_ sender: Any) {
+        
+    }
+    
+    @IBAction func menuView4(_ sender: Any) {
+        
+    }
+    
+    @IBAction func menuView5(_ sender: Any) {
+        
+    }
+    
+    @IBAction func menuView6(_ sender: Any) {
+        
+    }
+    
+
 
     override func viewDidLoad() {
        // TimerViewController().delegate = self

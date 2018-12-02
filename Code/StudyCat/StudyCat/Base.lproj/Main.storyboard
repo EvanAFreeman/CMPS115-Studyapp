@@ -627,6 +627,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kki-lF-XqX">
+                                <rect key="frame" x="138" y="322" width="197" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.3558912689" green="0.68793623100000001" blue="0.27442922019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="LOG IN TO SPOTIFY"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.77232601999999995" green="0.81586689670000001" blue="0.91697731599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -639,7 +645,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8c-BR-9Bt" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872.79999999999995" y="131.78410794602701"/>
+            <point key="canvasLocation" x="872.46376811594212" y="131.25"/>
         </scene>
         <!--Timer View Controller-->
         <scene sceneID="odQ-8f-ip2">
@@ -956,46 +962,46 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ5-Vu-bdg">
-                                        <rect key="frame" x="8" y="457" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="405" width="37" height="37"/>
                                         <state key="normal" image="checkmark"/>
                                         <connections>
                                             <segue destination="nqG-nl-nE8" kind="show" id="kU7-YB-ofM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhl-su-drZ">
-                                        <rect key="frame" x="8" y="378" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="339" width="37" height="37"/>
                                         <state key="normal" image="cat-goodies"/>
                                         <connections>
                                             <segue destination="clF-AR-ZAC" kind="show" id="v9z-cq-1Q9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifc-4Y-wZ4">
-                                        <rect key="frame" x="8" y="299" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="273" width="37" height="37"/>
                                         <state key="normal" backgroundImage="calendar"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahg-5U-0Xe">
-                                        <rect key="frame" x="8" y="222" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="209" width="37" height="37"/>
                                         <state key="normal" image="timer-icon"/>
                                         <connections>
                                             <segue destination="cQ6-uf-V1y" kind="show" id="jb5-xt-Zbr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-98-UT9">
-                                        <rect key="frame" x="8" y="146" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="146" width="37" height="37"/>
                                         <state key="normal" image="music-icon"/>
                                         <connections>
                                             <segue destination="fkt-fg-uyi" kind="show" id="Sao-Js-Qky"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKl-Ai-abh">
-                                        <rect key="frame" x="8" y="72" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="72" width="37" height="50"/>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="MAt-56-nbT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDC-C2-dbg">
-                                        <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="0.0" width="37" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="2C3-Pn-3Yf"/>
                                         </constraints>
@@ -1099,46 +1105,46 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-95-4RM">
-                                        <rect key="frame" x="8" y="457" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="405" width="37" height="37"/>
                                         <state key="normal" image="checkmark"/>
                                         <connections>
                                             <segue destination="nqG-nl-nE8" kind="show" id="24W-AU-jbY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8g-cQ-LrM">
-                                        <rect key="frame" x="8" y="378" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="339" width="37" height="37"/>
                                         <state key="normal" image="cat-goodies"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1O-g4-KjJ">
-                                        <rect key="frame" x="8" y="299" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="273" width="37" height="37"/>
                                         <state key="normal" backgroundImage="calendar"/>
                                         <connections>
                                             <segue destination="dGt-3x-bn7" kind="show" id="Asq-Ui-MYA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oe-on-UyV">
-                                        <rect key="frame" x="8" y="222" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="209" width="37" height="37"/>
                                         <state key="normal" image="timer-icon"/>
                                         <connections>
                                             <segue destination="cQ6-uf-V1y" kind="show" id="gU6-DP-7gh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6S-Gp-E7q">
-                                        <rect key="frame" x="8" y="146" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="146" width="37" height="37"/>
                                         <state key="normal" image="music-icon"/>
                                         <connections>
                                             <segue destination="fkt-fg-uyi" kind="show" id="X09-Wo-prh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-Zn-Rvu">
-                                        <rect key="frame" x="8" y="72" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="72" width="37" height="50"/>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="WoX-0A-awS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8md-sJ-oB9">
-                                        <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="0.0" width="37" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ZYP-3e-3aS"/>
                                         </constraints>
@@ -1180,13 +1186,128 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qfp-Jf-Jtw">
+                                <rect key="frame" x="75" y="52" width="299" height="790"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZrG-Qn-n0O">
+                                        <rect key="frame" x="20" y="20" width="259" height="750"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E63-xv-VCe">
+                                                <rect key="frame" x="40" y="40" width="179" height="168"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3XM-lL-RUT">
+                                                        <rect key="frame" x="8" y="8" width="163" height="152"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctG-U9-MG8">
+                                                                <rect key="frame" x="8" y="8" width="147" height="136"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glasses_0" translatesAutoresizingMaskIntoConstraints="NO" id="YPO-xT-H5x">
+                                                                        <rect key="frame" x="20" y="20" width="107" height="96"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="YPO-xT-H5x" secondAttribute="bottom" constant="20" id="HiX-HV-7vP"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="YPO-xT-H5x" secondAttribute="trailing" constant="20" id="Q3k-9w-a8J"/>
+                                                                    <constraint firstItem="YPO-xT-H5x" firstAttribute="top" secondItem="ctG-U9-MG8" secondAttribute="top" constant="20" id="lSe-1K-ccI"/>
+                                                                    <constraint firstItem="YPO-xT-H5x" firstAttribute="leading" secondItem="ctG-U9-MG8" secondAttribute="leading" constant="20" id="lgn-7k-ASM"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="ctG-U9-MG8" firstAttribute="top" secondItem="3XM-lL-RUT" secondAttribute="top" constant="8" id="2H2-rQ-dek"/>
+                                                            <constraint firstItem="ctG-U9-MG8" firstAttribute="leading" secondItem="3XM-lL-RUT" secondAttribute="leading" constant="8" id="GgW-rw-Xd4"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ctG-U9-MG8" secondAttribute="bottom" constant="8" id="OaN-de-1sd"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ctG-U9-MG8" secondAttribute="trailing" constant="8" id="usA-6K-0Vp"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="3XM-lL-RUT" firstAttribute="top" secondItem="E63-xv-VCe" secondAttribute="top" constant="8" id="JeA-4t-ITQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3XM-lL-RUT" secondAttribute="trailing" constant="8" id="Vkh-U5-tgC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3XM-lL-RUT" secondAttribute="bottom" constant="8" id="cJf-mu-UdP"/>
+                                                    <constraint firstItem="3XM-lL-RUT" firstAttribute="leading" secondItem="E63-xv-VCe" secondAttribute="leading" constant="8" id="ieY-IK-lhv"/>
+                                                    <constraint firstItem="3XM-lL-RUT" firstAttribute="top" secondItem="E63-xv-VCe" secondAttribute="top" constant="8" id="mw2-Wl-Udp"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69A-KW-k2b">
+                                                <rect key="frame" x="40" y="248" width="179" height="168"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hx2-K2-qEF">
+                                                        <rect key="frame" x="8" y="8" width="163" height="152"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgi-i4-t2F">
+                                                                <rect key="frame" x="8" y="8" width="147" height="136"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bunny_0" translatesAutoresizingMaskIntoConstraints="NO" id="xet-94-sJU">
+                                                                        <rect key="frame" x="20" y="20" width="107" height="96"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="xet-94-sJU" secondAttribute="bottom" constant="20" id="H1u-oj-iKp"/>
+                                                                    <constraint firstItem="xet-94-sJU" firstAttribute="top" secondItem="sgi-i4-t2F" secondAttribute="top" constant="20" id="U6e-0o-ody"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="xet-94-sJU" secondAttribute="trailing" constant="20" id="dfa-i0-diZ"/>
+                                                                    <constraint firstItem="xet-94-sJU" firstAttribute="leading" secondItem="sgi-i4-t2F" secondAttribute="leading" constant="20" id="fkp-c4-Efk"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="sgi-i4-t2F" firstAttribute="leading" secondItem="Hx2-K2-qEF" secondAttribute="leading" constant="8" id="E8Z-xb-K38"/>
+                                                            <constraint firstItem="sgi-i4-t2F" firstAttribute="top" secondItem="Hx2-K2-qEF" secondAttribute="top" constant="8" id="HZO-gF-IXm"/>
+                                                            <constraint firstAttribute="trailing" secondItem="sgi-i4-t2F" secondAttribute="trailing" constant="8" id="Te4-Bl-gsq"/>
+                                                            <constraint firstAttribute="bottom" secondItem="sgi-i4-t2F" secondAttribute="bottom" constant="8" id="Yuq-zZ-BIA"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Hx2-K2-qEF" firstAttribute="bottom" secondItem="69A-KW-k2b" secondAttribute="bottomMargin" id="1Q5-bc-T1s"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Hx2-K2-qEF" secondAttribute="bottom" constant="8" id="36m-wL-fYY"/>
+                                                    <constraint firstItem="Hx2-K2-qEF" firstAttribute="leading" secondItem="69A-KW-k2b" secondAttribute="leading" constant="8" id="6CI-7V-bo2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Hx2-K2-qEF" secondAttribute="trailing" constant="8" id="7LN-SE-vaM"/>
+                                                    <constraint firstItem="Hx2-K2-qEF" firstAttribute="centerY" secondItem="69A-KW-k2b" secondAttribute="centerY" id="iUq-2b-ZNl"/>
+                                                    <constraint firstItem="Hx2-K2-qEF" firstAttribute="top" secondItem="69A-KW-k2b" secondAttribute="top" constant="8" id="w6U-Wq-MLA"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="69A-KW-k2b" firstAttribute="top" secondItem="E63-xv-VCe" secondAttribute="bottom" constant="40" id="3eW-EY-pJ0"/>
+                                            <constraint firstAttribute="trailing" secondItem="69A-KW-k2b" secondAttribute="trailing" constant="40" id="8UX-H3-fhG"/>
+                                            <constraint firstItem="E63-xv-VCe" firstAttribute="top" secondItem="ZrG-Qn-n0O" secondAttribute="top" constant="40" id="9gn-ZE-6dk"/>
+                                            <constraint firstItem="69A-KW-k2b" firstAttribute="top" secondItem="E63-xv-VCe" secondAttribute="bottom" constant="40" id="Fhk-6s-aqm"/>
+                                            <constraint firstItem="69A-KW-k2b" firstAttribute="leading" secondItem="ZrG-Qn-n0O" secondAttribute="leading" constant="40" id="PT5-sH-Ub1"/>
+                                            <constraint firstAttribute="trailing" secondItem="E63-xv-VCe" secondAttribute="trailing" constant="40" id="Wgb-uw-z1z"/>
+                                            <constraint firstItem="E63-xv-VCe" firstAttribute="leading" secondItem="ZrG-Qn-n0O" secondAttribute="leading" constant="40" id="p5w-hh-Msi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZrG-Qn-n0O" secondAttribute="bottom" constant="20" id="0z3-st-dGR"/>
+                                    <constraint firstItem="ZrG-Qn-n0O" firstAttribute="top" secondItem="Qfp-Jf-Jtw" secondAttribute="top" constant="20" id="33Y-ge-lRb"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZrG-Qn-n0O" secondAttribute="trailing" constant="20" id="YUE-vM-Kg0"/>
+                                    <constraint firstItem="ZrG-Qn-n0O" firstAttribute="leading" secondItem="Qfp-Jf-Jtw" secondAttribute="leading" constant="20" id="lxo-Sv-EVn"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.42204228100000002" green="0.432955225" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Qfp-Jf-Jtw" firstAttribute="top" secondItem="Aqn-Mm-44X" secondAttribute="bottom" constant="8" id="3dh-4e-U32"/>
                             <constraint firstAttribute="trailing" secondItem="KiI-So-C2b" secondAttribute="trailing" constant="330" id="AZO-ty-WES"/>
+                            <constraint firstItem="Qfp-Jf-Jtw" firstAttribute="leading" secondItem="qsy-b8-c8e" secondAttribute="leadingMargin" constant="55" id="TRD-GH-64y"/>
                             <constraint firstItem="KiI-So-C2b" firstAttribute="leading" secondItem="qsy-b8-c8e" secondAttribute="leading" id="XKI-Zu-BbW"/>
                             <constraint firstAttribute="bottom" secondItem="KiI-So-C2b" secondAttribute="bottom" id="crN-tI-QYb"/>
+                            <constraint firstItem="6SH-e5-Iic" firstAttribute="top" secondItem="Qfp-Jf-Jtw" secondAttribute="bottom" constant="20" id="e2g-4S-42F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qfp-Jf-Jtw" secondAttribute="trailing" constant="20" id="h8u-y6-Le1"/>
+                            <constraint firstItem="6SH-e5-Iic" firstAttribute="top" secondItem="Qfp-Jf-Jtw" secondAttribute="bottom" constant="20" id="nkx-gM-bS9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qfp-Jf-Jtw" secondAttribute="trailing" constant="20" id="oLY-6v-9xy"/>
                             <constraint firstItem="KiI-So-C2b" firstAttribute="top" secondItem="Aqn-Mm-44X" secondAttribute="bottom" id="swg-Db-bfb"/>
+                            <constraint firstItem="Qfp-Jf-Jtw" firstAttribute="leading" secondItem="qsy-b8-c8e" secondAttribute="leadingMargin" constant="55" id="znt-7K-rtw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1242,46 +1363,46 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaE-Us-5nS">
-                                        <rect key="frame" x="8" y="457" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="405" width="37" height="37"/>
                                         <state key="normal" image="checkmark"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRZ-Xd-0zX">
-                                        <rect key="frame" x="8" y="378" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="339" width="37" height="37"/>
                                         <state key="normal" image="cat-goodies"/>
                                         <connections>
                                             <segue destination="clF-AR-ZAC" kind="show" id="mfv-3z-aLw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzW-x1-YBc">
-                                        <rect key="frame" x="8" y="299" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="273" width="37" height="37"/>
                                         <state key="normal" backgroundImage="calendar"/>
                                         <connections>
                                             <segue destination="dGt-3x-bn7" kind="show" id="Rio-2K-w4s"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZH-Oz-bjB">
-                                        <rect key="frame" x="8" y="222" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="209" width="37" height="37"/>
                                         <state key="normal" image="timer-icon"/>
                                         <connections>
                                             <segue destination="cQ6-uf-V1y" kind="show" id="69d-4S-Yks"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrk-HC-jch">
-                                        <rect key="frame" x="8" y="146" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="146" width="37" height="37"/>
                                         <state key="normal" image="music-icon"/>
                                         <connections>
                                             <segue destination="fkt-fg-uyi" kind="show" id="wGS-q1-M0h"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m95-0C-EdI">
-                                        <rect key="frame" x="8" y="72" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="72" width="37" height="50"/>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="otQ-Po-Tk9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKp-Ou-cdB">
-                                        <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="0.0" width="37" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="iUf-Ph-fnz"/>
                                         </constraints>
@@ -1435,39 +1556,41 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow-up" width="50" height="50"/>
+        <image name="arrow-up" width="37.5" height="37.5"/>
         <image name="bed_1" width="134" height="134"/>
         <image name="book_1" width="128" height="128"/>
         <image name="box_1" width="200" height="200"/>
-        <image name="calendar" width="50" height="50"/>
+        <image name="bunny_0" width="96" height="96"/>
+        <image name="calendar" width="37.5" height="37.5"/>
         <image name="cat house empty (1)" width="260" height="260"/>
-        <image name="cat-goodies" width="50" height="50"/>
+        <image name="cat-goodies" width="37.5" height="37.5"/>
         <image name="cat_scratch_1" width="320" height="320"/>
-        <image name="cathouseicon" width="50" height="50"/>
-        <image name="checkmark" width="50" height="50"/>
-        <image name="drop-down-arrow" width="50" height="50"/>
+        <image name="cathouseicon" width="37.5" height="37.5"/>
+        <image name="checkmark" width="37.5" height="37.5"/>
+        <image name="drop-down-arrow" width="37.5" height="37.5"/>
         <image name="floor" width="375" height="375"/>
+        <image name="glasses_0" width="96" height="96"/>
         <image name="laying_1" width="180" height="180"/>
         <image name="mouse_1" width="120" height="120"/>
-        <image name="music-icon" width="50" height="50"/>
+        <image name="music-icon" width="37.5" height="37.5"/>
         <image name="shaking_1" width="130" height="130"/>
         <image name="sitting_1" width="170" height="170"/>
         <image name="sprite_1" width="1500" height="1500"/>
         <image name="standing_1" width="150" height="150"/>
         <image name="tabby_cat_1" width="1300" height="1300"/>
-        <image name="timer-icon" width="50" height="50"/>
+        <image name="timer-icon" width="37.5" height="37.5"/>
         <image name="white_cat_1" width="320" height="320"/>
         <image name="window cat clone" width="180" height="180"/>
         <image name="window_cat_1" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kU7-YB-ofM"/>
-        <segue reference="v9z-cq-1Q9"/>
-        <segue reference="n8i-CU-aIT"/>
-        <segue reference="jb5-xt-Zbr"/>
-        <segue reference="Sao-Js-Qky"/>
-        <segue reference="MAt-56-nbT"/>
-        <segue reference="jxj-aT-nUP"/>
+        <segue reference="XVc-dc-8TO"/>
+        <segue reference="PeT-J0-Ka9"/>
+        <segue reference="6U6-c5-5nZ"/>
+        <segue reference="8bf-0f-Pr1"/>
+        <segue reference="pH5-QE-09A"/>
+        <segue reference="I7Y-kH-r03"/>
+        <segue reference="HcO-hq-VFU"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

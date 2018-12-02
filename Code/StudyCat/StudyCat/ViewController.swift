@@ -15,7 +15,7 @@ import AVFoundation
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
    
    
-    
+    //set outlet for white cat in tree and define UIImage variable for the cat animation
     @IBOutlet weak var cat_tree_white: UIImageView!
     var cat_tree_1: UIImage!
     var cat_tree_2: UIImage!
@@ -23,16 +23,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var cat_tree_4: UIImage!
     var cat_tree_5: UIImage!
     
-    
-
+    //set outlet for cat scratching tree and define UIImage variable for the cat animation
     @IBOutlet weak var cat_scratch: UIImageView!
     var cat_scratch1: UIImage!
     var cat_scratch2: UIImage!
     var cat_scratch3: UIImage!
     var cat_scratch4: UIImage!
     var cat_scratch5: UIImage!
-    //var list = ["Read"]
     
+    //set outlet for cat sitting on the floor and define UIImage variable for the cat animation
     @IBOutlet weak var cat_sitting: UIImageView!
     var cat_sit1: UIImage!
     var cat_sit2: UIImage!
@@ -50,6 +49,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var cat_sit14: UIImage!
     var cat_sit15: UIImage!
     
+    //set outlet for laying in tree and define UIImage variable for the cat animation
     @IBOutlet weak var laying_cat: UIImageView!
     var laying1: UIImage!
     var laying2: UIImage!
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var laying5: UIImage!
     var laying6: UIImage!
     
-    
+    //set outlet for cat in bed and define UIImage variable for the cat animation
     @IBOutlet weak var cat_bed: UIImageView!
     var bed1: UIImage!
     var bed2: UIImage!
@@ -72,6 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var bed10: UIImage!
     var bed11: UIImage!
     
+    //set outlet for cat shaking its tail and define UIImage variable for the cat animation
     @IBOutlet weak var shaking_butt: UIImageView!
     var shaking1: UIImage!
     var shaking2: UIImage!
@@ -82,6 +83,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var shaking7: UIImage!
     var shaking8: UIImage!
     
+    //set outlet for cat standing and define UIImage variable for the cat animation
     @IBOutlet weak var standing_cat: UIImageView!
     var standing1: UIImage!
     var standing2: UIImage!
@@ -90,6 +92,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var standing5: UIImage!
     var standing6: UIImage!
     
+    //set outlet for cat with mouse it in mouth and define UIImage variable for the cat animation
     @IBOutlet weak var mouse_cat: UIImageView!
     var mouse1: UIImage!
     var mouse2: UIImage!
@@ -98,6 +101,64 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var mouse5: UIImage!
     var mouse6: UIImage!
    
+    //set outlet for cat in box and define UIImage variable for the cat animation
+    @IBOutlet weak var cat_in_box: UIImageView!
+    var box: UIImage!
+    var box1: UIImage!
+    var box2: UIImage!
+    var box3: UIImage!
+    var box4: UIImage!
+    var box5: UIImage!
+    
+    
+    //set outlet for cat at the top of the tree and define UIImage variable for the cat animation
+    @IBOutlet weak var cat_in_tree: UIImageView!
+    var cat1: UIImage!
+    var cat2: UIImage!
+    var cat3: UIImage!
+    var cat4: UIImage!
+    var cat5: UIImage!
+    var cat6: UIImage!
+    var cat7: UIImage!
+    var cat8: UIImage!
+    var cat9: UIImage!
+    var cat10: UIImage!
+    var cat11: UIImage!
+    var cat12: UIImage!
+    var cat13: UIImage!
+    var cat14: UIImage!
+    var cat15: UIImage!
+    
+    //set outlet for tabby cat in the tree and define UIImage variable for the cat animation
+    @IBOutlet weak var tabby_in_tree: UIImageView!
+    var tabby1: UIImage!
+    var tabby2: UIImage!
+    var tabby3: UIImage!
+    var tabby4: UIImage!
+    var tabby5: UIImage!
+    var tabby6: UIImage!
+    var tabby7: UIImage!
+    var tabby8: UIImage!
+    var tabby9: UIImage!
+    var tabby10: UIImage!
+    var tabby11: UIImage!
+    var tabby12: UIImage!
+    var tabby13: UIImage!
+    var tabby14: UIImage!
+    var tabby15: UIImage!
+    
+    //set outlet for cat sitting on window and define UIImage variable for the cat animation
+    @IBOutlet weak var cat_window: UIImageView!
+    var windowcat1: UIImage!
+    var windowcat2: UIImage!
+    var windowcat3: UIImage!
+    var windowcat4: UIImage!
+    var windowcat5: UIImage!
+    var windowcat6: UIImage!
+    var windowcat7: UIImage!
+    var windowcat8: UIImage!
+    var windowcat9: UIImage!
+    var windowcat10: UIImage!
     
     @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var input: UITextField!
@@ -129,63 +190,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     ////////////////////////////////////////////////////
 
-    @IBOutlet weak var cat_in_box: UIImageView!
-    var box: UIImage!
-    var box1: UIImage!
-    var box2: UIImage!
-    var box3: UIImage!
-    var box4: UIImage!
-    var box5: UIImage!
-    
-
-    
-    @IBOutlet weak var cat_in_tree: UIImageView!
-    var cat1: UIImage!
-    var cat2: UIImage!
-    var cat3: UIImage!
-    var cat4: UIImage!
-    var cat5: UIImage!
-    var cat6: UIImage!
-    var cat7: UIImage!
-    var cat8: UIImage!
-    var cat9: UIImage!
-    var cat10: UIImage!
-    var cat11: UIImage!
-    var cat12: UIImage!
-    var cat13: UIImage!
-    var cat14: UIImage!
-    var cat15: UIImage!
-    
-    
-    @IBOutlet weak var tabby_in_tree: UIImageView!
-    var tabby1: UIImage!
-    var tabby2: UIImage!
-    var tabby3: UIImage!
-    var tabby4: UIImage!
-    var tabby5: UIImage!
-    var tabby6: UIImage!
-    var tabby7: UIImage!
-    var tabby8: UIImage!
-    var tabby9: UIImage!
-    var tabby10: UIImage!
-    var tabby11: UIImage!
-    var tabby12: UIImage!
-    var tabby13: UIImage!
-    var tabby14: UIImage!
-    var tabby15: UIImage!
-
-    @IBOutlet weak var cat_window: UIImageView!
-    var windowcat1: UIImage!
-    var windowcat2: UIImage!
-    var windowcat3: UIImage!
-    var windowcat4: UIImage!
-    var windowcat5: UIImage!
-    var windowcat6: UIImage!
-    var windowcat7: UIImage!
-    var windowcat8: UIImage!
-    var windowcat9: UIImage!
-    var windowcat10: UIImage!
-    
+    //Create arrays to store the UIImages to create animations for each of the cat
     var images13: [UIImage]!
     var animatedImage13: UIImage!
     
@@ -242,6 +247,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
        // TimerViewController().delegate = self
         super.viewDidLoad()
         
+        //create a timer to check every second whether the study time has reached a certain timer to make a cat appear
         run_timer1.shared.check2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.cat_appear), userInfo: nil, repeats: true)
         
         
@@ -367,7 +373,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         imageView.image = animated_random_cat
         
         
-        
+        //animated each of the cats and specify the duration wanted for the animation (usually 2 seconds)
         animatedImage12 = UIImage.animatedImage(with: images12, duration: 2.0)
         if mouse_cat != nil {
             mouse_cat.image = animatedImage12
@@ -595,10 +601,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
+    //if user exits main view invalidate (stop) check2 timer
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated);        run_timer1.shared.check2.invalidate()
+        super.viewDidDisappear(animated);
+        run_timer1.shared.check2.invalidate()
         
     }
     

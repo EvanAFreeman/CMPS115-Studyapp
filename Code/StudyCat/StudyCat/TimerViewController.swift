@@ -13,11 +13,13 @@ class TimerViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //if the user timer has not been checked (aka the timer that checks to update time) then initialize check timer
         if(run_timer1.shared.ischecked==false){
             run_timer1.shared.check = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(viewDidLoad), userInfo: nil, repeats: true)
             run_timer1.shared.ischecked=true
         }
         
+        //if user is on break then start break timer and invalidate study session timer, make break label show and go to counter_timer2() to update the break label
         if(run_timer1.shared.break_bool == true){
             run_timer1.shared.run_timer2()
             run_timer1.shared.timer.invalidate()
@@ -26,6 +28,7 @@ class TimerViewController: UIViewController{
             counter_timer2()
         }
             
+            //if user is on study session then start study timer and invalidate break timer, make timer label show and go to counter_timer() to update the study timer label
         else if(run_timer1.shared.timer_running == true){
             run_timer1.shared.timer2.invalidate()
             run_timer1.shared.run_timer()
@@ -37,7 +40,6 @@ class TimerViewController: UIViewController{
     }
     
     var seconds = 0
-    // var check = Timer()
     var picked = false
     
     
@@ -45,10 +47,12 @@ class TimerViewController: UIViewController{
     @IBOutlet weak var break_timer: UILabel!
     @IBOutlet weak var timer_label: UILabel!
     
+    //updates study timer
     func counter_timer(){
         timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
     }
     
+    //updates break timer
     func counter_timer2(){
         break_timer.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.break_time))
     }
@@ -62,6 +66,7 @@ class TimerViewController: UIViewController{
         if(picked == false){
             picked = true
             run_timer1.shared.time_sec = 1800
+            //totalTime is a helper for making the cats appear in ViewController.swift
             run_timer1.shared.totalTime = 1800
             //set timer_label to thirty minutes
             timer_label.text = run_timer1.shared.timeString(time: TimeInterval(run_timer1.shared.time_sec))
@@ -70,6 +75,7 @@ class TimerViewController: UIViewController{
         }
     }
     
+    //button action for hour
     @IBOutlet weak var hour_outlet: UIButton!
     @IBAction func hour_button(_ sender: UIButton) {
         timer_label.isHidden = false
@@ -83,7 +89,7 @@ class TimerViewController: UIViewController{
         }
     }
     
-    
+    //button action for hour thirty minutes
     @IBOutlet weak var hourThirty_outlet: UIButton!
     @IBAction func hourThirty_button(_ sender: UIButton) {
         timer_label.isHidden = false
@@ -97,6 +103,7 @@ class TimerViewController: UIViewController{
         }
     }
     
+    //button action for two hours
     @IBOutlet weak var twoHours_outlet: UIButton!
     @IBAction func twoHours_button(_ sender: UIButton) {
         timer_label.isHidden = false
@@ -169,6 +176,8 @@ class TimerViewController: UIViewController{
             run_timer1.shared.already_running = false
         }
     }
+    
+    //if the timer view dissapears then invalidate(stop) timer that updates the break and study timers
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         run_timer1.shared.ischecked = false

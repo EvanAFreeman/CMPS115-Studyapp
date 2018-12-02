@@ -163,7 +163,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var input: UITextField!
     ///////////////////////////////////////
-    // Code Start #1: Get user to do list item and allow user to send with button
+    // Code Start #1: Allow user to add to-do list and push it with the add button
+    // reload the list every time a new item gets added to the list
     @IBAction func additem(_ sender: Any) {
         if(input.text != ""){
             todo_list.shared.list.append(input.text!) //add the new item to the array
@@ -173,15 +174,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     // Code End #1
     /////////////////////////////////////////////////
-    // Code Start#2: List all the items and display it on the screen
+    // Code Start#2: Show/display the to-do list items on the screen
+    // define how many rows we want in our table view
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (todo_list.shared.list.count)
     }
+    //populate the table view with some text, go through all the items in the to-do list
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = todo_list.shared.list[indexPath.row]
         return (cell)
     }
+    // will allow the user to delete items by swiping left
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == UITableViewCellEditingStyle.delete{
             todo_list.shared.list.remove(at: indexPath.row)

@@ -246,7 +246,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     
-    
+    //Used for the first views menu, deals with the constraint of the menus location and hides it offscreen when the menu button is pressed
     @IBOutlet weak var leadingConstraint1: NSLayoutConstraint!
     
     var menuShow = true

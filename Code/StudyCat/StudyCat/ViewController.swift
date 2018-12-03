@@ -14,7 +14,6 @@ import AVFoundation
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
    
-   
     //set outlet for white cat in tree and define UIImage variable for the cat animation
     @IBOutlet weak var cat_tree_white: UIImageView!
     var cat_tree_1: UIImage!
@@ -109,7 +108,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var box3: UIImage!
     var box4: UIImage!
     var box5: UIImage!
-    
     
     //set outlet for cat at the top of the tree and define UIImage variable for the cat animation
     @IBOutlet weak var cat_in_tree: UIImageView!
@@ -621,7 +619,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         //Each one of these is tied to a cat to make it appear after an equal fraction of the total study time
-        if (run_timer1.shared.already_running == true || run_timer1.shared.break_already_running == true) && (run_timer1.shared.time_sec <= (1795)){
+        if (run_timer1.shared.already_running == true || run_timer1.shared.break_already_running == true) && (run_timer1.shared.time_sec <= ((run_timer1.shared.totalTime/12) * 11) + 10){
             cat_in_box.isHidden = false
         }
         

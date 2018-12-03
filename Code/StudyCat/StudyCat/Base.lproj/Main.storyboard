@@ -141,22 +141,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wzf-SO-lzH">
                                 <rect key="frame" x="0.0" y="88" width="84" height="808"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJc-Gk-A5F">
-                                        <rect key="frame" x="0.0" y="130" width="84" height="883"/>
-                                        <color key="backgroundColor" red="0.68885574240000003" green="0.83978426399999995" blue="0.68585462389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                <integer key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorFromUIColor">
-                                                <color key="value" red="0.32130057649999999" green="0.38780932740000001" blue="0.32236888050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="har-AQ-oXo">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="har-AQ-oXo">
                                         <rect key="frame" x="0.0" y="0.0" width="84" height="64"/>
                                         <color key="backgroundColor" red="0.68885574240000003" green="0.83978426399999995" blue="0.68585462389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -174,14 +159,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.69411764705882351" green="0.83529411764705885" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="har-AQ-oXo" firstAttribute="leading" secondItem="GJc-Gk-A5F" secondAttribute="leading" id="DHz-mF-1em"/>
                                     <constraint firstItem="har-AQ-oXo" firstAttribute="top" secondItem="Wzf-SO-lzH" secondAttribute="top" id="HpI-JG-cT1"/>
-                                    <constraint firstItem="GJc-Gk-A5F" firstAttribute="top" secondItem="Wzf-SO-lzH" secondAttribute="top" constant="130" id="JVu-L4-Pxk"/>
-                                    <constraint firstItem="GJc-Gk-A5F" firstAttribute="top" secondItem="har-AQ-oXo" secondAttribute="bottom" constant="66" id="JtX-aO-tfF"/>
                                     <constraint firstItem="har-AQ-oXo" firstAttribute="leading" secondItem="Wzf-SO-lzH" secondAttribute="leading" id="VOj-vF-vCu"/>
-                                    <constraint firstAttribute="trailing" secondItem="GJc-Gk-A5F" secondAttribute="trailing" id="YVD-CN-0h4"/>
-                                    <constraint firstItem="har-AQ-oXo" firstAttribute="trailing" secondItem="GJc-Gk-A5F" secondAttribute="trailing" id="hjC-ZS-U0a"/>
-                                    <constraint firstAttribute="bottom" secondItem="GJc-Gk-A5F" secondAttribute="bottom" constant="-205" id="mGJ-ll-NQQ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -210,7 +189,9 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioj-Ew-BTJ">
                                         <rect key="frame" x="0.0" y="61" width="50" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMa-X6-f3l">
                                         <rect key="frame" x="0.0" y="122" width="50" height="50"/>
@@ -392,6 +373,12 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifs-Dx-rse">
                                 <rect key="frame" x="65" y="113" width="320" height="320"/>
+                                <subviews>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="window_cat_1" translatesAutoresizingMaskIntoConstraints="NO" id="7zn-3f-h0D">
+                                        <rect key="frame" x="213" y="-18" width="79" height="104"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -468,6 +455,7 @@
                         <outlet property="cat_scratch" destination="zeI-KI-70r" id="MTU-BY-Wxc"/>
                         <outlet property="cat_sitting" destination="bki-YQ-hF4" id="uo0-X5-yU1"/>
                         <outlet property="cat_tree_white" destination="waY-P2-Usx" id="ex5-Fk-Xtb"/>
+                        <outlet property="cat_window" destination="7zn-3f-h0D" id="FCv-ol-tOQ"/>
                         <outlet property="laying_cat" destination="0RN-6w-p36" id="NDA-wL-1A9"/>
                         <outlet property="leadingConstraint1" destination="z6M-0L-PAj" id="N8O-Yi-x3Q"/>
                         <outlet property="mouse_cat" destination="vDp-yC-ygO" id="g2V-Ke-lbH"/>
@@ -949,48 +937,48 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="oLX-rU-E6C">
-                                <rect key="frame" x="17" y="25" width="46" height="438"/>
+                                <rect key="frame" x="17" y="25" width="50" height="516"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZ2-Ic-W50">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKl-Ai-abh">
-                                        <rect key="frame" x="0.0" y="61" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="61" width="50" height="50"/>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
                                             <segue destination="9H5-Ib-moc" kind="show" id="MAt-56-nbT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-98-UT9">
-                                        <rect key="frame" x="0.0" y="129" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="142" width="50" height="50"/>
                                         <state key="normal" image="music-icon"/>
                                         <connections>
                                             <segue destination="P47-Cn-7Oc" kind="show" id="Sao-Js-Qky"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahg-5U-0Xe">
-                                        <rect key="frame" x="0.0" y="197" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="223" width="50" height="50"/>
                                         <state key="normal" image="timer-icon"/>
                                         <connections>
                                             <segue destination="s0j-7i-3ob" kind="show" id="jb5-xt-Zbr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifc-4Y-wZ4">
-                                        <rect key="frame" x="0.0" y="265" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="304" width="50" height="50"/>
                                         <state key="normal" backgroundImage="calendar"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhl-su-drZ">
-                                        <rect key="frame" x="0.0" y="333" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="385" width="50" height="50"/>
                                         <state key="normal" image="cat-goodies"/>
                                         <connections>
                                             <segue destination="N2z-dQ-AMB" kind="show" id="v9z-cq-1Q9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ5-Vu-bdg">
-                                        <rect key="frame" x="0.0" y="401" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="466" width="50" height="50"/>
                                         <state key="normal" image="checkmark"/>
                                         <connections>
                                             <segue destination="oWc-7V-Jz1" kind="show" id="kU7-YB-ofM"/>
@@ -1160,54 +1148,54 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="CUm-rp-yfl">
-                                <rect key="frame" x="17" y="25" width="46" height="499"/>
+                                <rect key="frame" x="17" y="25" width="50" height="577"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcJ-Cb-2hF">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-Lk-ZR9">
-                                        <rect key="frame" x="0.0" y="61" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="61" width="50" height="30"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-Zn-Rvu">
-                                        <rect key="frame" x="0.0" y="122" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="122" width="50" height="50"/>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
                                             <segue destination="9H5-Ib-moc" kind="show" id="WoX-0A-awS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6S-Gp-E7q">
-                                        <rect key="frame" x="0.0" y="190" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="203" width="50" height="50"/>
                                         <state key="normal" image="music-icon"/>
                                         <connections>
                                             <segue destination="P47-Cn-7Oc" kind="show" id="X09-Wo-prh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oe-on-UyV">
-                                        <rect key="frame" x="0.0" y="258" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="284" width="50" height="50"/>
                                         <state key="normal" image="timer-icon"/>
                                         <connections>
                                             <segue destination="s0j-7i-3ob" kind="show" id="gU6-DP-7gh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1O-g4-KjJ">
-                                        <rect key="frame" x="0.0" y="326" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="365" width="50" height="50"/>
                                         <state key="normal" backgroundImage="calendar"/>
                                         <connections>
                                             <segue destination="5lD-aE-Szx" kind="show" id="Asq-Ui-MYA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8g-cQ-LrM">
-                                        <rect key="frame" x="0.0" y="394" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="446" width="50" height="50"/>
                                         <state key="normal" image="cat-goodies"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-95-4RM">
-                                        <rect key="frame" x="0.0" y="462" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="527" width="50" height="50"/>
                                         <state key="normal" image="checkmark"/>
                                         <connections>
                                             <segue destination="oWc-7V-Jz1" kind="show" id="24W-AU-jbY"/>
@@ -1585,13 +1573,14 @@
         <image name="timer-icon" width="50" height="50"/>
         <image name="white_cat_1" width="320" height="320"/>
         <image name="window cat clone" width="180" height="180"/>
+        <image name="window_cat_1" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="503-VY-inL"/>
         <segue reference="mx3-lF-up1"/>
         <segue reference="n8i-CU-aIT"/>
         <segue reference="aob-Sh-qPw"/>
-        <segue reference="EsN-3X-N3F"/>
+        <segue reference="I7Y-kH-r03"/>
         <segue reference="pH5-QE-09A"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

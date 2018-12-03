@@ -453,7 +453,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     **/
     
     func randomNumber() -> Float {
-        return Float(Int.random(in: 0 ... 10)) / 10.0
+        return Float(Int.random(in: 0 ... 10)) / 10
     }
     
     /**

@@ -1160,54 +1160,54 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="CUm-rp-yfl">
-                                <rect key="frame" x="17" y="25" width="50" height="577"/>
+                                <rect key="frame" x="17" y="25" width="46" height="499"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcJ-Cb-2hF">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-Lk-ZR9">
-                                        <rect key="frame" x="0.0" y="61" width="50" height="30"/>
+                                        <rect key="frame" x="0.0" y="61" width="46" height="30"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-Zn-Rvu">
-                                        <rect key="frame" x="0.0" y="122" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="122" width="46" height="37"/>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
                                             <segue destination="9H5-Ib-moc" kind="show" id="WoX-0A-awS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6S-Gp-E7q">
-                                        <rect key="frame" x="0.0" y="203" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="190" width="46" height="37"/>
                                         <state key="normal" image="music-icon"/>
                                         <connections>
                                             <segue destination="P47-Cn-7Oc" kind="show" id="X09-Wo-prh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oe-on-UyV">
-                                        <rect key="frame" x="0.0" y="284" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="258" width="46" height="37"/>
                                         <state key="normal" image="timer-icon"/>
                                         <connections>
                                             <segue destination="s0j-7i-3ob" kind="show" id="gU6-DP-7gh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1O-g4-KjJ">
-                                        <rect key="frame" x="0.0" y="365" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="326" width="46" height="37"/>
                                         <state key="normal" backgroundImage="calendar"/>
                                         <connections>
                                             <segue destination="5lD-aE-Szx" kind="show" id="Asq-Ui-MYA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8g-cQ-LrM">
-                                        <rect key="frame" x="0.0" y="446" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="394" width="46" height="37"/>
                                         <state key="normal" image="cat-goodies"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-95-4RM">
-                                        <rect key="frame" x="0.0" y="527" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="462" width="46" height="37"/>
                                         <state key="normal" image="checkmark"/>
                                         <connections>
                                             <segue destination="oWc-7V-Jz1" kind="show" id="24W-AU-jbY"/>
@@ -1364,57 +1364,57 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="7Qr-S6-gzZ">
-                                <rect key="frame" x="17" y="25" width="46" height="499"/>
+                                <rect key="frame" x="17" y="25" width="50" height="577"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8o-4r-I8A">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTY-Cv-xbk">
-                                        <rect key="frame" x="0.0" y="61" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="61" width="50" height="30"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m95-0C-EdI">
-                                        <rect key="frame" x="0.0" y="122" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="122" width="50" height="50"/>
                                         <state key="normal" image="cathouseicon"/>
                                         <connections>
                                             <segue destination="9H5-Ib-moc" kind="show" id="otQ-Po-Tk9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrk-HC-jch">
-                                        <rect key="frame" x="0.0" y="190" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="203" width="50" height="50"/>
                                         <state key="normal" image="music-icon"/>
                                         <connections>
                                             <segue destination="P47-Cn-7Oc" kind="show" id="wGS-q1-M0h"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZH-Oz-bjB">
-                                        <rect key="frame" x="0.0" y="258" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="284" width="50" height="50"/>
                                         <state key="normal" image="timer-icon"/>
                                         <connections>
                                             <segue destination="s0j-7i-3ob" kind="show" id="69d-4S-Yks"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzW-x1-YBc">
-                                        <rect key="frame" x="0.0" y="326" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="365" width="50" height="50"/>
                                         <state key="normal" backgroundImage="calendar"/>
                                         <connections>
                                             <segue destination="5lD-aE-Szx" kind="show" id="Rio-2K-w4s"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRZ-Xd-0zX">
-                                        <rect key="frame" x="0.0" y="394" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="446" width="50" height="50"/>
                                         <state key="normal" image="cat-goodies"/>
                                         <connections>
                                             <segue destination="N2z-dQ-AMB" kind="show" id="mfv-3z-aLw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaE-Us-5nS">
-                                        <rect key="frame" x="0.0" y="462" width="46" height="37"/>
+                                        <rect key="frame" x="0.0" y="527" width="50" height="50"/>
                                         <state key="normal" image="checkmark"/>
                                     </button>
                                 </subviews>
@@ -1565,24 +1565,24 @@
         <image name="book_1" width="128" height="128"/>
         <image name="box_1" width="200" height="200"/>
         <image name="bunny_0" width="96" height="96"/>
-        <image name="calendar" width="37.5" height="37.5"/>
+        <image name="calendar" width="50" height="50"/>
         <image name="cat house empty (1)" width="260" height="260"/>
-        <image name="cat-goodies" width="37.5" height="37.5"/>
+        <image name="cat-goodies" width="50" height="50"/>
         <image name="cat_scratch_1" width="320" height="320"/>
-        <image name="cathouseicon" width="37.5" height="37.5"/>
-        <image name="checkmark" width="37.5" height="37.5"/>
-        <image name="drop-down-arrow" width="37.5" height="37.5"/>
+        <image name="cathouseicon" width="50" height="50"/>
+        <image name="checkmark" width="50" height="50"/>
+        <image name="drop-down-arrow" width="50" height="50"/>
         <image name="floor" width="375" height="375"/>
         <image name="glasses_0" width="96" height="96"/>
         <image name="laying_1" width="180" height="180"/>
         <image name="mouse_1" width="120" height="120"/>
-        <image name="music-icon" width="37.5" height="37.5"/>
+        <image name="music-icon" width="50" height="50"/>
         <image name="shaking_1" width="130" height="130"/>
         <image name="sitting_1" width="170" height="170"/>
         <image name="sprite_1" width="1500" height="1500"/>
         <image name="standing_1" width="150" height="150"/>
         <image name="tabby_cat_1" width="1300" height="1300"/>
-        <image name="timer-icon" width="37.5" height="37.5"/>
+        <image name="timer-icon" width="50" height="50"/>
         <image name="white_cat_1" width="320" height="320"/>
         <image name="window cat clone" width="180" height="180"/>
     </resources>

@@ -256,6 +256,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tree2CatView: UIImageView!
 
+    
+    
+    
+    
+    /*if (menuShowing){
+    leadingConstraint1.constant = -67
+    UIView.animate(withDuration: 0.3, animations: {
+    self.view.layoutIfNeeded()
+    })
+    } else{
+    leadingConstraint1.constant = 17
+    
+    UIView.animate(withDuration: 0.3, animations: {
+    self.view.layoutIfNeeded()
+    })
+    view.layoutIfNeeded()
+    }
+    menuShowing = !menuShowing
+}*/
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
        // TimerViewController().delegate = self

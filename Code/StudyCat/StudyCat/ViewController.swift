@@ -246,9 +246,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     
-    //Used for the first views menu, deals with the constraint of the menus location and hides it offscreen when the menu button is pressed
     @IBOutlet weak var leadingConstraint1: NSLayoutConstraint!
     
+    //Used for the first views menu, deals with the constraint of the menus location and hides it offscreen when the menu button is pressed
     var menuShow = true
     @IBAction func menuView1(_ sender: Any) {
         if (menuShow){
@@ -267,8 +267,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         menuShow = !menuShow
     }
     
-    
-
+    //Used for the sixth views menu, deals with the constraint of the menus location and hides it offscreen when the menu button is pressed
     @IBOutlet weak var leadingConstraint6: NSLayoutConstraint!
     
     @IBAction func menuView6(_ sender: Any) {
@@ -621,6 +620,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cat_in_tree.isHidden = true
         }
         
+        //Each one of these is tied to a cat to make it appear after an equal fraction of the total study time
         if (run_timer1.shared.already_running == true || run_timer1.shared.break_already_running == true) && (run_timer1.shared.time_sec <= (1795)){
             cat_in_box.isHidden = false
         }

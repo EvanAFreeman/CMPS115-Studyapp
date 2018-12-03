@@ -40,7 +40,7 @@ class TimerViewController: UIViewController{
     }
     
     
-    
+    //Used for the third views menu, deals with the constraint of the menus location and hides it offscreen when the menu button is pressed
     @IBOutlet weak var leadingConstraint3: NSLayoutConstraint!
     
     var menuShow = true

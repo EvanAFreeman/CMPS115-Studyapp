@@ -13,7 +13,7 @@ class mainpageViewController: UIViewController{
 
     
     
-    
+    //Used for the second views menu, deals with the constraint of the menus location and hides it offscreen when the menu button is pressed
     @IBOutlet weak var leadingConstraint2: NSLayoutConstraint!
     
     var menuShow = true
@@ -34,7 +34,7 @@ class mainpageViewController: UIViewController{
         menuShow = !menuShow
     }
     
-    
+    //Used for the fifth views menu, deals with the constraint of the menus location and hides it offscreen when the menu button is pressed
     @IBOutlet weak var leadingConstraint5: NSLayoutConstraint!
     
     @IBAction func menuView5(_ sender: Any) {

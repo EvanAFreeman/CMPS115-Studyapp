@@ -10,10 +10,9 @@ import Foundation
 import UIKit
 
 class Cat {
-    var images: Array<UIImage>// = [UIImage()]
+    var images: Array<UIImage>
     var name: String
     var colorManip: Double //for changing hue of cat?
-    @IBOutlet weak var this_cat: UIImageView!
     
     init() {
         self.images = [UIImage()]
@@ -28,7 +27,7 @@ class Cat {
     func getImages() -> Array<UIImage> {
         return self.images
     }
-    //test
+    
     func setColor(colorManip: Double) {
         self.colorManip = colorManip
     }

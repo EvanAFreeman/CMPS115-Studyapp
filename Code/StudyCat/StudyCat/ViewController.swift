@@ -237,9 +237,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let database = Database.database().reference()
     
     var animatedImage: UIImage!
-
-    //var alarm_sound: AVAudioPlayer = AVAudioPlayer()
-    
   
     @IBOutlet weak var boxCatTrail: NSLayoutConstraint!
     
@@ -254,51 +251,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //create a timer to check every second whether the study time has reached a certain timer to make a cat appear
         run_timer1.shared.check2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.cat_appear), userInfo: nil, repeats: true)
         
-        
-        //timer_main.text = time_string  
-        
-       // let music_file = Bundle.main.path(forResource: "alarm", ofType: ".mp3")
-        
-        //do{
-        //    try alarm_sound = AVAudioPlayer(contentsOf: URL(fileURLWithPath: music_file!))
-       // }
-        
-        //catch{
-        //    print(error)
-    //    }
-    
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        
-        //let boxCatVisible = false
-        
-//        
-//            if !boxCatVisible{
-//                //boxCatLead.constant = 150
-//                //boxCatTrail.constant = -150
-//                boxCatView.isHidden = true
-//            }
-//            else{
-//                //boxCatLead.constant = 33
-//                //boxCatTrail.constant = -18
-//                boxCatView.isHidden = false
-//            }
-//
-        
-        
-//        let metaData = StorageMetadata()
-//        metaData.contentType = "image/jpeg"
-        
-//        let study_cats = [("bed", 11), ("cat_scratch", 5), ("white_cat", 5),
-//                        ("book", 9), ("laying", 6), ("mouse", 6),
-//                        ("shaking", 8), ("sitting", 15), ("standing", 6),
-//                        ("tabby_cat", 14), ("window_cat", 10), ("box", 5),
-//                        ("sprite", 15)]
-//
-//        for cat in study_cats {
-//            uploadImages(filename: cat.0, num_images: cat.1, data: metaData)
-//        }
+        /*
+ 
+            We create an object for each cat, making modification
+            more accessible in the future
+         
+        */
         
         let mice_cat: Cat = Cat()
         images12 = loadCat(filename: "mouse", num_images: 6)
@@ -363,20 +321,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 11. tabby_cat
                 12. box_cat
          */
-    
-        let random_cat: Cat = Cat()
-        random_cat.addImages(imgArray: randomCat(image_list: mice_cat.getImages()))
-        
-        //probably do the randomization here?
-        
-        let imageView = UIImageView(image: random_cat.getImages()[0])
-        imageView.frame = CGRect(x: 300, y: 0, width: 100, height: 100)
-        view.addSubview(imageView)
-        
-        let animated_random_cat = UIImage.animatedImage(with: random_cat.getImages(), duration: 2.0)
-        imageView.image = animated_random_cat
-        
-        
+
         //animated each of the cats and specify the duration wanted for the animation (usually 2 seconds)
         animatedImage12 = UIImage.animatedImage(with: images12, duration: 2.0)
         if mouse_cat != nil {
@@ -433,11 +378,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cat_in_tree.image = animatedImage2
         }
 
-//        animatedImage = UIImage.animatedImage(with: images, duration: 2.0)
-//        if cat_in_box != nil {
-//            cat_in_box.image = animated_random_cat//animatedImage
-//        }
+        animatedImage = UIImage.animatedImage(with: images, duration: 2.0)
+        if cat_in_box != nil {
+            cat_in_box.image = animatedImage
+        }
     }
+    
+    /**
+     
+    Randomizes the hue of a cat
+    
+    - Parameter image_list: an array of cat UIImages
+     
+    - Returns: a new UIImage array with modified hues
+     
+    **/
     
     func randomCat(image_list: [UIImage]) -> [UIImage] {
         var temp = [UIImage]()
@@ -448,9 +403,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return temp
     }
     
+    /**
+    Randomizes a number to be used in adjusting the hue
+    - Returns: a random number between (0 .. 10) / 10
+    **/
+    
     func randomNumber() -> Float {
         return Float(Int.random(in: 0 ... 10)) / 10.0
     }
+    
+    /**
+     
+    Returns a new image with slightly adjusted hue to serve as a random cat
+    
+     - Parameter image: the image to be modified
+     
+     - Parameter randColor: a value between 0 ... 1.0 used for Hue adjustment
+     
+     - Returns: a new, UIImage with a random hue
+     
+    **/
     
     func newColor(image: UIImage, randColor: Float) -> UIImage {
         let newImage = CIImage(image: image)
@@ -459,6 +431,38 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return UIImage(ciImage: modImage!)
     }
+    
+    /**
+     
+    Used only when Firebase does not contain cat images.
+    This calls uploadImages on all cat assets
+     
+    **/
+    
+    func initializeCats() {
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpeg"
+        
+        let study_cats = [("bed", 11), ("cat_scratch", 5), ("white_cat", 5),
+                        ("book", 9), ("laying", 6), ("mouse", 6),
+                        ("shaking", 8), ("sitting", 15), ("standing", 6),
+                        ("tabby_cat", 14), ("window_cat", 10), ("box", 5),
+                        ("sprite", 15)]
+
+        for cat in study_cats {
+            uploadImages(filename: cat.0, num_images: cat.1, data: metaData)
+        }
+    }
+    
+    /**
+     
+    Retreives UIColor info for each cat in a series of images
+    - Parameter input: the image to be inspected
+    
+    - Returns: RGBA representation of each image in the sequence
+     
+    **/
+    
     func getInfo(input: UIImage) -> Array<UIColor> {
         let width = Int(input.size.width)
         let height = Int(input.size.height)
@@ -482,6 +486,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return imageColors
     }
     
+    /**
+     
+     Uploads a specified number of images to Firebase Storage
+     
+     - Parameter filename: the root name file to be uploaded
+        e.g. "box_1" will be passed as "box"
+     
+     - Parameter num_images: the number of images to be uploaded
+     
+     - Parameter data: the metadata of the image
+ 
+    **/
+    
     func uploadImages(filename: String, num_images: Int, data:
         StorageMetadata) {
         for i in 1...num_images {
@@ -500,6 +517,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
    
 
+    /**
+    Loads a series of cat images from Firebase Storage
+ 
+     - Parameter filename: The root name of the file to be uploaded
+        e.g. "box_1" will be "box"
+     
+     - Parameter num_images: The total number of images in the animation
+     
+     - Returns: A UIImage array of all the cat images retreived from Firebase
+ 
+    **/
     func loadCat(filename: String, num_images: Int) -> [UIImage]{
         var images = [UIImage]()
         for i in 1...num_images {
@@ -508,7 +536,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             temp.getData(maxSize: 1*1000*1000) { (data, error) in
                 if error == nil {
                     print(String(format: filename + "_%d retreived successfully\n", i))
-                    //I HAD IT HERE BEFORE
                 } else {
                     print(String(format: "there was an error loading the cat %d\n", i))
                 }

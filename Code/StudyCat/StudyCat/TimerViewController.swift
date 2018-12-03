@@ -39,6 +39,30 @@ class TimerViewController: UIViewController{
         }
     }
     
+    
+    
+    @IBOutlet weak var leadingConstraint3: NSLayoutConstraint!
+    
+    var menuShow = true
+    @IBAction func menuView3(_ sender: Any) {
+        if (menuShow){
+            leadingConstraint3.constant = -67
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+        } else{
+            leadingConstraint3.constant = 17
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+            view.layoutIfNeeded()
+        }
+        menuShow = !menuShow
+    }
+    
+    
+    
     var seconds = 0
     var picked = false
     

@@ -33,6 +33,28 @@ class CalendarViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = rightBarBtn
     }
     
+    
+    @IBOutlet weak var leadingConstraint4: NSLayoutConstraint!
+    
+    var menuShow = true
+    @IBAction func menuView4(_ sender: Any) {
+        if (menuShow){
+            leadingConstraint4.constant = -67
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+        } else{
+            leadingConstraint4.constant = 17
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+            view.layoutIfNeeded()
+        }
+        menuShow = !menuShow
+    }
+    
+    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         calenderView.myCollectionView.collectionViewLayout.invalidateLayout()

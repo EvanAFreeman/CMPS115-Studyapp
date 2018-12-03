@@ -12,6 +12,50 @@ import AVFoundation
 class mainpageViewController: UIViewController{
 
     
+    
+    
+    @IBOutlet weak var leadingConstraint2: NSLayoutConstraint!
+    
+    var menuShow = true
+    @IBAction func menuView2(_ sender: Any) {
+        if (menuShow){
+            leadingConstraint2.constant = -67
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+        } else{
+            leadingConstraint2.constant = 17
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+            view.layoutIfNeeded()
+        }
+        menuShow = !menuShow
+    }
+    
+    
+    @IBOutlet weak var leadingConstraint5: NSLayoutConstraint!
+    
+    @IBAction func menuView5(_ sender: Any) {
+        if (menuShow){
+            leadingConstraint5.constant = -67
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+        } else{
+            leadingConstraint5.constant = 17
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+            view.layoutIfNeeded()
+        }
+        menuShow = !menuShow
+    }
+    
+    
+    
     @IBOutlet weak var book_cat: UIImageView!
     var book1: UIImage!
     var book2: UIImage!

@@ -244,6 +244,51 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var boxCatView: UIImageView!
 
+    
+    
+    
+    @IBOutlet weak var leadingConstraint1: NSLayoutConstraint!
+    
+    var menuShow = true
+    @IBAction func menuView1(_ sender: Any) {
+        if (menuShow){
+            leadingConstraint1.constant = -67
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+        } else{
+            leadingConstraint1.constant = 17
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+            view.layoutIfNeeded()
+        }
+        menuShow = !menuShow
+    }
+    
+    
+
+    @IBOutlet weak var leadingConstraint6: NSLayoutConstraint!
+    
+    @IBAction func menuView6(_ sender: Any) {
+        if (menuShow){
+            leadingConstraint6.constant = -67
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+        } else{
+            leadingConstraint6.constant = 17
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+            view.layoutIfNeeded()
+        }
+        menuShow = !menuShow
+    }
+    
+    
     override func viewDidLoad() {
        // TimerViewController().delegate = self
         super.viewDidLoad()
